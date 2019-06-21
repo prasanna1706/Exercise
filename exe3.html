@@ -1,0 +1,152 @@
+
+ 
+    
+<!DOCTYPE html>
+<html>
+
+<body>
+<div id="c1" style="height:120px;overflow:auto;">
+<form>
+<input type="checkbox" id="cb" name="colors" onchange="myfunction(this)" value="colors">colors
+
+<div id="lak" style="display:none">
+
+<ul>
+   <li><input type="checkbox" class="colors" id="cb1"  name="colors" value="red">red</li>
+   <li><input type="checkbox" class="colors" id="cb2"  name="colors" value="green">green</li>
+   <li><input type="checkbox" class="colors" id="cb3"  name="colors" value="yellow">yellow</li>
+   <li><input type="checkbox" class="colors" id="cb4"  name="colors" value="blue">blue</li>
+   </ul>
+   </div>
+  
+   
+<br>
+  <form>
+   <input type="checkbox" id="cb'" name="movies" onchange="myfunction1(this)"  value="movies">movies
+   
+   <div id="shm" style="display:none">
+
+   <ul>
+      <li><input type="checkbox" id="cb'1" name="movies" value="hollywood">hollywood</li>
+      <li><input type="checkbox" id="cb'2" name="movies" value="tollywood">tollywood</li>
+      <li><input type="checkbox" id="cb'3" name="movies" value="bollywood">bollywood</li>
+      <li><input type="checkbox" id="cb'4" name="movies" value="collywood">collywood</li>
+      </ul>
+      </div>
+      <br>
+      <form>
+      <input type="checkbox" id="cb''" name="drinks" onchange="myfunction2(this)" value="drinks">drinks
+     
+       <div id="pra" style="display:none">
+      <ul>
+         <li><input type="checkbox" id="cb''1" name="drinks" value="thumpsup">thumpsup</li>
+         <li><input type="checkbox" id="cb''2" name="drinks" value="mazza">mazza</li>
+         <li><input type="checkbox" id="cb''3" name="drinks" value="pepsi">pepsi</li>
+         <li><input type="checkbox" id="cb''4" name="drinks" value="dew">dew<li>
+         </ul>
+        </div>
+        <br> 
+        <form>
+         <input type="checkbox" id="cb'''" name="bikes" onchange="myfunction3(this)" value="bikes">bikes
+        
+      <div id="san" style="display:none">
+         <ul>
+         <li><input type="checkbox" id="cb'''1" name="bikes" value="splendor">splendor</li>
+         <li><input type="checkbox" id="cb'''2" name="bikes" value="pulsar">pulsar</li>
+         <li><input type="checkbox" id="cb'''3" name="bikes" value="royalenfield">royalenfield</li>
+         <li><input type="checkbox" id="cb'''4" name="bikes" value="cbz">cbz</li>
+         </ul>
+         </div>
+         </div>
+ <script>
+function myfunction(e) {
+     var a = document.getElementsByName("colors");
+     if (e.checked) {
+         for (var i = 0; i < a.length; i++) {
+             if (a[i].type == "checkbox") {
+                 a[i].checked = true;
+                 document.getElementById("lak").style.display = "block";
+                 var scroll1=document.getElementById("cb");
+               scroll1.scrollIntoView();
+             }
+         }
+     } else {
+         for (var i = 0; i < a.length; i++) {
+             console.log(i)
+             if (a[i].type == "checkbox") {
+                 a[i].checked = false;
+                 document.getElementById("lak").style.display = "none";
+             }
+         }
+     }
+ }
+ function myfunction1(p) {
+     var b = document.getElementsByName("movies");
+     if (p.checked) {
+         for (var i = 0; i < b.length; i++) {
+             if (b[i].type == "checkbox") {
+                 b[i].checked = true;
+                 document.getElementById("shm").style.display = "block";
+                 var scroll2=document.getElementById("cb'");
+               scroll2.scrollIntoView();
+             }
+         }
+     } else {
+         for (var i = 0; i < b.length; i++) {
+             console.log(i)
+             if (b[i].type == "checkbox") {
+                 b[i].checked = false;
+                 document.getElementById("shm").style.display = "none";
+                 
+             }
+         }
+     }
+ }
+    
+ function myfunction2(q) {
+     var c = document.getElementsByName("drinks");
+     if (q.checked) {
+         for (var i = 0; i < c.length; i++) {
+             if (c[i].type == "checkbox") {
+                 c[i].checked = true;
+                 document.getElementById("pra").style.display = "block";
+                 var scroll3=document.getElementById("cb''");
+               scroll3.scrollIntoView();
+             }
+         }
+     } else {
+         for (var i = 0; i < c.length; i++) {
+             console.log(i)
+             if (c[i].type == "checkbox") {
+                 c[i].checked = false;
+                 document.getElementById("pra").style.display = "none";
+             }
+         }
+     }
+ }   
+function myfunction3(r) {
+     var d = document.getElementsByName("bikes");
+     if (r.checked) {
+         for (var i = 0; i < d.length; i++) {
+             if (d[i].type == "checkbox") {
+                 d[i].checked = true;
+                 document.getElementById("san").style.display = "block";
+                 var scroll4=document.getElementById("cb'''");
+               scroll4.scrollIntoView();
+             }
+         }
+     } else {
+         for (var i = 0; i < d.length; i++) {
+             console.log(i)
+             if (d[i].type == "checkbox") {
+                 d[i].checked = false;
+                 document.getElementById("san").style.display = "none";
+             }
+         }
+     }
+ }   
+     
+    var opt=document.getElementById("c1");
+    opt.scrollIntoView();
+   </script>
+    
