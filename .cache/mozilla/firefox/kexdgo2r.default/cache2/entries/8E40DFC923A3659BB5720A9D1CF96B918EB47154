@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>SitePoint</title>
+	<atom:link href="https://www.sitepoint.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.sitepoint.com</link>
+	<description>Learn CSS &#124; HTML5 &#124; JavaScript &#124; Wordpress &#124; Tutorials-Web Development &#124; Reference &#124; Books and More</description>
+	<lastBuildDate>Sat, 29 Jun 2019 10:49:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>SitePoint Premium New Releases: Dev Tools, C# &#038; Kubernetes</title>
+		<link>https://www.sitepoint.com/sitepoint-premium-new-releases-dev-tools-c-kubernetes/?utm_source=rss</link>
+		<comments>https://www.sitepoint.com/sitepoint-premium-new-releases-dev-tools-c-kubernetes/#respond</comments>
+		<pubDate>Fri, 28 Jun 2019 17:00:06 +0000</pubDate>
+		<dc:creator><![CDATA[Joel Falconer]]></dc:creator>
+				<category><![CDATA[Web]]></category>
+
+		<guid isPermaLink="false">https://www.sitepoint.com/?p=172728</guid>
+		<description><![CDATA[<a href="https://www.sitepoint.com/sitepoint-premium-new-releases-dev-tools-c-kubernetes/" title="SitePoint Premium New Releases: Dev Tools, C# &#038; Kubernetes" rel="nofollow"><img width="1000" height="667" src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/05/1558670945spacex-530585-unsplash.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 5px;max-width: 100%;" link_thumbnail="1" srcset="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/05/1558670945spacex-530585-unsplash.jpg 1000w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/05/1558670945spacex-530585-unsplash-300x200.jpg 300w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/05/1558670945spacex-530585-unsplash-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a><p>We're working hard to keep you on the cutting edge of your field with SitePoint Premium. We've got plenty of new books to <a href="https://www.sitepoint.com/premium/?utm_source=blog&#038;utm_medium=articles">check out in the library</a> — let us introduce you to them.</p>
+<p><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/1561696787devessentials-tools.png" alt="" width="150" height="188" class="alignleft size-full wp-image-172730" /></p>
+<h2 id="developeressentialstools">Developer Essentials: Tools</h2>
+<p>In this short collection, we round up some of the best developer tools available, and provide some tips on how to improve your workflow with Gulp, and how to write better JavaScript.</p>
+<p>➤ Read <a href="https://www.sitepoint.com/premium/books/developer-essentials-tools/read?utm_source=blog&#38;utm_medium=articles">Developer Essentials: Tools</a>.</p>
+<p><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/1561696801csharp.jpg" alt="" width="150" height="188" class="alignleft size-full wp-image-172731" /></p>
+<h2 id="beginningc7programmingwithvisualstudio2017">Beginning C# 7 Programming with Visual Studio 2017</h2>
+<p>In this book, top ethical hackers discuss advanced persistent threats, public key encryption, firewalls, hacking cars, tools and techniques, social engineering, cryptography, penetration testing, network attacks, advice for parents of young hackers, the Code of Ethical Hacking, and much more.</p>
+<p>➤ Read <a href="https://www.sitepoint.com/premium/books/beginning-c-7-programming-with-visual-studio-2017/read?utm_source=blog&#38;utm_medium=articles">Beginning C# 7 Programming with Visual Studio 2017</a>.</p>
+<p><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/1561696810kubernetes.png" alt="" width="150" height="188" class="alignleft size-full wp-image-172732" /></p>
+<h2 id="kubernetesmicroservicesanddevops">Kubernetes, Microservices and DevOps</h2>
+<p>A guided tour of container orchestration with Kubernetes. This Versioning Guide provides a guided reading list, curated by Versioning maestro Adam Roberts. It will cover installation, objects, cluster interaction, deployment and much more.</p>
+<p>➤ Read <a href="https://www.sitepoint.com/premium/books/kubernetes-microservices-and-devops/read?utm_source=blog&#38;utm_medium=articles">Kubernetes, Microservices and DevOps</a>.</p>
+<h2 id="andmoretocome">And More to Come…</h2>
+<p>We're releasing new content on SitePoint Premium almost every day, so we'll be back next week with the latest updates. And don't forget: if you haven't checked out our offering yet, take our <a href="https://www.sitepoint.com/?utm_source=blog&#038;utm_medium=articles">library for a spin</a>.</p>
+<p>The post <a rel="nofollow" href="https://www.sitepoint.com/sitepoint-premium-new-releases-dev-tools-c-kubernetes/">SitePoint Premium New Releases: Dev Tools, C# &#038; Kubernetes</a> appeared first on <a rel="nofollow" href="https://www.sitepoint.com">SitePoint</a>.</p>
+]]></description>
+		<wfw:commentRss>https://www.sitepoint.com/sitepoint-premium-new-releases-dev-tools-c-kubernetes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>The 9 Best Mind Mapping Tools for Designers</title>
+		<link>https://www.sitepoint.com/mind-mapping-tools-for-designers/?utm_source=rss</link>
+		<comments>https://www.sitepoint.com/mind-mapping-tools-for-designers/#respond</comments>
+		<pubDate>Thu, 27 Jun 2019 17:00:23 +0000</pubDate>
+		<dc:creator><![CDATA[Daniel Schwarz]]></dc:creator>
+				<category><![CDATA[Design & UX]]></category>
+		<category><![CDATA[UX]]></category>
+		<category><![CDATA[mind map]]></category>
+		<category><![CDATA[mind mapping]]></category>
+		<category><![CDATA[mindmapping]]></category>
+		<category><![CDATA[ux]]></category>
+
+		<guid isPermaLink="false">https://www.sitepoint.com/?p=172355</guid>
+		<description><![CDATA[<a href="https://www.sitepoint.com/mind-mapping-tools-for-designers/" title="The 9 Best Mind Mapping Tools for Designers" rel="nofollow"><img width="600" height="374" src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1559872291mind-mapping.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="A Roundup of the Best Mind Mapping Tools" style="display: block; margin: auto; margin-bottom: 5px;max-width: 100%;" link_thumbnail="1" srcset="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1559872291mind-mapping.jpg 600w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1559872291mind-mapping-300x187.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></a><p><strong>A mind map is a diagram drawn to help brainstorm ideas without being forced to organize or structure them. Instead, ideas are visually depicted in a hierarchical structure showing the flow and relationship between various ideas as they arise, which allows us to analyze them and recall them with ease.</strong></p>
+<p>Let’s take a look at the types of mind maps that are used in UX, and the mind mapping tools that are used to create them.</p>
+<h2 id="the-benefits-of-mind-mapping">The Benefits of Mind Mapping</h2>
+<p>So, why mind map?</p>
+<p>Ideation is exciting. Ideas here, ideas there. However, the enthusiasm to conceptualize them can be so invigorating that we don’t take the time to develop upon them or consider other ideas.</p>
+<p>Rushing into a concept can take us down a road that’s seemingly harmless but actually quite dangerous. It might get us to finish line, which feels great, but with an end-result that’s mashup of random thoughts and ideas that don’t work together.</p>
+<p>By mapping out ideas, we can better understand their:</p>
+<ol>
+<li><strong>value</strong> (what’s to be <em>gained</em> by exploring this idea?)</li>
+<li><strong>role</strong> (how does the idea fit into the <em>bigger picture</em>?)</li>
+<li><strong>relationships</strong> (how does the idea relate to <em>other</em> ideas?)</li>
+</ol>
+<p>Eventually we can start to organize these ideas by similarity using a methodology called <a href="https://www.interaction-design.org/literature/article/affinity-diagrams-learn-how-to-cluster-and-bundle-ideas-and-facts">affinity mapping</a>, which in turn helps us design user-centric mockups and wireframes as opposed to being driven by personal opinion.</p>
+<h2 id="how-mind-maps-are-used-in-ux">How Mind Maps Are Used in UX</h2>
+<p>Mind maps can evolve into other types of maps with more specific uses. For example, maps that explore the navigational hierarchy and user flows of software systems such as websites, apps, and so on, are referred to as <em>sitemaps</em>. Maps that explore the numerous ways in which customers might interact with a product are called <em>customer journey maps</em>.</p>
+<p>Both of these are useful when planning UX design projects — sitemaps for planning wireframes, and customer journey maps for optimizing the online and offline customer experience.</p>
+<h2 id="coggle"><a href="https://coggle.it/">Coggle</a></h2>
+<ul>
+<li><a href="https://coggle.it/#pricing">Pricing</a>: $0, $5, or $8 (/month)</li>
+<li>Platform: web</li>
+<li>Pros: simple features, real-time collaboration</li>
+<li>Cons: looks a tad outdated, only accomplishes mind mapping</li>
+</ul>
+<p>While many old-school mind mapping tools have become tragically outdated over the years, Coggle is one that’s managed to survive by keeping its focus solely on mind mapping and sporting a fairly simple user interface.</p>
+<p><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/1559871222coggle.jpg" alt="a Coggle mind map" width="984" height="615" class="aligncenter size-full wp-image-172357" /></p>
+<p>It still looks somewhat dated, but nonetheless is much better looking than veteran tools like FreeMind (which hasn’t been updated in at least four years) and Mind Manager (which looks like it came bundled with Windows 95).</p>
+<p>Check out the <a href="https://coggle.it/gallery">Coggle Mind Map Gallery</a>, especially the mind map that describes <a href="https://static.coggle.it/diagram/WwmNVefgI2ZH1Ygh/t/describing-how-you-feel%F0%9F%91%A4">the various types of emotion</a>.</p>
+<p>Notice how each emotion is divided by color, then further divided into more specific emotions depicted with capital letters, and then divided once more in a smaller font. It’s totally up to you how visually organize your thoughts and relationships. Coggle lets us explore ideas using images, branches, loops, shapes, and whatever else we need to explore our story.</p>
+<p>Stakeholders can weigh in by commenting on mind maps, but also collaborate in real time as if using a whiteboard.</p>
+<p>Apart from real-time collaboration, these features are standard and are included in every other tool in this list.</p>
+<p><em>TL;DR: Coggle is everything you need, and nothing you don’t.</em></p>
+<h2 id="xmind"><a href="https://www.xmind.net/">XMind</a></h2>
+<ul>
+<li><a href="https://www.xmind.net/pricing/">Pricing</a>: $1.24, $4.58, or $4.99 (/month)</li>
+<li>Platform: web, iOS, Android, macOS, Linux, Windows</li>
+<li>Pros: beautiful maps, very modern, excellent UX</li>
+<li>Cons: only mind mapping, no real-time collaboration</li>
+</ul>
+<p>Other than Coggle, XMind is the only mind mapping tool to withstand the test of time, these days taking inspiration from critically acclaimed screen design tools like Sketch to offer a mighty mind mapping experience, but still with a minimalist and intuitive user interface. XMind mind maps look stunning, and while there’s no real-time collaboration, the maps can be shared with stakeholders and exported in a variety of formats.</p>
+<p><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/1559871297xmind.jpg" alt="An XMind map" width="1000" height="617" class="aligncenter size-full wp-image-172358" /></p>
+<p>If you’re looking for a modern-looking mind mapping tool without the bells and whistles, XMind is more than suitable.</p>
+<p><em>Tip: try “Zen Mode” to remove all UI distractions!</em></p>
+<p>The post <a rel="nofollow" href="https://www.sitepoint.com/mind-mapping-tools-for-designers/">The 9 Best Mind Mapping Tools for Designers</a> appeared first on <a rel="nofollow" href="https://www.sitepoint.com">SitePoint</a>.</p>
+]]></description>
+		<wfw:commentRss>https://www.sitepoint.com/mind-mapping-tools-for-designers/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>How to Get Started with Vuetify</title>
+		<link>https://www.sitepoint.com/get-started-vuetify/?utm_source=rss</link>
+		<comments>https://www.sitepoint.com/get-started-vuetify/#respond</comments>
+		<pubDate>Wed, 26 Jun 2019 17:00:58 +0000</pubDate>
+		<dc:creator><![CDATA[Michael Wanyoike]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[vue]]></category>
+		<category><![CDATA[vuetify]]></category>
+
+		<guid isPermaLink="false">https://www.sitepoint.com/?p=172701</guid>
+		<description><![CDATA[<a href="https://www.sitepoint.com/get-started-vuetify/" title="How to Get Started with Vuetify" rel="nofollow"><img width="1000" height="667" src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561531413henry-co-3coKbdfnAFg-unsplash.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 5px;max-width: 100%;" link_thumbnail="1" srcset="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561531413henry-co-3coKbdfnAFg-unsplash.jpg 1000w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561531413henry-co-3coKbdfnAFg-unsplash-300x200.jpg 300w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561531413henry-co-3coKbdfnAFg-unsplash-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a><p>In this article, you will learn how you can quickly build an attractive and interactive frontend very quickly using <a href="https://vuetifyjs.com">Vuetify</a>. Building a friendly application interface with a great user experience is a skill that requires practice and knowledge. While Vuetify won't make you a skilled UX practitioner over night, it will help provide a solid start to those who are new in this area.</p>
+<p>As a Vue.js developer, there are many fully-featured CSS frameworks specifically developed for Vue that you can take advantage of. One great example is <a href="https://bootstrap-vue.js.org/">Bootstrap-Vue</a>. I have used it and and it does really make building components easier than just using traditional CSS frameworks. However, you may want to give your apps a <a href="https://material.io/">Material Design look and feel</a> to make it familiar to new users.</p>
+<p>According to the makers of Material Design:</p>
+<blockquote>
+<p>"Material Design isn't a single style. It's an adaptable design system inspired by paper and ink. And engineered so you can build beautiful, usable products faster."</p>
+</blockquote>
+<p>I hope I now have your attention with that powerful statement. Currently, <strong>Vuetify</strong> is the most complete user interface component library for Vue applications that follows the Google Material Design specs. Let's quickly dive in and look at how you can get started.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This guide is written for developers who have intermediate or advanced knowledge of Vue.js. If you have never used Vue.js to build applications, please check out these articles:</p>
+<ul>
+<li><a href="https://www.sitepoint.com/premium/books/jump-start-vue-js">Jump Start Vue</a>, our complete introduction to Vue.js</li>
+<li><a href="https://www.sitepoint.com/getting-started-with-vue-js/">Getting Started with Vue.js</a> — a quick primer</li>
+<li><a href="https://www.sitepoint.com/up-and-running-vue-js-2-0/">Getting up and Running with the Vue.js 2.0 Framework</a></li>
+<li><a href="https://www.sitepoint.com/tag/vue-js/">More Vue.js Articles</a></li>
+</ul>
+<h2 id="whatisvuetify">What is Vuetify?</h2>
+<p>Vuetify is an open source MIT project for building user interfaces for web and mobile applications. It is a project that is backed by <a href="https://vuetifyjs.com/en/getting-started/sponsors-and-backers">sponsors</a> and volunteers from the Vue community. The project is supported by a vibrant <a href="https://community.vuetifyjs.com/">Discord community forum</a> where you can ask JavaScript questions — even if they're not about Vuetify. The <a href="https://vuetifyjs.com/en/getting-started/meet-the-team">development team</a> is committed to fixing bugs and providing enhancements through consistent update cycles. There are also weekly patches to fix issues that the community raises.</p>
+<p>Most open-source frontend libraries don't get this level of attention. So you can be confident that when you start using Vuetify in your projects, you won't be left hanging without support in the future. Vuetify supports all major browsers out of the box. Older browsers such as IE11 and Safari 9 can work too but will require <code>babel-polyfill</code>. Anything older than that is not supported. Vuetify is built to be semantic. This means that every component and prop name you learn will be easy to remember and re-use without frequently checking the documentation.</p>
+<p>Vuetify also comes with <a href="https://vuetifyjs.com/en/themes/premium">free/premium themes</a> and <a href="https://vuetifyjs.com/en/framework/pre-made-layouts">pre-made layouts</a> you can use to quickly theme your application. At the time of writing, Vuetify v1.5.13 is the current version, which utilizes <a href="https://material.io/archive/guidelines/material-design/introduction.html">Material Design Spec v1</a>. Version 2.x of Vuetify will utilize <a href="https://material.io/design/">Material Design Spec v2</a> which will soon be made <a href="https://vuetifyjs.com/en/getting-started/roadmap">available</a>. Let's go over to the next section to see a couple of ways we can install Vuetify into our projects.</p>
+<h2 id="installingvuetify">Installing Vuetify</h2>
+<p>If you already have an existing Vue project that was created with an older version of Vue CLI tool or some other way, you can simply install Vuetify as follows:</p>
+<p>The post <a rel="nofollow" href="https://www.sitepoint.com/get-started-vuetify/">How to Get Started with Vuetify</a> appeared first on <a rel="nofollow" href="https://www.sitepoint.com">SitePoint</a>.</p>
+]]></description>
+		<wfw:commentRss>https://www.sitepoint.com/get-started-vuetify/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>A Beginner’s Guide to Vue CLI</title>
+		<link>https://www.sitepoint.com/vue-cli-intro/?utm_source=rss</link>
+		<comments>https://www.sitepoint.com/vue-cli-intro/#respond</comments>
+		<pubDate>Tue, 25 Jun 2019 23:07:14 +0000</pubDate>
+		<dc:creator><![CDATA[Ahmed Bouchefra]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[Vue CLI]]></category>
+		<category><![CDATA[vue-hub]]></category>
+
+		<guid isPermaLink="false">https://www.sitepoint.com/?p=172449</guid>
+		<description><![CDATA[<a href="https://www.sitepoint.com/vue-cli-intro/" title="A Beginner’s Guide to Vue CLI" rel="nofollow"><img width="600" height="346" src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1560387342vue-cli.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="A Beginner’s Guide to Vue CLI" style="display: block; margin: auto; margin-bottom: 5px;max-width: 100%;" link_thumbnail="1" srcset="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1560387342vue-cli.jpg 600w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1560387342vue-cli-300x173.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></a><p><strong>When building a new Vue app, the best way to get up and running quickly is to use <a style="font-weight:bold" href="https://cli.vuejs.org/">Vue CLI</a>. This is a command-line utility that allows you to choose from a range of build tools, which it will then install and configure for you. It will also scaffold out your project, providing you with a pre-configured starting point that you can build on, rather than starting everything from scratch.</strong></p>
+<p>The most recent version of Vue CLI is version 3. It provides a new experience for Vue developers and helps them start developing Vue apps without dealing with the complex configuration of tools like webpack. At the same time, it can be configured and extended with plugins for advanced use cases.</p>
+<p>Vue CLI v3 is a complete system for rapid Vue.js development and prototyping. It’s composed of different components, such as the <a href="https://cli.vuejs.org/guide/cli-service.html">CLI service</a>, <a href="https://cli.vuejs.org/guide/plugins-and-presets.html#plugins">CLI plugins</a> and recently a <a href="https://cli.vuejs.org/guide/creating-a-project.html#using-the-gui">web UI</a> that allows developers to perform tasks via an easy-to-use interface.</p>
+<p>Throughout this article, I’ll introduce the latest version of Vue CLI and its new features. I’ll demonstrate how to install the latest version of Vue CLI and how to create, serve and build an example project.</p>
+<h2 id="vue-cli-v3-installation-and-requirements">Vue CLI v3 Installation and Requirements</h2>
+<p>In this section, we’ll look at the requirements needed for Vue CLI v3 and how to install it.</p>
+<h3 id="requirements">Requirements</h3>
+<p>Let’s start with the requirements. Vue CLI v3 requires Node.js 8.9+, but v8.11.0+ is recommended.</p>
+<p>You can install the latest version of Node.js in various ways:</p>
+<ul>
+<li>By downloading the binaries for your system from the <a href="https://nodejs.org">official website</a>.</li>
+<li>By using the official package manager for your system.</li>
+<li>Using a version manager. This is probably the easiest way, as it allows you to manage multiple versions of Node on the same machine. If you’d like to find out more about this approach, please see our quick tip <a href="https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/">Installing Multiple Versions of Node.js Using nvm</a>.</li>
+</ul>
+<p>Vue creator, Evan You, described version 3 of the CLI as a “completely different beast” from its predecessor. As such, it’s important to uninstall any previous version of the CLI (that is, 2.x.x) before preceding with this tutorial.</p>
+<p>If the <code>vue-cli</code> package is installed globally on your system, you can remove it by running the following command:</p>
+<pre><code class="lang-bash">npm uninstall vue-cli -g
+</code></pre>
+<h3 id="installing-vue-cli-v3">Installing Vue CLI v3</h3>
+<p>You can now install Vue CLI v3 by simply running the following command from your terminal:</p>
+<pre><code class="lang-bash">npm install -g @vue/cli
+</code></pre>
+<p><em>Note: if you find yourself needing to add <code>sudo</code> before your command in macOS or Debian-based systems, or to use an administrator CMD prompt in Windows in order to install packages globally, then you should fix your permissions. The npm site has <a href="https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally">a guide on how to do this</a>, or just use a version manager and you avoid the problem completely.</em></p>
+<p>After successfully installing the CLI, you’ll be able to access the <code>vue</code> executable in your terminal.</p>
+<p>For example, you can list all the available commands by executing the <code>vue</code> command:</p>
+<pre><code class="lang-bash">vue
+</code></pre>
+<p>You can check the version you have installed by running:</p>
+<pre><code class="lang-bash">vue --version
+$ 3.2.1
+</code></pre>
+<h2 id="creating-a-vue-project">Creating a Vue Project</h2>
+<p>After installing Vue CLI, let’s now look at how we can use it to quickly scaffold complete Vue projects with a modern front-end toolset.</p>
+<p>Using Vue CLI, you can create or generate a new Vue app by running the following command in your terminal:</p>
+<pre><code class="lang-bash">vue create example-vue-project
+</code></pre>
+<p><em>Tip: <code>example-vue-project</code> is the name of the project. You can obviously choose any valid name for your project.</em></p>
+<p>The CLI will prompt you for the preset you want to use for your project. One option is to select the default preset which installs two plugins: Babel for transpiling modern JavaScript, and ESLint for ensuring code quality. Or you can manually select the features needed for your project from a set of official plugins. These include:</p>
+<ul>
+<li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/@vue/cli-plugin-babel">Babel</a></li>
+<li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/@vue/cli-plugin-typescript">TypeScript</a></li>
+<li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/@vue/cli-plugin-pwa">Progressive Web App support</a></li>
+<li><a href="https://github.com/vuejs/vue-router">Vue Router</a></li>
+<li><a href="https://github.com/vuejs/vuex">Vuex</a> (Vue’s official state management library)</li>
+<li>CSS Pre-processors (<a href="https://postcss.org/">PostCSS</a>, <a href="https://github.com/css-modules/css-modules">CSS modules</a>, <a href="https://sass-lang.com/">Sass</a>, <a href="http://lesscss.org/">Less</a> &#38; <a href="http://stylus-lang.com/">Stylus</a>)</li>
+<li>Linter/ Formatter using <a href="https://github.com/vuejs/vue-cli/tree/dev/packages/@vue/cli-plugin-eslint">ESLint</a> and <a href="https://github.com/vuejs/vue-cli/tree/dev/packages/@vue/eslint-config-prettier">Prettier</a></li>
+<li>Unit Testing using <a href="https://github.com/vuejs/vue-cli/tree/dev/packages/@vue/cli-plugin-unit-mocha">Mocha</a> or <a href="https://github.com/vuejs/vue-cli/tree/dev/packages/@vue/cli-plugin-unit-jest">Jest</a></li>
+<li>E2E Testing using <a href="https://github.com/vuejs/vue-cli/tree/dev/packages/@vue/cli-plugin-e2e-cypress">Cypress</a> or <a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-e2e-nightwatch">Nightwatch</a></li>
+</ul>
+<p>Whatever you choose, the CLI will download the appropriate libraries and configure the project to use them. And if you choose to manually select features, at the end of the prompts you’ll also have the option to save your selections as a preset so that you can reuse it in future projects.</p>
+<p>Now let’s look at the other scripts for serving the project (using a webpack development server and hot module reloading) and building the project for production.</p>
+<p>Navigate inside your project’s folder:</p>
+<pre><code class="lang-bash">cd example-vue-project
+</code></pre>
+<p>Next, run the following command to serve your project locally:</p>
+<pre><code class="lang-bash">npm run serve
+</code></pre>
+<p>The command will allow you to run a local development server from the <a href="http://localhost:8080">http://localhost:8080</a> address. If you use your web browser to navigate to this address, you should see the following page:</p>
+<p><img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2018/12/1543831819vue-cli-1.png" alt="Welcome to Your Vue.js App"/></p>
+<p>The development server supports features like hot code reloading, which means you don’t need to stop and start your server every time you make any changes to your project’s source code. It will even preserve the state of your app!</p>
+<p>And when you’ve finished developing your project, you can use the following command to build a production bundle:</p>
+<pre><code class="lang-bash">npm run build
+</code></pre>
+<p>This will output everything to a <code>dist</code> folder within your project. You can <a href="https://cli.vuejs.org/guide/deployment.html">read more about deployment here</a>.</p>
+<h3 id="what-is-the-vue-cli-service-">What is the Vue CLI Service?</h3>
+<p>The <a href="https://cli.vuejs.org/guide/cli-service.html">Vue CLI Service</a> is a run-time dependency (<code>@vue/cli-service</code>) that abstracts webpack and provides default configurations. It can be upgraded, configured and extended with plugins.</p>
+<p>It provides multiple scripts for working with Vue projects, such as the <code>serve</code>, <code>build</code> and <code>inspect</code> scripts.</p>
+<p>We’ve seen the <code>serve</code> and <code>build</code> scripts in action already. The <code>inspect</code> script allows you to inspect the webpack config in a project with <code>vue-cli-service</code>. Try it out:</p>
+<pre><code class="lang-bash">vue inspect
+</code></pre>
+<p>As you can see, that produces a lot of output. Later on we’ll see how to tweak the webpack config in a Vue CLI project.</p>
+<h3 id="the-project-anatomy">The Project Anatomy</h3>
+<p>A Vue project generated with the CLI has a predefined structure that adheres to best practices. If you choose to install any extra plugins (such as the Vue router), the CLI will also create the files necessary to use and configure these libraries.</p>
+<p>Let’s take a look at the important files and folders in a Vue project when using the default preset.</p>
+<ul>
+<li><code>public</code>. This folder contains public files like <code>index.html</code> and <code>favicon.ico</code>. Any static assets placed here will simply be copied and not go through webpack.</li>
+<li><code>src</code>. This folder contains the source files for your project. Most work will be done here.</li>
+<li><code>src/assets</code>. This folder contains the project’s assets such as <code>logo.png</code>.</li>
+<li><code>src/components</code>. This folder contains the Vue components.</li>
+<li><code>src/App.vue</code>. This is the main Vue component of the project.</li>
+<li><code>src/main.js</code>. This is the main project file which bootstraps the Vue application.</li>
+<li><code>babel.config.js</code>. This is a configuration file for Babel.</li>
+<li><code>package.json</code>. This file contains a list of the project’s dependencies, as well as the configuration options for ESLint, PostCSS and supported browsers.</li>
+<li><code>node_modules</code>. This folder contains the installed npm packages.</li>
+</ul>
+<p>This is a screenshot of the project’s anatomy:</p>
+<p><img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2018/12/1543835205vue-cli-2.png" alt="Project anatomy"/></p>
+<h2 id="vue-cli-plugins">Vue CLI Plugins</h2>
+<p>Vue CLI v3 is designed with a plugin architecture in mind. In this section, we’ll look at what plugins are and how to install them in your projects. We’ll also look at some popular plugins that can help add advanced features by automatically installing the required libraries and making various settings—all of which would otherwise have to be done manually.  </p>
+<h3 id="what-a-vue-plugin-is">What a Vue Plugin Is</h3>
+<p>CLI Plugins are just npm packages that provide additional features to your Vue project. The  <code>vue-cli-service</code> binary automatically resolves and loads all plugins listed in the  <code>package.json</code> file.</p>
+<p>The base configuration for a Vue CLI 3 project is webpack and Babel. All the other features can be added via plugins.</p>
+<p>There are official plugins provided by the Vue team and community plugins developed by the community. Official plugin names start with <code>@vue/cli-plugin-</code>, and community plugin names start with <code>vue-cli-plugin-</code>.</p>
+<p>Official Vue CLI 3 plugins include:</p>
+<ul>
+<li>Typescript</li>
+<li>PWA</li>
+<li>Vuex</li>
+<li>Vue Router</li>
+<li>ESLint</li>
+<li>Unit testing etc.</li>
+</ul>
+<h3 id="how-to-add-a-vue-plugin">How to Add a Vue Plugin</h3>
+<p>Plugins are either automatically installed when creating the project or explicitly installed later by the developer.</p>
+<p>You can install many built-in plugins in a project when initializing your project, and install any other additional plugins in the project using the <code>vue add my-plugin</code> command at any point of your project.</p>
+<p>You can also install plugins with presets, and group your favorite plugins as reusable presets that you can use later as the base for other projects.</p>
+<h3 id="some-useful-vue-plugins">Some Useful Vue Plugins</h3>
+<p>There are many Vue CLI plugins that you might find useful for your next projects. For example, the <a href="https://github.com/vuetifyjs/vue-cli-plugin-vuetify">Vuetify UI library is available as a plugin</a>, as is <a href="https://github.com/storybooks/vue-cli-plugin-storybook">Storybook</a>. You can also use the <a href="https://github.com/nklayman/vue-cli-plugin-electron-builder">Electron Builder plugin</a> to quickly scaffold out a Vue project based on Electron.</p>
+<p>I’ve also written a couple of plugins which you can make use of:</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/vue-cli-plugin-nuxt">vue-cli-plugin-nuxt</a>: a Vue CLI plugin for quickly creating a universal Vue application with Nuxt.js</li>
+<li><a href="https://www.npmjs.com/package/vue-cli-plugin-bootstrap">vue-cli-plugin-bootstrap</a>: a Vue CLI plugin for adding Bootstrap 4 to your project</li>
+</ul>
+<p>If you’d like to find out more about plugins, check out this great article on Vue Mastery: <a href="https://medium.com/vue-mastery/5-vue-cli-3-plugins-for-your-vue-project-df5af357d076">5 Vue CLI 3 plugins for your Vue project</a>.</p>
+<p>The post <a rel="nofollow" href="https://www.sitepoint.com/vue-cli-intro/">A Beginner’s Guide to Vue CLI</a> appeared first on <a rel="nofollow" href="https://www.sitepoint.com">SitePoint</a>.</p>
+]]></description>
+		<wfw:commentRss>https://www.sitepoint.com/vue-cli-intro/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>30+ Web Tools and Services to Help You Launch Your Next Big Thing</title>
+		<link>https://www.sitepoint.com/30-web-tools-and-services-to-help-you-launch-your-next-big-thing/?utm_source=rss</link>
+		<comments>https://www.sitepoint.com/30-web-tools-and-services-to-help-you-launch-your-next-big-thing/#respond</comments>
+		<pubDate>Tue, 25 Jun 2019 16:30:17 +0000</pubDate>
+		<dc:creator><![CDATA[SitePoint Team]]></dc:creator>
+				<category><![CDATA[Web]]></category>
+		<category><![CDATA[Angelap]]></category>
+		<category><![CDATA[Business]]></category>
+		<category><![CDATA[entrepreneur]]></category>
+		<category><![CDATA[mekanism]]></category>
+		<category><![CDATA[sponsored]]></category>
+		<category><![CDATA[website builders]]></category>
+		<category><![CDATA[wordpress themes]]></category>
+
+		<guid isPermaLink="false">https://www.sitepoint.com/?p=172580</guid>
+		<description><![CDATA[<a href="https://www.sitepoint.com/30-web-tools-and-services-to-help-you-launch-your-next-big-thing/" title="30+ Web Tools and Services to Help You Launch Your Next Big Thing" rel="nofollow"><img width="2607" height="1738" src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561350433clark-tibbs-367075-unsplash.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="Do something great neon sign" style="display: block; margin: auto; margin-bottom: 5px;max-width: 100%;" link_thumbnail="1" srcset="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561350433clark-tibbs-367075-unsplash.jpg 2607w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561350433clark-tibbs-367075-unsplash-300x200.jpg 300w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561350433clark-tibbs-367075-unsplash-768x512.jpg 768w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561350433clark-tibbs-367075-unsplash-1024x683.jpg 1024w" sizes="(max-width: 2607px) 100vw, 2607px" /></a><p class="wp-special"><em>This article was created in partnership with <a href="http://mekanism.co/" rel="nofollow">Mekanism</a>. Thank you for supporting the partners who make SitePoint possible.</em></p>
+<p>2019 is the best year to become successful, to launch your own online or offline business, to invent a product or service, or to grow your business into a huge corporation. Because to sketch, test, build and launch that business that will become the next Uber, Instagram, or Waze is now easier than ever before.</p>
+<p>The difference between now and previous years, is that there are now a plethora of web tools and services to help you launch your next big thing - some of them are even free! Today anybody can build a website or logo without any specialist knowledge or previous experience. With only a few hours investment, you can get amazing results. It's a quick and affordable way to get your site or product to market. </p>
+<p>In this article we are going to review 36 different web tools and services that are recommended by successful people. Each of them will save you time and money, or help improve your business and workflows, so you can get on with launching and scaling.</p>
+<h2 id="1creativetimpremiumbootstrapthemesandtemplateshttpswwwcreativetimcomexploreframeworks">1. <a href="https://www.creative-tim.com/explore-frameworks" rel="nofollow">Creative-TIM - Premium Bootstrap Themes and Templates</a></h2>
+<p><a href="https://www.creative-tim.com/explore-frameworks" rel="nofollow"><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/15613376561.-Creative-Tim.jpg" alt="Creative Tim" width="1200" height="720" class="alignnone size-full wp-image-172581"/></a></p>
+<p>Creative Tim is the perfect place where web designers and web developers can find fully coded UI tools to help you build web and mobile apps. With over 750.000 users, Creative Tim offers UI Kits, Dashboards and Design Systems.</p>
+<p>All the development is made on top of Bootstrap 4: Vuejs, Angular, React, React Native. Using these tools will save developers and designers hours of work since the products already contain a large number of components and are packed with all the plugins that you might need on a project. Everything used to create the products can be downloaded for free under the MIT License.</p>
+<p>For people with many upcoming projects, Creative Tim offers 6 Bundles at special prices, to encourage developers to save precious time and to trust the quality of their projects.<br />
+Last but not least, Creative Tim’s products are used not only by thousands of freelancers and developers but by top companies like NASA, Cisco, IBM, and Amazon.</p>
+<p>Check out their <a href="https://www.creative-tim.com/explore-frameworks" rel="nofollow">website</a> and find the product that matches your needs.<br />
+<strong>Pricing:</strong> Free to $249</p>
+<h2 id="2brizyinnovativesitebuilderhttpswwwbrizyio">2. <a href="https://www.brizy.io/" rel="nofollow">Brizy - Innovative Site Builder</a></h2>
+<p><a href="http://www.brizy.io/" rel="nofollow"><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/15613386422.-Brizy-1024x576.jpg" alt="Brizy" width="1024" height="576" class="alignnone size-large wp-image-172586" /></a></p>
+<p>Brizy is the most user-friendly visual page builder in town! No designer or developer skills required. The only tools you'll need to master are clicks and drags.</p>
+<p>Brizy can be used two ways. One is to download the WordPress plugin and use it as such, and the next one is the Cloud platform where you can create landing pages in minutes. From hosting to domain setups Brizy handles everything. Brizy Cloud is included with any Brizy PRO plan.</p>
+<p>Creating a powerful, fully functional website is extremely easy with Brizy and anybody can do it without having any designer’s skills or writing a single line of code. This website builder has the most powerful features included, both for the free and paid plans. The free account will bring you premium features that you have to pay for on other website builders. At Brizy, these features are free.</p>
+<p>Build a free website with Brizy today, the process is very fast and intuitive.</p>
+<h2 id="3tailorbrandshttpswwwtailorbrandscom">3. <a href="https://www.tailorbrands.com/" rel="nofollow">Tailor Brands</a></h2>
+<p><a href="http://www.tailorbrands.com/" rel="nofollow"><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/15613386433.-Tailor-Brands.jpg" alt="Tailor Brands" width="860" height="540" class="alignnone size-full wp-image-172587" /></a></p>
+<p>Tailor Brands is a revolutionary online logo and branding platform that will help you design your logo in seconds. It has over 10 million users and counting, and it was used to create over 400 million designs. Every second 1 a new design is made via it. </p>
+<p>This AI-powered online logo maker platform does not use pre-made logo templates. Every design is uniquely crafted to match your business and brand personality perfectly. You don’t need to have any design skills or special knowledge, it is super simple to use and extremely fast.</p>
+<p>Write down the logo name you want, make a few selections from the options provided by Tailor Brands and you will get a number of designs to choose from.</p>
+<h2 id="448hourslogoaffordablelogosdonefast">4. <a href="https://www.48hourslogo.com/" rel="nofollow">48HoursLogo – Affordable Logos Done Fast</a></h2>
+<p><a href="http://www.48hourslogo.com/"><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/15613386454.-48HoursLogo-1024x496.png" alt="48HoursLogo" width="1024" height="496" class="alignnone size-large wp-image-172588" /></a></p>
+<p>48hourslogo is a fast, easy and very affordable logo crowdsourcing website that has created over 3 million logos. With contest prizes starting at just $99, more than 40,000 small businesses and entrepreneurs have used this amazing logo design service to get gorgeous and creative designs.</p>
+<p>After launching your logo design contest at 48hourslogo, your project will go through 3 stages before arriving at your final design. The qualifying stage: the contest is open to all registered designers and they will submit multiple logo concepts for you to choose from. The design revision stage: at the end of qualifying stage, you will be prompted to select up to 3 finalist designers to enter the “design revision stage”. And at the end, the finalizing stage: after selecting your contest winner, you will work with your winning designer on finalizing your design, (you can still request small changes and tweaks to your winning logo).</p>
+<p>Start a logo design contest using 48hourslogo.</p>
+<h2 id="5codesterhttpswwwcodestercom">5. <a href="https://www.codester.com/" rel="nofollow">Codester</a></h2>
+<p><a href="http://www.codester.com/" rel="nofollow"><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/15613386475.-Codester.com_-1024x535.png" alt="Codester.com" width="1024" height="535" class="alignnone size-large wp-image-172589" /></a></p>
+<p>Codester is a huge marketplace where web designers and web developers will find tons of premium PHP scripts, app templates, themes, plugins and much more. </p>
+<p>Always check the Flash Sales section where hugely discounted items are being sold.</p>
+<p>Browse Codester and pick the items you need.</p>
+<h2 id="6nameqlhttpswwwnameqlcom">6. <a href="https://www.nameql.com/" rel="nofollow">NameQL</a></h2>
+<p><a href="http://www.nameql.com/" rel="nofollow"><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/15613395176.-NameQL-1024x469.png" alt="NameQL" width="1024" height="469" class="alignnone size-large wp-image-172594" /></a></p>
+<p>NameQL helps you find a great name. It considers thousands of potential names in milliseconds and shows you the best ones that are still available for purchase as [name].com. It'sa huge time saver whenever you are looking for a new website domain name.</p>
+<h2 id="7seekvisahttpswwwseekvisacomau">7. <a href="https://www.seekvisa.com.au/" rel="nofollow">SeekVisa</a></h2>
+<p><a href="http://www.seekvisa.com.au/" rel="nofollow"><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/15613395207.-Seekvisa-1024x684.png" alt="Seekvisa" width="1024" height="684" class="alignnone size-large wp-image-172595" /></a></p>
+<p>Australia is a great destination to live and work, with developers, software engineers and user experience/user interface designer in high demand. If you're considering immigrating to Australia, you can discuss with SeekVisa, who are migration experts.</p>
+<p>Australia's Employer Nomination Scheme (ENS) enables Australian employers to sponsor highly skilled workers to live and work permanently in Australia. This is the quickest way for IT developers to immigrate to Australia. Contact Seekvisa to determine your eligibility. </p>
+<h2 id="8mobiloudhttpswwwmobiloudcom">8. <a href="https://www.mobiloud.com/" rel="nofollow">MobiLoud</a></h2>
+<p><a href="http://www.mobiloud.com/" rel="nofollow"><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/15613399458-1024x683.png" alt="MobiLoud" width="1024" height="683" class="alignnone size-large wp-image-172598" /></a></p>
+<p>Publishers are seeing up to 90% of their traffic coming from mobile. Mobile apps give readers the experience they want and let publishers increase engagement, traffic, and revenue. </p>
+<p>With fast loading times, your app encourages loyalty and repeat visits. With push notifications, it brings people back again and again. Your icon is a constant reminder of your brand and content.</p>
+<p>MobiLoud is the best solution for news mobile apps built on WordPress. They will publish and maintain your custom app, with push notifications, advertising and subscriptions, all at a fraction of the time and cost of traditional app development.</p>
+<p>The post <a rel="nofollow" href="https://www.sitepoint.com/30-web-tools-and-services-to-help-you-launch-your-next-big-thing/">30+ Web Tools and Services to Help You Launch Your Next Big Thing</a> appeared first on <a rel="nofollow" href="https://www.sitepoint.com">SitePoint</a>.</p>
+]]></description>
+		<wfw:commentRss>https://www.sitepoint.com/30-web-tools-and-services-to-help-you-launch-your-next-big-thing/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Code Challenge #2: 4 Tips for Higher Scores in CSSBattle.dev</title>
+		<link>https://www.sitepoint.com/code-challenge-2-4-tips-for-higher-scores-in-cssbattle-dev/?utm_source=rss</link>
+		<comments>https://www.sitepoint.com/code-challenge-2-4-tips-for-higher-scores-in-cssbattle-dev/#comments</comments>
+		<pubDate>Mon, 24 Jun 2019 05:11:25 +0000</pubDate>
+		<dc:creator><![CDATA[Alex Walker]]></dc:creator>
+				<category><![CDATA[CSS]]></category>
+		<category><![CDATA[HTML]]></category>
+		<category><![CDATA[HTML & CSS]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[code challenge]]></category>
+		<category><![CDATA[css challenge]]></category>
+
+		<guid isPermaLink="false">https://www.sitepoint.com/?p=172583</guid>
+		<description><![CDATA[<a href="https://www.sitepoint.com/code-challenge-2-4-tips-for-higher-scores-in-cssbattle-dev/" title="Code Challenge #2: 4 Tips for Higher Scores in CSSBattle.dev" rel="nofollow"><img width="300" height="368" src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561335291css-borders@2x.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 5px;max-width: 100%;" link_thumbnail="1" srcset="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561335291css-borders@2x.png 300w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561335291css-borders@2x-245x300.png 245w" sizes="(max-width: 300px) 100vw, 300px" /></a><p>Our CSSBattle Code Challenge requires some 'outside the square' CSS thinking. Here are four pro tips to get you started on the right track.  </p>
+<p>The post <a rel="nofollow" href="https://www.sitepoint.com/code-challenge-2-4-tips-for-higher-scores-in-cssbattle-dev/">Code Challenge #2: 4 Tips for Higher Scores in CSSBattle.dev</a> appeared first on <a rel="nofollow" href="https://www.sitepoint.com">SitePoint</a>.</p>
+]]></description>
+		<wfw:commentRss>https://www.sitepoint.com/code-challenge-2-4-tips-for-higher-scores-in-cssbattle-dev/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>How to Set Up a Mobile Development Environment</title>
+		<link>https://www.sitepoint.com/mobile-development-environment/?utm_source=rss</link>
+		<comments>https://www.sitepoint.com/mobile-development-environment/#comments</comments>
+		<pubDate>Fri, 21 Jun 2019 17:00:10 +0000</pubDate>
+		<dc:creator><![CDATA[Shaumik Daityari]]></dc:creator>
+				<category><![CDATA[Web]]></category>
+
+		<guid isPermaLink="false">https://www.sitepoint.com/?p=172543</guid>
+		<description><![CDATA[<a href="https://www.sitepoint.com/mobile-development-environment/" title="How to Set Up a Mobile Development Environment" rel="nofollow"><img width="1200" height="674" src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561086771dexpad.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 5px;max-width: 100%;" link_thumbnail="1" srcset="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561086771dexpad.jpg 1200w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561086771dexpad-300x169.jpg 300w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561086771dexpad-768x431.jpg 768w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1561086771dexpad-1024x575.jpg 1024w" sizes="(max-width: 1200px) 100vw, 1200px" /></a><p>The use of mobile devices has increased considerably in the past decade. It has been over two years since <a href="https://www.sitepoint.com/browser-trends-december-2016-mobile-overtakes-desktop/">mobile browsing took over desktop</a>. The usability of mobile devices has exploded, too. Mobile devices now come with huge processing power.</p>
+<p>We often dismiss mobile platforms as serious workhorses for developers, but today, it's possible to take advantage of mobile portability with a level of flexibility that gets closer to the desktop every year.</p>
+<p>This post explains the process of running a Linux development environment from your mobile device using Samsung Dex.</p>
+<h2 id="abriefhistoryofsamsungdex">A Brief History of Samsung Dex</h2>
+<p>Samsung Dex is a platform that allows you to use the computing power of your mobile device to run a desktop-like environment. It was introduced in 2017 and has been actively developed since. The number of devices that can run Dex has increased steadily. In this post, we explore how to set up a Linux development environment through Samsung Dex.</p>
+<p>The post <a rel="nofollow" href="https://www.sitepoint.com/mobile-development-environment/">How to Set Up a Mobile Development Environment</a> appeared first on <a rel="nofollow" href="https://www.sitepoint.com">SitePoint</a>.</p>
+]]></description>
+		<wfw:commentRss>https://www.sitepoint.com/mobile-development-environment/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>SitePoint Premium New Releases: Cybersecurity &#038; DevOps Adoption</title>
+		<link>https://www.sitepoint.com/sitepoint-premium-new-releases-cybersecurity-devops-adoption/?utm_source=rss</link>
+		<comments>https://www.sitepoint.com/sitepoint-premium-new-releases-cybersecurity-devops-adoption/#respond</comments>
+		<pubDate>Fri, 21 Jun 2019 16:00:24 +0000</pubDate>
+		<dc:creator><![CDATA[Joel Falconer]]></dc:creator>
+				<category><![CDATA[Blogs]]></category>
+
+		<guid isPermaLink="false">https://www.sitepoint.com/?p=172569</guid>
+		<description><![CDATA[<a href="https://www.sitepoint.com/sitepoint-premium-new-releases-cybersecurity-devops-adoption/" title="SitePoint Premium New Releases: Cybersecurity &#038; DevOps Adoption" rel="nofollow"><img width="1000" height="667" src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/05/1558670945spacex-530585-unsplash.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 5px;max-width: 100%;" link_thumbnail="1" srcset="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/05/1558670945spacex-530585-unsplash.jpg 1000w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/05/1558670945spacex-530585-unsplash-300x200.jpg 300w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/05/1558670945spacex-530585-unsplash-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a><p>We're working hard to keep you on the cutting edge of your field with SitePoint Premium. We've got plenty of new books to <a href="https://www.sitepoint.com/premium/?utm_source=blog&#038;utm_medium=articles">check out in the library</a> — let us introduce you to them.</p>
+<p><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/1561098358devops.jpg" alt="" width="150" height="225" class="alignleft size-full wp-image-172572" /></p>
+<h2 id="thedevopsadoptionplaybook">The DevOps Adoption Playbook</h2>
+<p>This award-winning book provides actionable, real-world guidance on implementing DevOps in large-scale enterprise IT environments, explaining how to achieve high-value innovation and optimization with low cost and risk, and exceed traditional business goals with higher product release efficiency.</p>
+<p>➤ Read <a href="https://www.sitepoint.com/premium/books/the-devops-adoption-playbook/read?utm_source=blog&#38;utm_medium=articles">The DevOps Adoption Playbook</a>.</p>
+<p><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/1561098368hacker.jpg" alt="" width="150" height="225" class="alignleft size-full wp-image-172573" /></p>
+<h2 id="hackingthehacker">Hacking the Hacker</h2>
+<p>In this book, top ethical hackers discuss advanced persistent threats, public key encryption, firewalls, hacking cars, tools and techniques, social engineering, cryptography, penetration testing, network attacks, advice for parents of young hackers, the Code of Ethical Hacking, and much more.</p>
+<p>➤ Read <a href="https://www.sitepoint.com/premium/books/hacking-the-hacker/read?utm_source=blog&#38;utm_medium=articles">Hacking the Hacker</a>.</p>
+<h2 id="andmoretocome">And More to Come…</h2>
+<p>We're releasing new content on SitePoint Premium almost every day, so we'll be back next week with the latest updates. And don't forget: if you haven't checked out our offering yet, take our <a href="https://www.sitepoint.com/?utm_source=blog&#038;utm_medium=articles">library for a spin</a>.</p>
+<p>The post <a rel="nofollow" href="https://www.sitepoint.com/sitepoint-premium-new-releases-cybersecurity-devops-adoption/">SitePoint Premium New Releases: Cybersecurity &#038; DevOps Adoption</a> appeared first on <a rel="nofollow" href="https://www.sitepoint.com">SitePoint</a>.</p>
+]]></description>
+		<wfw:commentRss>https://www.sitepoint.com/sitepoint-premium-new-releases-cybersecurity-devops-adoption/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>7 Worst UX Mistakes Limiting Your Growth</title>
+		<link>https://www.sitepoint.com/worst-ux-mistakes/?utm_source=rss</link>
+		<comments>https://www.sitepoint.com/worst-ux-mistakes/#respond</comments>
+		<pubDate>Wed, 19 Jun 2019 17:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[Daniel Schwarz]]></dc:creator>
+				<category><![CDATA[Design & UX]]></category>
+		<category><![CDATA[growth]]></category>
+		<category><![CDATA[joelf]]></category>
+		<category><![CDATA[user experience]]></category>
+
+		<guid isPermaLink="false">https://www.sitepoint.com/?p=172531</guid>
+		<description><![CDATA[<a href="https://www.sitepoint.com/worst-ux-mistakes/" title="7 Worst UX Mistakes Limiting Your Growth" rel="nofollow"><img width="1200" height="801" src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1560926094design-sprints.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 5px;max-width: 100%;" link_thumbnail="1" srcset="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1560926094design-sprints.jpg 1200w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1560926094design-sprints-300x200.jpg 300w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1560926094design-sprints-768x513.jpg 768w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1560926094design-sprints-1024x684.jpg 1024w" sizes="(max-width: 1200px) 100vw, 1200px" /></a><p>Growth. Growth! GROWTH!</p>
+<p><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/1560926035film-antman-review-46120966-7a4c-11e8-93cc-6d3beccdd7a3-1260x800.jpg" alt="" width="1260" height="800" class="aligncenter size-full wp-image-172534" /></p>
+<p>Growth is often the top focus for businesses that are “onto something.” They’ve found what makes customers tick, their special recipe, and now they’re ready for the world to see.</p>
+<p>However, scaling doesn’t <em>only</em> scale success.</p>
+<p>If there’s friction in the UX, bugs, technical limitations, or any other types of UX flaws, these flaws are magnified as a product scales, which is why the most successful businesses are the ones that take their time and try not to grow <em>too</em> rapidly.</p>
+<p>It’s why software teams build for one platform at a time, and it’s why MVPs and betas are only available to a subset of users.</p>
+<p>Let’s take a look at some of the worst UX mistakes we’ll really, really want to avoid while trying to “scale up” our businesses.</p>
+<h2 id="1timewasting">1. Time Wasting</h2>
+<p>The majority of design decisions will have only a <em>small</em> impact. Sure, collectively, these decisions may amount to improved UX, but only one in a few will have a detrimental effect on growth.</p>
+<p>Also, UX design is <strong>not</strong> a task. UX design is a continuous effort, and attempting to solve everything all at once can result in stress, anxiety, OCD, and eventually severe burnout.</p>
+<p>Perfectionism is a <em>serious</em> growth-stopper.</p>
+<p>The fact is, some design changes will <em>skyrocket</em> conversions whereas others will be much less effective, but it <em>is</em> really easy to obsess over these tiny details. A fantastic way to approach this is to tackle design in short, focused bursts using well-known design methodologies such as the <a href="https://www.gv.com/sprint/">design sprint</a>. Design sprints help to identify <em>problems</em>, reframe them as <em>opportunities</em>, and then decide which of the problems might yield the best results, if solved.</p>
+<p>In short, don’t waste too much time on the small things by focusing on the high-growth opportunities first. This ensures that we’re tackling the bigger problems while not creating too many bugs and flaws, as too many can be a serious hindrance.</p>
+<p><img src="https://www.sitepoint.com/wp-content/uploads/2019/06/1560926094design-sprints.jpg" alt="" width="1200" height="801" class="aligncenter size-full wp-image-172535" /></p>
+<h2 id="2focusingonpixels">2. Focusing on Pixels</h2>
+<p>Performance, meaning, how fast the app or website feels and loads, is a vital aspect of the user experience. While this is <a href="https://www.sitepoint.com/cross-browser-testing-tools/">a task</a> typically assigned to developers, designers should remember that it’s <em>they</em> who’ll design what’s to be implemented, which is why we’d recommend working design handoff tools into the workflow.</p>
+<p>The post <a rel="nofollow" href="https://www.sitepoint.com/worst-ux-mistakes/">7 Worst UX Mistakes Limiting Your Growth</a> appeared first on <a rel="nofollow" href="https://www.sitepoint.com">SitePoint</a>.</p>
+]]></description>
+		<wfw:commentRss>https://www.sitepoint.com/worst-ux-mistakes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Getting Started with Vuex: a Beginner’s Guide</title>
+		<link>https://www.sitepoint.com/vuex-beginner-guide/?utm_source=rss</link>
+		<comments>https://www.sitepoint.com/vuex-beginner-guide/#respond</comments>
+		<pubDate>Tue, 18 Jun 2019 17:00:56 +0000</pubDate>
+		<dc:creator><![CDATA[Michael Wanyoike]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[vue]]></category>
+		<category><![CDATA[vuex]]></category>
+
+		<guid isPermaLink="false">https://www.sitepoint.com/?p=172442</guid>
+		<description><![CDATA[<a href="https://www.sitepoint.com/vuex-beginner-guide/" title="Getting Started with Vuex: a Beginner’s Guide" rel="nofollow"><img width="600" height="417" src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1560386011vuex.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="Getting Started with Vuex: a Beginner’s Guide" style="display: block; margin: auto; margin-bottom: 5px;max-width: 100%;" link_thumbnail="1" srcset="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1560386011vuex.jpg 600w, https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/06/1560386011vuex-300x209.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></a><p><strong>In single-page applications, the concept of <em>state</em> relates to any piece of data that can change. An example of state could be the details of a logged-in user, or data fetched from an API.</strong></p>
+<p>Handling state in single-page apps can be a tricky process. As an application gets larger and more complex, you start to encounter situations where a given piece of state needs to be used in multiple components, or you find yourself passing state through components that don’t need it, just to get it to where it needs to be. This is also known as “prop drilling”, and can lead to some unwieldy code.</p>
+<p><a href="https://vuex.vuejs.org/">Vuex</a> is the official state management solution for Vue. It works by having a central store for shared state, and providing methods to allow any component in your application to access that state. In essence, Vuex ensures your views remain consistent with your application data, regardless of which function triggers a change to your application data.</p>
+<p>In this article, I’ll offer you a high-level overview of Vuex and demonstrate how to implement it into a simple app.</p>
+<h2 id="a-shopping-cart-example">A Shopping Cart Example</h2>
+<p>Let’s consider a real-world example to demonstrate the problem that Vuex solves.</p>
+<p>When you go to a shopping site, you’ll usually have a list of products. Each product has an <em>Add to Cart</em> button and sometimes an <em>Items Remaining</em> label indicating the current stock or the maximum number of items you can order for the specified product. Each time a product is purchased, the current stock of that product is reduced. When this happens, the <em>Items Remaining</em> label should update with the correct figure. When the product’s stock level reaches 0, the label should read <em>Out of Stock</em>. In addition, the <em>Add to Cart</em> button should be disabled or hidden to ensure customers can’t order products that are currently not in inventory.</p>
+<p>Now ask yourself how you’d implement this logic. It may be trickier than you think. And let me throw in a curve ball. You’ll need another function for updating stock records when new stock comes in. When the depleted product’s stock is updated, both the <em>Items Remaining</em> label and the <em>Add to Cart</em> button should be updated instantly to reflect the new state of the stock.</p>
+<p>Depending on your programming prowess, your solution may start to look a bit like spaghetti. Now, let’s imagine your boss tells you to develop an API that allows third-party sites to sell the products directly from the warehouse. The API needs to ensure that the main shopping website remains in sync with the products’ stock levels. At this point you feel like pulling your hair out and demanding why you weren’t told to implement this earlier. You feel like all your hard work has gone to waste, as you’ll need to completely rework your code to cope with this new requirement.</p>
+<p>This is where a state management pattern library can save you from such headaches. It will help you organize the code that handles your front-end data in a way that makes adding new requirements a breeze.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before we start, I’ll assume that you:</p>
+<ul>
+<li>have a basic knowledge of <a href="https://www.sitepoint.com/getting-started-with-vue-js/">Vue.js</a></li>
+<li>are familiar with <a href="https://www.sitepoint.com/tag/es6/">ES6</a> and <a href="https://www.sitepoint.com/es2017-whats-new/">ES7</a> language features</li>
+</ul>
+<p>You’ll also need to have a recent version of Node.js that’s not older than version 6.0. At the time of writing, Node.js v10.13.0 (LTS) and npm version 6.4.1 are the most recent. If you don’t have a suitable version of Node installed on your system already, I recommend <a href="https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/">using a version manager</a>.</p>
+<p>Finally, you should have the most recent version of the <a href="https://cli.vuejs.org/">Vue CLI</a> installed:</p>
+<pre><code class="lang-js">npm install -g @vue/cli
+</code></pre>
+<h2 id="build-a-counter-using-local-state">Build a Counter Using Local State</h2>
+<p>In this section, we’re going to build a simple counter that keeps track of its state locally. Once we’re done, I’ll go over the fundamental concepts of Vuex, before looking at how to rewrite the counter app to use Vue’s official state management solution.</p>
+<h3 id="getting-set-up">Getting Set Up</h3>
+<p>Let’s generate a new project using the CLI:</p>
+<pre><code class="lang-bash">vue create vuex-counter
+</code></pre>
+<p>A wizard will open up to guide you through the project creation. Select <em>Manually select features</em> and ensure that you choose to install Vuex.</p>
+<p>Next, change into the new directory and in the <code>src/components</code> folder, rename <code>HelloWorld.vue</code> to <code>Counter.vue</code>:</p>
+<pre><code class="lang-bash">cd vuex-counter
+mv src/components/HelloWorld.vue src/components/Counter.vue
+</code></pre>
+<p>Finally, open up <code>src/App.vue</code> and replace the existing code with the following:</p>
+<pre><code class="lang-html">&#60;template&#62;
+  &#60;div id=&#34;app&#34;&#62;
+    &#60;h1&#62;Vuex Counter&#60;/h1&#62;
+    &#60;Counter/&#62;
+  &#60;/div&#62;
+&#60;/template&#62;
+
+&#60;script&#62;
+import Counter from &#39;./components/Counter.vue&#39;
+
+export default {
+  name: &#39;app&#39;,
+  components: {
+    Counter
+  }
+}
+&#60;/script&#62;
+</code></pre>
+<p>You can leave the styles as they are.</p>
+<h3 id="creating-the-counter">Creating the Counter</h3>
+<p>Let’s start off by initializing a count and outputting it to the page. We’ll also inform the user whether the count is currently even or odd. Open up <code>src/components/Counter.vue</code> and replace the code with the following:</p>
+<pre><code class="lang-html">&#60;template&#62;
+  &#60;div&#62;
+    &#60;p&#62;Clicked {{ count }} times! Count is {{ parity }}.&#60;/p&#62;
+  &#60;/div&#62;
+&#60;/template&#62;
+
+&#60;script&#62;
+export default {
+  name: &#39;Counter&#39;,
+  data: function() {
+    return {
+      count: 0
+    };
+  },
+  computed: {
+    parity: function() {
+      return this.count % 2 === 0 ? &#39;even&#39; : &#39;odd&#39;;
+    }
+  }
+}
+&#60;/script&#62;
+</code></pre>
+<p>As you can see, we have one state variable called <code>count</code> and a computed function called <code>parity</code> which returns the string <code>even</code> or <code>odd</code> depending on the whether <code>count</code> is an odd or even number.</p>
+<p>To see what we’ve got so far, start the app from within the root folder by running <code>npm run serve</code> and navigate to <a href="http://localhost:8080">http://localhost:8080</a>.</p>
+<p>Feel free to change the value of the counter to show that the correct output for both <code>counter</code> and <code>parity</code> is displayed. When you’re satisfied, make sure to reset it back to 0 before we proceed to the next step.</p>
+<h3 id="incrementing-and-decrementing">Incrementing and Decrementing</h3>
+<p>Right after the <code>computed</code> property in the <code>&#60;script&#62;</code> section of <code>Counter.vue</code>, add this code:</p>
+<pre><code class="lang-javascript">methods: {
+  increment: function () {
+    this.count++;
+  },
+  decrement: function () {
+    this.count--;
+  },
+  incrementIfOdd: function () {
+    if (this.parity === &#39;odd&#39;) {
+      this.increment();
+    }
+  },
+  incrementAsync: function () {
+    setTimeout(() =&#62; {
+      this.increment()
+    }, 1000)
+  }
+}
+</code></pre>
+<p>The first two functions, <code>increment</code> and <code>decrement</code>, are hopefully self-explanatory. The <code>incrementIfOdd</code> function only executes if the value of <code>count</code> is an odd number, whereas <code>incrementAsync</code> is an asynchronous function that performs an increment after one second.</p>
+<p>In order to access these new methods from the template, we’ll need to define some buttons. Insert the following after the template code which outputs the count and parity:</p>
+<pre><code class="lang-html">&#60;button @click=&#34;increment&#34; variant=&#34;success&#34;&#62;Increment&#60;/button&#62;
+&#60;button @click=&#34;decrement&#34; variant=&#34;danger&#34;&#62;Decrement&#60;/button&#62;
+&#60;button @click=&#34;incrementIfOdd&#34; variant=&#34;info&#34;&#62;Increment if Odd&#60;/button&#62;
+&#60;button @click=&#34;incrementAsync&#34; variant=&#34;warning&#34;&#62;Increment Async&#60;/button&#62;
+</code></pre>
+<p>After you’ve saved, the browser should refresh automatically. Click all of the buttons to ensure everything is working as expected. This is what you should have ended up with:</p>
+</p>
+<p data-height="300" data-theme-id="6441" data-slug-hash="xQXNwm" data-default-tab="js,result" data-user="SitePoint" data-pen-title="Vue Counter Using Local State" class="codepen">See the Pen <a href="https://codepen.io/SitePoint/pen/xQXNwm/">Vue Counter Using Local State</a> by SitePoint (<a href="https://codepen.io/SitePoint">@SitePoint</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p><script async src="https://static.codepen.io/assets/embed/ei.js"></script></p>
+<p>The counter example is now complete. Let’s move and examine the fundamentals of Vuex, before looking at how we would rewrite the counter to implement them.</p>
+<h2 id="how-vuex-works">How Vuex Works</h2>
+<p>Before we go over the practical implementation, it’s best that we acquire a basic grasp of how Vuex code is organized. If you’re familiar with similar frameworks such as Redux, you shouldn’t find anything too surprising here. If you haven’t dealt with any Flux-based state management frameworks before, please pay close attention.</p>
+<h3 id="the-vuex-store">The Vuex Store</h3>
+<p>The store provides a centralized repository for shared state in Vue apps. This is what it looks like in its most basic form:</p>
+<pre><code class="lang-javascript">// src/store/index.js
+
+import Vue from &#39;vue&#39;
+import Vuex from &#39;vuex&#39;
+
+Vue.use(Vuex)
+
+export default new Vuex.Store({
+  state: {
+    // put variables and collections here
+  },
+  mutations: {
+    // put sychronous functions for changing state e.g. add, edit, delete
+  },
+  actions: {
+    // put asynchronous functions that can call one or more mutation functions
+  }
+})
+</code></pre>
+<p>After defining your store, you need to inject it into your Vue.js application like this:</p>
+<pre><code class="lang-javascript">// src/main.js
+import store from &#39;./store&#39;
+
+new Vue({
+  store,
+  render: h =&#62; h(App)
+}).$mount(&#39;#app&#39;)
+</code></pre>
+<p>This will make the injected store instance available to every component in our application as <code>this.$store</code>.</p>
+<h3 id="working-with-state">Working with State</h3>
+<p>Also referred to as the <em>single state tree</em>, this is simply an object that contains all front-end application data. Vuex, just like Redux, operates using a single store. Application data is organized in a tree-like structure. Its construction is quite simple. Here’s an example:</p>
+<pre><code class="lang-javascript">state: {
+  products: [],
+  count: 5,
+  loggedInUser: {
+    name: &#39;John&#39;,
+    role: &#39;Admin&#39;
+  }
+}
+</code></pre>
+<p>Here we have <code>products</code> that we’ve initialized with an empty array, and <code>count</code>, which is initialized with the value 5. We also have <code>loggedInUser</code>, which is a JavaScript object literal containing multiple fields. State properties can contain any valid datatype from Booleans, to arrays, to other objects.</p>
+<p>There are multiple ways to display state in our views. We can reference the store directly in our templates using <code>$store</code>:</p>
+<pre><code class="lang-html">&#60;template&#62;
+  &#60;p&#62;{{ $store.state.count }}&#60;/p&#62;
+&#60;/template&#62;
+</code></pre>
+<p>Or we can return some store state from within a <a href="https://vuejs.org/guide/computed.html">computed property</a>:</p>
+<pre><code class="lang-html">&#60;template&#62;
+  &#60;p&#62;{{ count }}&#60;/p&#62;
+&#60;/template&#62;
+
+&#60;script&#62;
+export default {
+  computed: {
+    count() {
+      return this.$store.state.count;
+    }
+  }
+}
+&#60;/script&#62;
+</code></pre>
+<p>Since Vuex stores are reactive, whenever the value of <code>$store.state.count</code> changes, the view will change as well. All this happens behind the scenes, making your code look simple and cleaner.</p>
+<h4 id="the-mapstate-helper">The <code>mapState</code> Helper</h4>
+<p>Now, suppose you have multiple states you want to display in your views. Declaring a long list of computed properties can get verbose, so Vuex provides a <a href="https://vuex.vuejs.org/api/#mapstate">mapState</a> helper. This can be used to generate multiple computed properties easily. Here’s an example:</p>
+<pre><code class="lang-html">&#60;template&#62;
+  &#60;div&#62;
+    &#60;p&#62;Welcome, {{ loggedInUser.name }}.&#60;/p&#62;
+    &#60;p&#62;Count is {{ count }}.&#60;/p&#62;
+  &#60;/div&#62;
+&#60;/template&#62;
+
+&#60;script&#62;
+import { mapState } from &#39;vuex&#39;;
+
+export default {
+  computed: mapState({
+    count: state =&#62; state.count,
+    loggedInUser: state =&#62; state.loggedInUser
+  })
+}
+&#60;/script&#62;
+</code></pre>
+<p>Here’s an even simpler alternative where we can pass an array of strings to the <code>mapState</code> helper function:</p>
+<pre><code class="lang-javascript">export default {
+  computed: mapState([
+    &#39;count&#39;, &#39;loggedInUser&#39;
+  ])
+}
+</code></pre>
+<p>This version of the code and the one above it do exactly the same thing. You should note that <code>mapState</code> returns an object. If you want to use it with other computed properties, you can use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">spread operator</a>. Here’s how:</p>
+<pre><code class="lang-javascript">computed: {
+  ...mapState([
+    &#39;count&#39;, &#39;loggedInUser&#39;
+  ]),
+  parity: function() {
+    return this.count % 2  === 0 ? &#39;even&#39; : &#39;odd&#39;
+  }
+}
+</code></pre>
+<p>The post <a rel="nofollow" href="https://www.sitepoint.com/vuex-beginner-guide/">Getting Started with Vuex: a Beginner’s Guide</a> appeared first on <a rel="nofollow" href="https://www.sitepoint.com">SitePoint</a>.</p>
+]]></description>
+		<wfw:commentRss>https://www.sitepoint.com/vuex-beginner-guide/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Object Caching 119/214 objects using memcached
+Page Caching using memcached 
+Content Delivery Network via Amazon Web Services: CloudFront: dab1nmslvvntp.cloudfront.net
+
+Served from: www.sitepoint.com @ 2019-06-29 03:49:14 by W3 Total Cache
+-->��ظ�W           ]D�@���]D�        :https://www.sitepoint.com/feed/ strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Sat, 29 Jun 2019 10:59:48 GMT
+Server: Apache
+Vary: X-Forwarded-Proto
+Last-Modified: Sat, 29 Jun 2019 10:49:12 GMT
+Link: <https://www.sitepoint.com/wp-json/>; rel="https://api.w.org/"
+Referrer-Policy: no-referrer-when-downgrade
+Content-Type: application/rss+xml; charset=UTF-8
+X-Frame-Options: sameorigin
+ original-response-headers Date: Sat, 29 Jun 2019 10:59:48 GMT
+Server: Apache
+Vary: X-Forwarded-Proto
+Last-Modified: Sat, 29 Jun 2019 10:49:12 GMT
+Link: <https://www.sitepoint.com/wp-json/>; rel="https://api.w.org/"
+Referrer-Policy: no-referrer-when-downgrade
+Transfer-Encoding: chunked
+Content-Type: application/rss+xml; charset=UTF-8
+X-Frame-Options: sameorigin
+ net-response-time-onstart 314 net-response-time-onstop 649  *�

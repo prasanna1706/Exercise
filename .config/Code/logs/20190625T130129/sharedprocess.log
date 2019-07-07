@@ -1,0 +1,214 @@
+[2019-06-25 13:01:33.299] [sharedprocess] [info] main {"machineId":"909e2764d384c69d086c6ef13ac4da7754a58af841c94ba6ec871134f064b3ca"}
+[2019-06-25 13:01:33.351] [sharedprocess] [info] Scanned user extensions: 2
+[2019-06-25 13:01:33.558] [sharedprocess] [info] Scanned user extensions: 2
+[2019-06-25 13:01:33.616] [sharedprocess] [info] Scanned user extensions: 2
+[2019-06-25 13:01:33.760] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:01:33.805] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:01:33.855] [sharedprocess] [info] Scanned user extensions: 2
+[2019-06-25 13:01:33.970] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:02:13.196] [sharedprocess] [info] Starting to clean up unused language packs.
+[2019-06-25 13:02:47.705] [sharedprocess] [info] Scanned user extensions: 2
+[2019-06-25 13:02:47.712] [sharedprocess] [info] Scanned user extensions: 2
+[2019-06-25 13:02:47.716] [sharedprocess] [info] Scanned user extensions: 2
+[2019-06-25 13:02:47.727] [sharedprocess] [info] Scanned user extensions: 2
+[2019-06-25 13:02:47.824] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:02:47.829] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:02:47.832] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:02:47.859] [sharedprocess] [info] Scanned user extensions: 2
+[2019-06-25 13:02:47.886] [sharedprocess] [info] Scanned user extensions: 2
+[2019-06-25 13:02:47.951] [sharedprocess] [info] Scanned user extensions: 2
+[2019-06-25 13:02:47.973] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:02:48.031] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:02:48.052] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:02:56.012] [sharedprocess] [info] Installing extension: wallabyjs.quokka-vscode
+[2019-06-25 13:02:56.025] [sharedprocess] [info] Scanned user extensions: 2
+[2019-06-25 13:03:05.841] [sharedprocess] [info] Downloaded extension: wallabyjs.quokka-vscode /tmp/153c9b89-8b4c-4a81-90b5-585b3e1b67f9
+[2019-06-25 13:03:07.569] [sharedprocess] [info] Extracted extension to /home/prasanna/.vscode/extensions/.wallabyjs.quokka-vscode-1.0.231: wallabyjs.quokka-vscode
+[2019-06-25 13:03:07.570] [sharedprocess] [info] Renamed to /home/prasanna/.vscode/extensions/wallabyjs.quokka-vscode-1.0.231
+[2019-06-25 13:03:07.571] [sharedprocess] [info] Installation completed. wallabyjs.quokka-vscode
+[2019-06-25 13:03:07.583] [sharedprocess] [info] Extensions installed successfully: wallabyjs.quokka-vscode
+[2019-06-25 13:04:39.626] [sharedprocess] [info] Scanned user extensions: 3
+[2019-06-25 13:04:39.628] [sharedprocess] [info] Scanned user extensions: 3
+[2019-06-25 13:04:39.629] [sharedprocess] [info] Scanned user extensions: 3
+[2019-06-25 13:04:39.748] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:04:39.756] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:04:39.763] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:04:39.811] [sharedprocess] [info] Scanned user extensions: 3
+[2019-06-25 13:04:39.857] [sharedprocess] [info] Scanned user extensions: 3
+[2019-06-25 13:04:39.885] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:04:39.894] [sharedprocess] [info] Scanned user extensions: 3
+[2019-06-25 13:04:39.960] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:04:39.976] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:04:46.367] [sharedprocess] [info] Installing extension: mgmcdermott.vscode-language-babel
+[2019-06-25 13:04:46.371] [sharedprocess] [info] Scanned user extensions: 3
+[2019-06-25 13:04:49.719] [sharedprocess] [info] Downloaded extension: mgmcdermott.vscode-language-babel /tmp/cd9bd73c-3c0a-46a7-96e4-17c8f3dbc4c7
+[2019-06-25 13:04:52.247] [sharedprocess] [info] Extracted extension to /home/prasanna/.vscode/extensions/.mgmcdermott.vscode-language-babel-0.0.22: mgmcdermott.vscode-language-babel
+[2019-06-25 13:04:52.247] [sharedprocess] [info] Renamed to /home/prasanna/.vscode/extensions/mgmcdermott.vscode-language-babel-0.0.22
+[2019-06-25 13:04:52.249] [sharedprocess] [info] Installation completed. mgmcdermott.vscode-language-babel
+[2019-06-25 13:04:52.261] [sharedprocess] [info] Extensions installed successfully: mgmcdermott.vscode-language-babel
+[2019-06-25 13:04:56.488] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-25 13:04:56.488] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-25 13:04:56.491] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-25 13:04:56.587] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:04:56.591] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:04:56.594] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:04:56.644] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-25 13:04:56.645] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-25 13:04:56.681] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-25 13:04:56.736] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:04:56.742] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:04:56.757] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:05:16.567] [sharedprocess] [info] Installing extension: humao.rest-client
+[2019-06-25 13:05:16.577] [sharedprocess] [info] Scanned user extensions: 4
+[2019-06-25 13:05:30.226] [sharedprocess] [info] Downloaded extension: humao.rest-client /tmp/f1b84865-3eaa-4ebd-b261-13772e4f8c90
+[2019-06-25 13:05:35.282] [sharedprocess] [info] Extracted extension to /home/prasanna/.vscode/extensions/.humao.rest-client-0.21.3: humao.rest-client
+[2019-06-25 13:05:35.282] [sharedprocess] [info] Renamed to /home/prasanna/.vscode/extensions/humao.rest-client-0.21.3
+[2019-06-25 13:05:35.284] [sharedprocess] [info] Installation completed. humao.rest-client
+[2019-06-25 13:05:35.306] [sharedprocess] [info] Extensions installed successfully: humao.rest-client
+[2019-06-25 13:05:41.059] [sharedprocess] [info] Scanned user extensions: 5
+[2019-06-25 13:05:41.061] [sharedprocess] [info] Scanned user extensions: 5
+[2019-06-25 13:05:41.061] [sharedprocess] [info] Scanned user extensions: 5
+[2019-06-25 13:05:41.121] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:05:41.126] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:05:41.129] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:05:41.160] [sharedprocess] [info] Scanned user extensions: 5
+[2019-06-25 13:05:41.201] [sharedprocess] [info] Scanned user extensions: 5
+[2019-06-25 13:05:41.217] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:05:41.230] [sharedprocess] [info] Scanned user extensions: 5
+[2019-06-25 13:05:41.275] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:05:41.292] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:06:08.526] [sharedprocess] [info] Installing extension: 30-seconds.30-seconds-of-code
+[2019-06-25 13:06:08.536] [sharedprocess] [info] Scanned user extensions: 5
+[2019-06-25 13:06:10.525] [sharedprocess] [info] Downloaded extension: 30-seconds.30-seconds-of-code /tmp/28ba9649-6242-4d3e-8379-4de453b821f7
+[2019-06-25 13:06:10.543] [sharedprocess] [info] Extracted extension to /home/prasanna/.vscode/extensions/.30-seconds.30-seconds-of-code-1.0.0: 30-seconds.30-seconds-of-code
+[2019-06-25 13:06:10.544] [sharedprocess] [info] Renamed to /home/prasanna/.vscode/extensions/30-seconds.30-seconds-of-code-1.0.0
+[2019-06-25 13:06:10.547] [sharedprocess] [info] Installation completed. 30-seconds.30-seconds-of-code
+[2019-06-25 13:06:10.557] [sharedprocess] [info] Extensions installed successfully: 30-seconds.30-seconds-of-code
+[2019-06-25 13:06:14.717] [sharedprocess] [info] Scanned user extensions: 6
+[2019-06-25 13:06:14.719] [sharedprocess] [info] Scanned user extensions: 6
+[2019-06-25 13:06:14.724] [sharedprocess] [info] Scanned user extensions: 6
+[2019-06-25 13:06:14.820] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:06:14.825] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:06:14.831] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:06:14.869] [sharedprocess] [info] Scanned user extensions: 6
+[2019-06-25 13:06:14.909] [sharedprocess] [info] Scanned user extensions: 6
+[2019-06-25 13:06:14.944] [sharedprocess] [info] Scanned user extensions: 6
+[2019-06-25 13:06:14.958] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:06:15.024] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:06:15.034] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:06:29.370] [sharedprocess] [info] Installing extension: ritwickdey.liveserver
+[2019-06-25 13:06:29.379] [sharedprocess] [info] Scanned user extensions: 6
+[2019-06-25 13:06:33.634] [sharedprocess] [info] Scanned user extensions: 6
+[2019-06-25 13:06:34.571] [sharedprocess] [info] Downloaded extension: ritwickdey.liveserver /tmp/5618ca7b-14ab-401f-b2ae-2af5a3a067e7
+[2019-06-25 13:06:37.337] [sharedprocess] [info] Extracted extension to /home/prasanna/.vscode/extensions/.ritwickdey.liveserver-5.6.1: ritwickdey.liveserver
+[2019-06-25 13:06:37.337] [sharedprocess] [info] Renamed to /home/prasanna/.vscode/extensions/ritwickdey.liveserver-5.6.1
+[2019-06-25 13:06:37.338] [sharedprocess] [info] Installation completed. ritwickdey.liveserver
+[2019-06-25 13:06:37.349] [sharedprocess] [info] Extensions installed successfully: ritwickdey.liveserver
+[2019-06-25 13:06:45.260] [sharedprocess] [info] Scanned user extensions: 7
+[2019-06-25 13:06:45.261] [sharedprocess] [info] Scanned user extensions: 7
+[2019-06-25 13:06:45.263] [sharedprocess] [info] Scanned user extensions: 7
+[2019-06-25 13:06:45.389] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:06:45.394] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:06:45.401] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:06:45.460] [sharedprocess] [info] Scanned user extensions: 7
+[2019-06-25 13:06:45.515] [sharedprocess] [info] Scanned user extensions: 7
+[2019-06-25 13:06:45.522] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:06:45.546] [sharedprocess] [info] Scanned user extensions: 7
+[2019-06-25 13:06:45.585] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:06:45.600] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:06:51.350] [sharedprocess] [info] Installing extension: eamodio.gitlens
+[2019-06-25 13:06:51.355] [sharedprocess] [info] Scanned user extensions: 7
+[2019-06-25 13:06:52.778] [sharedprocess] [info] Downloaded extension: eamodio.gitlens /tmp/1098e024-ed7c-439c-bdc6-f71089dc6992
+[2019-06-25 13:06:53.298] [sharedprocess] [info] Extracted extension to /home/prasanna/.vscode/extensions/.eamodio.gitlens-9.8.2: eamodio.gitlens
+[2019-06-25 13:06:53.298] [sharedprocess] [info] Renamed to /home/prasanna/.vscode/extensions/eamodio.gitlens-9.8.2
+[2019-06-25 13:06:53.313] [sharedprocess] [info] Installation completed. eamodio.gitlens
+[2019-06-25 13:06:53.344] [sharedprocess] [info] Extensions installed successfully: eamodio.gitlens
+[2019-06-25 13:07:25.438] [sharedprocess] [info] Scanned user extensions: 8
+[2019-06-25 13:07:25.443] [sharedprocess] [info] Scanned user extensions: 8
+[2019-06-25 13:07:25.448] [sharedprocess] [info] Scanned user extensions: 8
+[2019-06-25 13:07:25.480] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:07:25.491] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:07:25.497] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:07:25.566] [sharedprocess] [info] Scanned user extensions: 8
+[2019-06-25 13:07:25.598] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:07:25.649] [sharedprocess] [info] Scanned user extensions: 8
+[2019-06-25 13:07:25.691] [sharedprocess] [info] Scanned user extensions: 8
+[2019-06-25 13:07:25.693] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:07:25.707] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:07:31.768] [sharedprocess] [info] Installing extension: zhuangtongfa.material-theme
+[2019-06-25 13:07:31.785] [sharedprocess] [info] Scanned user extensions: 8
+[2019-06-25 13:07:32.344] [sharedprocess] [info] Downloaded extension: zhuangtongfa.material-theme /tmp/9472313e-3563-4acd-846e-f9a866434359
+[2019-06-25 13:07:32.375] [sharedprocess] [info] Extracted extension to /home/prasanna/.vscode/extensions/.zhuangtongfa.material-theme-2.24.1: zhuangtongfa.material-theme
+[2019-06-25 13:07:32.375] [sharedprocess] [info] Renamed to /home/prasanna/.vscode/extensions/zhuangtongfa.material-theme-2.24.1
+[2019-06-25 13:07:32.376] [sharedprocess] [info] Installation completed. zhuangtongfa.material-theme
+[2019-06-25 13:07:32.382] [sharedprocess] [info] Extensions installed successfully: zhuangtongfa.material-theme
+[2019-06-25 13:07:45.682] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 13:07:45.692] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 13:07:45.697] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 13:07:45.729] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:07:45.739] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:07:45.746] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:07:45.838] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 13:07:45.863] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:07:45.901] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 13:07:45.929] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:07:45.944] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 13:07:45.956] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-25 13:11:33.851] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 13:16:33.888] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 13:21:33.927] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 13:26:33.961] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 13:31:33.993] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 13:36:34.025] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 13:41:34.057] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 13:46:34.088] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 13:51:34.118] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 13:56:34.158] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 14:01:34.187] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 14:06:34.220] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 14:11:34.544] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 14:16:34.571] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 14:21:34.597] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 14:26:34.628] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 14:31:34.660] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 14:36:34.701] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 14:41:34.736] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 14:46:34.789] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 14:51:34.826] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 14:56:34.854] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 15:01:34.885] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 15:06:34.918] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 15:11:37.033] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 15:16:37.068] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 15:21:37.101] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 15:26:37.132] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 15:31:37.169] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 15:36:37.198] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 15:41:37.229] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 15:46:37.264] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 15:51:37.294] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 15:56:37.340] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 16:01:37.374] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 16:06:37.407] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 16:11:38.333] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 16:16:38.366] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 16:21:38.396] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 16:26:38.426] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 16:31:38.458] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 16:36:38.488] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 16:41:38.523] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 16:46:38.565] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 16:51:38.592] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 16:56:38.626] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 17:01:38.659] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 17:06:38.692] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 17:11:39.166] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 17:16:39.195] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 17:21:39.231] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 17:26:39.264] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 17:29:58.070] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 17:31:39.297] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 17:36:39.328] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 17:41:39.358] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 17:46:39.397] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-25 17:51:39.430] [sharedprocess] [info] Scanned user extensions: 9

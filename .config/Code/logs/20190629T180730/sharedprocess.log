@@ -1,0 +1,27 @@
+[2019-06-29 18:07:34.390] [sharedprocess] [info] main {"machineId":"909e2764d384c69d086c6ef13ac4da7754a58af841c94ba6ec871134f064b3ca"}
+[2019-06-29 18:07:34.626] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-29 18:07:34.782] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-29 18:07:34.926] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-29 18:07:34.940] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-29 18:07:35.232] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-29 18:07:35.296] [sharedprocess] [info] Scanned system extensions: 72
+[2019-06-29 18:07:36.116] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-29 18:07:39.452] [sharedprocess] [info] Installing extension: wallabyjs.quokka-vscode
+[2019-06-29 18:07:39.453] [sharedprocess] [info] Installing extension: zhuangtongfa.material-theme
+[2019-06-29 18:07:39.561] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-29 18:07:39.612] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-29 18:07:41.221] [sharedprocess] [info] Downloaded extension: zhuangtongfa.material-theme /tmp/aadaf73e-7c6c-4667-96a7-a70e9ad0412b
+[2019-06-29 18:07:41.401] [sharedprocess] [info] Extracted extension to /home/prasanna/.vscode/extensions/.zhuangtongfa.material-theme-2.25.0: zhuangtongfa.material-theme
+[2019-06-29 18:07:41.402] [sharedprocess] [info] Renamed to /home/prasanna/.vscode/extensions/zhuangtongfa.material-theme-2.25.0
+[2019-06-29 18:07:41.410] [sharedprocess] [info] Installation completed. zhuangtongfa.material-theme
+[2019-06-29 18:07:41.438] [sharedprocess] [info] Extensions installed successfully: zhuangtongfa.material-theme
+[2019-06-29 18:07:43.588] [sharedprocess] [info] Downloaded extension: wallabyjs.quokka-vscode /tmp/c937c804-eb3e-47fd-8862-5251c8f187ac
+[2019-06-29 18:07:48.213] [sharedprocess] [info] Extracted extension to /home/prasanna/.vscode/extensions/.wallabyjs.quokka-vscode-1.0.232: wallabyjs.quokka-vscode
+[2019-06-29 18:07:48.213] [sharedprocess] [info] Renamed to /home/prasanna/.vscode/extensions/wallabyjs.quokka-vscode-1.0.232
+[2019-06-29 18:07:48.214] [sharedprocess] [info] Installation completed. wallabyjs.quokka-vscode
+[2019-06-29 18:07:48.236] [sharedprocess] [info] Extensions installed successfully: wallabyjs.quokka-vscode
+[2019-06-29 18:08:14.340] [sharedprocess] [info] Starting to clean up unused language packs.
+[2019-06-29 18:12:36.180] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-29 18:17:36.212] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-29 18:22:36.236] [sharedprocess] [info] Scanned user extensions: 9
+[2019-06-29 18:27:36.267] [sharedprocess] [info] Scanned user extensions: 9

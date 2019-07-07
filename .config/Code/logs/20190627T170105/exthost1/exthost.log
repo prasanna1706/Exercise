@@ -1,0 +1,26 @@
+[2019-06-27 17:01:07.842] [exthost] [info] extension host started
+[2019-06-27 17:01:07.866] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:javascript"}
+[2019-06-27 17:01:07.866] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/typescript-language-features/dist/extension
+[2019-06-27 17:01:07.886] [exthost] [info] ExtensionService#_doActivateExtension mgmcdermott.vscode-language-babel {"startup":false,"activationEvent":"onLanguage:javascript"}
+[2019-06-27 17:01:07.886] [exthost] [info] ExtensionService#loadCommonJSModule /home/prasanna/.vscode/extensions/mgmcdermott.vscode-language-babel-0.0.22/dist/extension
+[2019-06-27 17:01:07.888] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-06-27 17:01:07.888] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2019-06-27 17:01:07.889] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-06-27 17:01:07.889] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/emmet/dist/extension
+[2019-06-27 17:01:07.893] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-06-27 17:01:07.893] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/git/dist/main
+[2019-06-27 17:01:07.926] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-06-27 17:01:07.927] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2019-06-27 17:01:07.929] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"activationEvent":"*"}
+[2019-06-27 17:01:07.929] [exthost] [info] ExtensionService#loadCommonJSModule /home/prasanna/.vscode/extensions/dbaeumer.vscode-eslint-1.9.0/client/out/extension
+[2019-06-27 17:01:07.938] [exthost] [info] ExtensionService#_doActivateExtension eamodio.gitlens {"startup":true,"activationEvent":"*"}
+[2019-06-27 17:01:07.939] [exthost] [info] ExtensionService#loadCommonJSModule /home/prasanna/.vscode/extensions/eamodio.gitlens-9.8.2/dist/extension
+[2019-06-27 17:01:07.983] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"activationEvent":"*"}
+[2019-06-27 17:01:07.983] [exthost] [info] ExtensionService#loadCommonJSModule /home/prasanna/.vscode/extensions/esbenp.prettier-vscode-1.9.0/out/src/extension
+[2019-06-27 17:01:08.082] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer {"startup":true,"activationEvent":"*"}
+[2019-06-27 17:01:08.082] [exthost] [info] ExtensionService#loadCommonJSModule /home/prasanna/.vscode/extensions/ritwickdey.liveserver-5.6.1/out/src/extension
+[2019-06-27 17:01:08.350] [exthost] [info] ExtensionService#_doActivateExtension WallabyJs.quokka-vscode {"startup":true,"activationEvent":"*"}
+[2019-06-27 17:01:08.350] [exthost] [info] ExtensionService#loadCommonJSModule /home/prasanna/.vscode/extensions/wallabyjs.quokka-vscode-1.0.231/index
+[2019-06-27 17:01:08.351] [exthost] [info] eager extensions activated
+[2019-06-27 17:41:18.386] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"activationEvent":"onLanguage:typescript"}
+[2019-06-27 17:41:18.386] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/extension-editing/dist/extension

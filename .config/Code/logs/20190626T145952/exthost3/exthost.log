@@ -1,0 +1,20 @@
+[2019-06-26 16:03:54.395] [exthost] [info] extension host started
+[2019-06-26 16:03:54.412] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-06-26 16:03:54.412] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2019-06-26 16:03:54.414] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-06-26 16:03:54.414] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/emmet/dist/extension
+[2019-06-26 16:03:54.419] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-06-26 16:03:54.419] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/git/dist/main
+[2019-06-26 16:03:54.441] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-06-26 16:03:54.441] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2019-06-26 16:03:54.443] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"activationEvent":"*"}
+[2019-06-26 16:03:54.443] [exthost] [info] ExtensionService#loadCommonJSModule /home/prasanna/.vscode/extensions/dbaeumer.vscode-eslint-1.9.0/client/out/extension
+[2019-06-26 16:03:54.453] [exthost] [info] ExtensionService#_doActivateExtension eamodio.gitlens {"startup":true,"activationEvent":"*"}
+[2019-06-26 16:03:54.454] [exthost] [info] ExtensionService#loadCommonJSModule /home/prasanna/.vscode/extensions/eamodio.gitlens-9.8.2/dist/extension
+[2019-06-26 16:03:54.485] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"activationEvent":"*"}
+[2019-06-26 16:03:54.485] [exthost] [info] ExtensionService#loadCommonJSModule /home/prasanna/.vscode/extensions/esbenp.prettier-vscode-1.9.0/out/src/extension
+[2019-06-26 16:03:54.549] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer {"startup":true,"activationEvent":"*"}
+[2019-06-26 16:03:54.549] [exthost] [info] ExtensionService#loadCommonJSModule /home/prasanna/.vscode/extensions/ritwickdey.liveserver-5.6.1/out/src/extension
+[2019-06-26 16:03:54.753] [exthost] [info] ExtensionService#_doActivateExtension WallabyJs.quokka-vscode {"startup":true,"activationEvent":"*"}
+[2019-06-26 16:03:54.753] [exthost] [info] ExtensionService#loadCommonJSModule /home/prasanna/.vscode/extensions/wallabyjs.quokka-vscode-1.0.231/index
+[2019-06-26 16:03:54.754] [exthost] [info] eager extensions activated

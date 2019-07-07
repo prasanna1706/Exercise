@@ -1,0 +1,6 @@
+[Info  - 1:01:31 PM] ESLint server stopped.
+[Info  - 1:01:31 PM] ESLint server running in node v10.2.0
+[Info  - 1:01:31 PM] ESLint server is running.
+[Info  - 1:01:34 PM] ESLint library loaded from: /home/prasanna/Documents/prasanna/node_modules/eslint/lib/api.js
+[Error - 1:01:34 PM] Cannot read config file: /home/prasanna/Documents/prasanna/.eslintrc.js Error: Unexpected token :
+[Info  - 5:54:42 PM] ESLint server stopped.

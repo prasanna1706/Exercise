@@ -1,0 +1,31 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/prasanna/Documents/prasanna
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git show :untitled.js
+> git check-ignore -v -z --stdin
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git show :untitled.js
+> git show :untitled.js
+> git show :untitled.js
+> git show :untitled.js
+git.getSCMResource.uri file:///home/prasanna/Documents/prasanna/untitled.js
+repo root /home/prasanna/Documents/prasanna
+> git ls-tree -l HEAD -- /home/prasanna/Documents/prasanna/untitled.js
+> git show c79916d42684bceb4007724cd7106779ae882284
+> git show HEAD:untitled.js
+> git show :untitled.js
+> git show :untitled.js
+> git show :untitled.js
+> git show :untitled.js
+> git show :.eslintrc.js
+> git show :untitled.js

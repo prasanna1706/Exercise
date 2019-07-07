@@ -1,0 +1,11 @@
+1/7/2019, 5:46:37 PM:
+---------------------
+Unexpected token, expected "," (/home/prasanna/Desktop/exe5.js:8:55)
+   6 |   addEventListener(box)
+   7 |   {
+>  8 |     this.btn.addEventListener("click",this.function() {
+     |                                                       ^
+   9 |         let array = [];
+  10 |         for (let i = 0; i < this.countries.options.length; i++) 
+  11 |         {
+

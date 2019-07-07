@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1cddd13273","applicationID":"2499187","transactionName":"dldfEENdVVwEFhoOXUZLXgpCHUpYDhM=","queueTime":4,"applicationTime":20,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Callback Functions | DashingD3js.com</title>
+    <meta name="description" content="This video covers JavaScript Callback Functions. Specifically, this video covers: a) Passing JavaScript Functions as Variables Revisited and b) JavaScript Callback Functions." />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="robots" content="FOLLOW,INDEX" />
+
+    <!-- Bootstrap and Bootswatch CSS + JS Libraries
+    ================================================== -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/readable/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim + Respond.js
+    ================================================== -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Application Specific JS + CSS + CSRF Meta Tags
+    ================================================== -->    
+    <link href="/assets/application-6d3b700c86e739ba3d914422fc2c282e.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="/assets/application-2478861aa2c0ba2dc16f5c7cfabb42f6.js" type="text/javascript"></script>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="MaiAf5ivUHplJnZWhLJ52+zl3YWzjk2VmIz02cBrTyU=" name="csrf-token" />
+
+    <!-- Canonical URL Tag
+    ================================================== -->
+    <link rel="canonical" href="https://www.dashingd3js.com/javascript-callback-functions" />
+
+    <!-- Open Graph Protocol Meta Tags
+    ================================================== -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="JavaScript Callback Functions | DashingD3js.com" />
+    <meta property="og:description" content="This video covers JavaScript Callback Functions. Specifically, this video covers: a) Passing JavaScript Functions as Variables Revisited and b) JavaScript Callback Functions." />
+    <meta property="og:url" content="https://www.dashingd3js.com/javascript-callback-functions" />
+    <meta property="og:site_name" content="DashingD3js.com" />
+    <meta property="article:section" content="D3 Screencast and Written Tutorials" />
+    <meta property="og:image" content="https://s3.amazonaws.com/dashingd3js/d3-video-lesson-thumbnails/javascript-callback-functions_280x158.jpg" />
+
+    <!-- Twitter Card Meta Tags
+    ================================================== -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="JavaScript Callback Functions | DashingD3js.com"/>
+    <meta name="twitter:description" content="This video covers JavaScript Callback Functions. Specifically, this video covers: a) Passing JavaScript Functions as Variables Revisited and b) JavaScript Callback Functions."/>
+    <meta property="twitter:image" content="https://s3.amazonaws.com/dashingd3js/d3-video-lesson-thumbnails/javascript-callback-functions_280x158.jpg" />
+    <meta name="twitter:site" content="@DashingD3js"/>
+    <meta name="twitter:domain" content="DashingD3js.com"/>
+    <meta name="twitter:creator" content="@DashingD3js"/>
+
+    <!-- Application CSS Stylesheets
+    ================================================== -->
+    <link href="/assets/application-6d3b700c86e739ba3d914422fc2c282e.css" media="all" rel="stylesheet" type="text/css" />
+
+    <!-- Google Analytics
+    ================================================== -->
+      <!-- Environment: production -->
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-35836008-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+
+    <!-- Heap Analytics
+    ================================================== -->
+      <script type="text/javascript">
+        window.heap=window.heap||[],heap.load=function(t,e){window.heap.appid=t,window.heap.config=e;var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(t){return function(){heap.push([t].concat(Array.prototype.slice.call(arguments,0)))}},p=["clearEventProperties","identify","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+        heap.load("2413960016");
+      </script>
+
+    <!-- Perfect Audience
+    ================================================== -->
+      <script type="text/javascript">
+        (function() {
+          window._pa = window._pa || {};
+          var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+          pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.marinsm.com/serve/56b35c64755632e5580000d4.js";
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+        })();
+      </script>
+  </head>
+
+  <body>
+
+    <!-- Static Navbar Top
+    ================================================== -->
+    <style>
+div#navbar-for-courses {
+  /* http://uigradients.com/#ClearSky */ 
+  background: #005C97; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #005C97 , #363795); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #005C97 , #363795); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 0px;
+  margin-bottom: 0px;
+  box-shadow: 0 0px 0px;
+}
+</style>
+
+<!-- Static Navbar Top
+================================================== -->
+<div id="navbar-for-courses" class="navbar navbar-default">
+  <div class="container">
+
+    <!-- Navbar Brand
+    ================================================== -->
+    <div class="navbar-header">
+
+      <a href="/" class="navbar-brand" style="color: white;">Dashing D3.js</a>
+
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div id="navbar-main" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">D3 Training Courses<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/introductory-d3-course">Introductory D3 Course</a></li>
+              <li><a href="/intermediate-d3-course">Intermediate D3 Course</a></li>
+              <li><a href="/mapping-d3-course">Mapping D3 Course</a></li>
+              <li><a href="/d3-data-manipulation">D3 Data Manipulation Course</a></li>
+              <li><a href="/d3-v4-tutorial">D3 V4 Tutorial</a></li>
+            </ul>
+          </li>
+          <li><a href="/lessons" style="color:white;">D3 Tutorial Lessons</a></li>
+          <li>
+            <a href="/d3-training/corporate-data-visualization-and-d3-js-training" style="padding:0px 0px 0px;">
+              <button id="D3T_navbar_btn" class="btn btn-success btn-primary" type="button">
+                D3 Corporate Training
+              </button>
+</a>          </li>
+        </ul>
+
+      <!-- Sign In / Sign Up Section
+      ================================================== -->
+      <ul class="nav navbar-nav navbar-right">
+
+          <!-- Non-Logged In User Nav Bar Options
+          ================================================== -->
+          <li style="padding-left:15px;">
+            <a href="/join-now" style="padding:0px 0px 0px;">
+              <button id="D3T_navbar_btn" class="btn btn-danger btn-primary" type="button">
+                Learn D3 Faster
+              </button>
+</a>          </li>
+          <li>
+            <a href="/users/sign_in" style="color: white;">Sign In</a>
+          </li>
+
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+    <!-- Flash Messages :: Notice & Alerts Container
+    ================================================== -->
+
+    <!-- Main Container
+    ================================================== -->
+    <div class="container" id="main-yield-container">
+      <br>
+      <div class="col-lg-12">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- highlightjs.org Library (using cdnjs)
+================================================== -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!-- highlightjs.org initiate
+================================================== -->
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<!-- DashingD3js.com Lessons Breadcrumbs
+================================================== -->
+<ul class="breadcrumb">
+  <li>
+    <a href="https://www.dashingd3js.com/">Home</a>
+  </li>
+  <li>
+    <a href="/lessons">D3 Screencast and Written Tutorials</a>
+  </li>
+  <li class="active">
+    <a href="/lessons/javascript-callback-functions">JavaScript Callback Functions</a>
+  </li>
+</ul>
+
+
+<div class="col-lg-12 well">
+
+    <!-- DashingD3js.com Lesson Description
+    ================================================== -->
+    <div id="wistia_video_description" class="col-lg-12 well" style="background:white;">
+      <div id="lesson-title">
+        <strong style="font-size:2em;">JavaScript Callback Functions</strong>
+      </div>
+      <div id="lesson-secondary-info" style="padding-top:0.25em;">
+        <span class="text-muted" style="font-size:0.9em;">
+              <strong><span class="label label-success" style="font-size:0.9em;">FREE</span></strong>
+              &nbsp;
+          <span class="glyphicon glyphicon-time" style="top:2px;"></span>
+          &nbsp;
+            Duration: 6:18
+        </span>
+      </div>
+        <div id="lesson-course-designation" style="font-size:1em;padding-top:0.75em;">
+          Part of Course:
+          <a href="/introductory-d3-course">Introductory D3 Course</a>
+        </div>
+    </div>
+
+    <!-- DashingD3js.com Lesson Video
+    ================================================== -->
+        <div id="wistia_video_frame" class="col-lg-12 well" style="background:white;width=100%;height=100%;">
+          <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_40xwqs7ogt videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div>
+        </div>
+    
+
+    <br>
+
+    <!-- DashingD3js.com Lesson Takeaways
+    ================================================== -->
+      <div id="wistia_video_takeaway" class="col-lg-12 well" style="background:white;">
+        <div style="font-size:1.75em;">
+          <strong>
+            <span class="text-primary">Takeaways:</span>
+          </strong>
+        </div>
+        <div id="lesson-takeaway" style="font-size:1.25em;padding-top:1%;padding-left:2%;padding-right:2%;">
+          <p>
+<ul>
+<li>A JavaScript function is a block of code that will be executed when you call it</li>
+<li>Because JavaScript functions are first-class objects, you can pass functions to other functions as variables</li>
+<li>The method of passing in functions as parameters to other functions to use them inside is used in JavaScript libraries almost everywhere</li>
+<li>A JavaScript Callback Function is a function that is passed as a parameter to another JavaScript function, and the callback function is run inside of the function it was passed into</li>
+<li>JavaScript Callback Functions can be used synchronously or asynchronously</li>
+</ul>
+</p>
+        </div>
+      </div>
+
+
+    <!-- DashingD3js.com Lesson Video Resources
+    ================================================== -->
+      <div id="wistia_video_resources" class="col-lg-12 well" style="background:white;">
+        <div style="font-size:1.75em;">
+          <strong>
+            <span class="text-primary">Resources:</span>
+          </strong>
+        </div>
+        <div id="lesson-resources" style="font-size:1.25em;padding-top:1%;padding-left:2%;padding-right:2%;">
+          <p>
+<strong>
+D3 Video Tutorial Lessons:
+</strong>
+</p>
+<p>
+<p>
+<ul>
+<li><a href="https://www.dashingd3js.com/lessons/introduction-to-javascript">Introduction to JavaScript</a></li>
+<li><a href="https://www.dashingd3js.com/lessons/javascript-functions">JavaScript Functions</a></li>
+<li><a href="https://www.dashingd3js.com/lessons/really-simple-http-server-with-python">Really Simple HTTP Server with Python</a></li>
+</ul>
+</p>
+        </div>
+      </div>
+
+    <!-- Data Science Tutorial Video Lesson Transcript
+    ================================================== -->
+      <div id="wistia_video_resources" class="col-lg-12 well" style="background:white;margin-bottom:0px;">
+        <div style="font-size:2em;">
+          <strong>
+              <span class="text-primary">Transcript:</span>
+            <br>
+            <br>
+            JavaScript Callback Functions
+          </strong>
+        </div>
+        <br>
+        <div id="lesson-transcript" style="font-size:1.25em;padding-top:15px;">
+          <p>
+<strong>
+Passing JavaScript Functions as Variables Revisited
+</strong>
+</p>
+<br>
+<p>
+<pre><code class="javascript">function functionName() {
+    // some code	
+}</code></pre>
+</p>
+<p>
+This is a JavaScript Function
+</p>
+<p>
+A function is a block of code that will be executed when you call it
+</p>
+<p>
+A function is written as a code block inside curly { } braces, preceded by the function keyword
+</p>
+<p>
+The code inside the function will be executed when you call the function
+
+</p>
+<br>
+<p>
+<pre><code class="javascript">function functionName(var1, var 2) {
+    // some code
+}</code></pre>
+
+functionName(argument1, argument2);</code></pre>
+</p>
+<p>
+When you call a function, you can pass along some values to it, these values are called arguments or parameters.
+</p>
+<p>
+These arguments can then be used inside of the function.
+</p>
+<p>
+You can send as many arguments as you like, separated by commas (,)
+</p>
+<p>
+To use the arguments inside of the function, you must declare the arguments as variables when defining the function
+</p>
+<p>
+The variables and arguments must be in expected order.
+</p>
+<p>
+That is, the first argument gets assigned to the first variable.
+</p>
+<br>
+<p>
+<pre><code class="javascript">function functionOne(x) { return x; };
+
+function functionTwo(var1) {
+    // some code
+}
+
+functionTwo(functionOne);</code></pre>
+</p>
+<p>
+Because you can assign functions to variables, and because functions are objects in JavaScript, you can pass functions to other functions as variables
+</p>
+<p>
+Which means that in this case, we are passing functionOne as a variable to be used inside of functionTwo
+</p>
+<p>
+Inside of functionTwo, var1's value will be functionOne
+</p>
+<p>
+This is how you can pass functions to other functions in JavaScript.
+</p>
+<p>
+In this case, functionTwo can use functionOne inside of it.
+</p>
+<br>
+<br>
+<p>
+<strong>
+JavaScript Callback Functions
+</strong>
+</p>
+<br>
+<p>
+<pre><code class="javascript">function functionOne(x) { return x; };
+
+function functionTwo(var1) {
+    // some code
+}
+
+functionTwo(functionOne);</code></pre>
+</p>
+<p>
+This method of passing in functions to other functions to use them inside is used in JavaScript libraries almost everywhere.
+</p>
+<p>
+The common name for the function passed in is a callback function.
+</p>
+<p>
+In computer programming, a callback is a piece of executable code that is passed as an argument to other code, which is expected to call back (execute) the argument at some convenient time.
+</p>
+<p>
+The invocation may be immediate as in a synchronous callback or it might happen at later time, as in an asynchronous callback.
+</p>
+<p>
+We will come back to synchronous and asynchronous callbacks in another video.
+</p>
+<br>
+<p>
+<pre><code class="javascript">function functionOne(x) { alert(x); }
+
+function functionTwo(var1, callback) {
+    callback(var1);		
+}
+
+functionTwo(2, functionOne);</code></pre>
+</p>
+<p>
+This is an example of using the callback variable in a JavaScript Function.
+</p>
+<p>
+Function One takes in an argument and issues an alert with the x as it's argument.
+</p>
+<p>
+Function Two takes in an argument and a function.
+</p>
+<p>
+Function Two then passes the argument it took in to the function it took in.
+</p>
+<p>
+Function One is the callback function in this case.
+</p>
+<br>
+<p>
+<p>
+As JavaScript has anonymous functions available, you can also pass in anonymous Functions as a variable to a function.
+</p>
+<pre><code class="javascript">function functionTwo(var1, callback) {
+    callback(var1);		
+}
+
+functionTwo(1, function (x) { alert(x); })</code></pre>
+</p>
+<p>
+In this case, the callback function is defined when we are calling functionTwo.
+</p>
+<br>
+<p>
+Note that we can call the callback function inside of functionTwo as many times as we like.
+</p>
+<p>
+<pre><code class="javascript">function functionTwo(var1, callback) {
+    callback(var1);	
+    callback(var1);	
+}
+
+functionTwo(1, function (x) { alert(x); })</code></pre>
+</p>
+<p>
+There is no limit to how many times we can call it.
+</p>
+<br>
+<p>
+The other thing to pay attention to is that you can pass in as many callback functions as you like to another function.
+</p>
+<p>
+<pre><code class="javascript">function functionTwo(var1, var2, callback1, callback2) {
+    callback1(var1);	
+    callback2(var2);	
+}
+
+functionTwo(1, 2, function (x) { alert(x); }, function (x) { alert(x); })</code></pre>
+</p>
+<p>
+Here in function two we pass in two variables and two functions as arguments.
+</p>
+<p>
+Inside of function two, we run callback1 with variable 1 and we run callback2 with variable 2.
+</p>
+<br>
+<p>
+Let's take a look at the code in the JavaScript Console to see how it functions.
+</p>
+<br>
+<p>
+First we start in the browser with the Developer tools open and the JavaScript Console ready to go.
+</p>
+<p>
+<pre><code class="javascript">function functionOne(x) { alert(x); }</code></pre>
+</p>
+<p>
+FunctionOne is defined so that it emits an alert with the value of the argument that got passed into it.
+</p>
+<br>
+<p>
+Let's test it
+</p>
+<p>
+<pre><code class="javascript">functionOne(2);</code></pre>
+</p>
+<p>
+BROWSER - Click on the Okay button
+</p>
+<p>
+Function One alerts us with the number 2.
+</p>
+<br>
+<p>
+Next, let's define function two so that it alerts us as well.
+</p>
+<p>
+<pre><code class="javascript">function functionTwo(x) { alert(x); }</code></pre>
+</p>
+<p>
+FunctionTwo is defined so that emits an alert with the value of the argument that got passed into it.
+</p>
+<p>
+It has the exact same functionality as functionOne.
+</p>
+<br>
+<p>
+We test it with the number two.
+</p>
+<p>
+<pre><code class="javascript">functionTwo(2);</code></pre>
+</p>
+<p>
+BROWSER - Click on the Okay button
+</p>
+<p>
+Function Two alerts us with the number 2.
+</p>
+<p>
+This is expected because it's the same functionality as function one.
+</p>
+<br>
+<p>
+Let's rewrite the definition of functionTwo so that it takes in a variable and a function.
+</p>
+<p>
+Then it will pass the variable to the function that was passed in.
+</p>
+<p>
+<pre><code class="javascript">function functionTwo(var1, callback) { callback(var1); }</code></pre>
+</p>
+<p>
+We name the function being passed into functionTwo callback.
+</p>
+<br>
+<p>
+Let's test it by passing the number 2 and the functionOne function
+</p>
+<p>
+<pre><code class="javascript">functionTwo(2, functionOne);</code></pre>
+</p>
+<p>
+BROWSER - Click on the Okay button
+</p>
+<p>
+It works the same as before.
+</p>
+<p>
+Function Two alerts us with the number 2.
+</p>
+<p>
+This time however, instead of functionTwo having the alert command inside of it, it used the command inside of functionOne.
+</p>
+<br>
+<p>
+Let's test it a different way this time.
+</p>
+<p>
+We continue passing in the number 2, except this time instead of passing in the functionOne function, we pass in an anonymous function.
+</p>
+<p>
+<pre><code class="javascript">functionTwo(2, function(x) { alert(x); });</code></pre>
+</p>
+<p>
+BROWSER - Click on the Okay button
+</p>
+<p>
+It works the same as before.
+</p>
+<p>
+Function Two alerts us with the number 2.
+</p>
+<p>
+This time however, instead of functionTwo having the alert command inside of it, it used the command inside of the anonymous function we passed in.
+</p>
+<br>
+<p>
+Let's rewrite the definition of functionTwo so that it takes in a variable and two functions.
+</p>
+<p>
+<pre><code class="javascript">function functionTwo(var1, callback1, callback2) {
+    callback1(var1);
+    callback2(var1);
+}</code></pre>
+</p>
+<p>
+Function two now takes in one variable and two functions.
+</p>
+<p>
+We name the functions being passed into functionTwo callback1 and callback2.
+</p>
+<p>
+It then passes this variable to the first function - callback1.
+</p>
+<p>
+It then passes this variable to the second function - callback2.
+</p>
+<br>
+<p>
+Let's test it by passing the number 2 and the functionOne function in twice
+</p>
+<p>
+<pre><code class="javascript">functionTwo(2, functionOne, functionOne);</code></pre>
+</p>
+<p>
+BROWSER - Click on the Okay button
+</p>
+<p>
+It works the same as before for each function.
+</p>
+<p>
+Function Two alerts us with the number 2 then alerts us with the number 2 again.
+</p>
+<br>
+<p>
+Finally, Let's test it by passing the number 2, the functionOne function and an anonymous function.
+</p>
+<p>
+The anonymous function will alert the result of adding two to the number that was passed into it.
+</p>
+<p>
+<pre><code class="javascript">functionTwo(2, functionOne, function(x) { alert(x+2); });</code></pre>
+</p>
+<p>
+BROWSER - Click on the Okay button
+</p>
+<p>
+First we get the alert of the number 2.
+</p>
+<p>
+Then we get the alert of the number 4.
+</p>
+<br>
+<p>
+And with that we have covered what JavaScript Callback Functions are and how they can be used.
+</p>
+<p>
+This will let us explore topics like AJAX, how D3 does asynchronous requests to the server and how we can use callback functions to manipulate the data after D3 receives it and parses it for us.
+</p>
+        </div>
+      </div>
+
+</div>
+
+<a href="/lessons">&lt;&lt; Back To D3 Screencast and Written Tutorials  Index</a>
+      </div>
+    </div>
+
+    <!-- Footer Container
+    ================================================== -->
+		<div class="container">
+	    <footer class="footer">
+	      <footer style="padding-top:20px;padding-bottom:40px;margin-top:40px;color:#777;text-align:left;border-top: 1px solid #e5e5e5;">
+
+<div class="row" id="footer-company-row">
+  <div class="col-lg-12">
+
+    <!-- DashingD3js.com Learning Materials
+    ================================================== -->
+    <div class="col-lg-3">
+      <ul style="margin-left:0px;;list-style:none;padding-left:0px;">
+        <li style="border-left:0px;padding-left:0px;margin-left:0px;">
+          <h5 class="h5_footer">Learn D3.js</h5>
+          <hr STYLE="margin-top:0px;margin-bottom:5px;">
+          <a href="/table-of-contents" id="D3T_tutorial_footer_lnk">D3 Tutorial</a>
+          <br>
+          <a href="/lessons" id="D3S_footer_lnk">D3 Screencasts</a>
+          <br>
+          <br>
+          <h5 class="h5_footer">D3 Training Series</h5>
+          <hr STYLE="margin-top:0px;margin-bottom:5px;">
+          <a href="/introductory-d3-course" id="D3T_introductory_footer_lnk">D3 Introductory Training</a>
+          <br>
+          <a href="/intermediate-d3-course" id="D3T_intermediate_footer_lnk">D3 Intermediate Training</a>
+          <br>
+          <a href="/mapping-d3-course" id="D3T_mapping_footer_lnk">D3 Mapping Training</a>
+          <br>
+          <a href="/d3-data-manipulation" id="D3T_data_manipulation_footer_lnk">D3 Data Manipulation Training</a>
+          <br>
+          <a href="/d3-v4-tutorial" id="D3T_d3_v4_tutorial_footer_lnk">D3 V4 Tutorial</a>
+          <br>
+          <a href="/d3-training/corporate-data-visualization-and-d3-js-training" id="D3T_corporate_footer_lnk">D3 Corporate Training</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- DashingD3js.com Website Information
+    ================================================== -->
+    <div class="col-lg-3">
+      <ul style="margin-left:0px;;list-style:none;padding-left:0px;">
+        <li style="border-left:0px;padding-left:0px;margin-left:0px;">
+          <h5 class="h5_footer">DashingD3js.com</h5>
+          <hr STYLE="margin-top:0px;margin-bottom:5px;">
+          <a href="/blog">Blog</a>
+          <br>
+          <a href="/about">About</a>
+          <br>
+          <a href="/d3-data-visualization-freelancer-and-consultant">Hire Me</a>
+          <br>
+          <a href="/d3-examples">D3 Examples</a>
+          <br>
+          <a href="/d3-resources">D3 Resources</a>
+          <br>
+          <a href="/data-visualization-and-d3-newsletter">D3 &amp; Data Viz Newsletter Archive</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- DashingD3js.com Weekly Newsletter 
+    ================================================== -->
+    <div class="col-lg-6">
+      <div style="float:left; vertical-align:bottom;" class="pull-right footer_lister">
+
+        <div id="newsletter-sign-up" style="border-color:#C0C0C0;border-style:none none none solid;border-width:1px;float:left;margin-left: 1.5em;padding-left: 1.5em;">
+          <h5 style="margin-top:0.4em;margin-bottom:15px;">
+            Data Visualization & D3.js Weekly Newsletter
+          </h5><!-- /h5_footer-->
+          <div id="newsletter-paragraph" style="line-height:1.5em;font-size:1em;margin-right:1.25em;">
+            Get D3.js and Data Visualization
+            <br>
+            news, articles, jobs and more
+            <br>
+            delivered to your inbox every Tuesday:
+            <br>
+          </div><!-- /newsletter-paragraph -->
+          <div id="newsletter-mailchimp-holder" style="padding-top:0.5em;">
+
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+              <form action="https://dashingd3js.us6.list-manage.com/subscribe/post?u=de8d917c7a8f266f6333b46e8&id=b79bf6ac8b" method="post" target="popupwindow" onsubmit="window.open('http://dashingd3js.us6.list-manage.com/subscribe/post?u=de8d917c7a8f266f6333b46e8&id=b79bf6ac8b', 'popupwindow', 'scrollbars=yes,width=650,height=520');return true">
+                <div class="form-group mc-field-group" style="margin-top:10px;">
+                  <input type="email" name="EMAIL" value="E-mail" class="form-control required email" id="mce-EMAIL" onfocus="if (this.value == 'E-mail') {this.value = '';}" onblur="if (this.value == '') {this.value = 'E-mail';}"/>
+                </div>
+                <input type="submit" value="Get the Newsletter" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">
+              </form>
+            </div><!--/mc_embed_signup-->
+            <!--End Begin MailChimp Signup Form-->
+
+          </div>
+        </div><!-- /newsletter-sign-up -->
+      </div><!-- /pull-right -->
+    </div><!-- /col-lg-6 -->
+
+  </div>
+</div>
+
+<hr />
+
+<div class="col-lg-12" style="color:grey;">
+  Did you sign up for the newsletter? :)
+  <div class=" pull-right">
+    Â© 2012-2016 DashingD3js.com. All rights reserved.
+  </div><!--/pull-right-->
+</div>
+
+</footer>
+	    </footer><!--/footer-->
+    </div><!--/container-->
+		<!-- /Footer Container -->
+
+  </body>
+</html>ÿÚ}hëÊ      ]SÂ]SÙ@ƒØ;       B    :https://www.dashingd3js.com/lessons/javascript-callback-functions necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Server: Cowboy
+Strict-Transport-Security: max-age=31536000
+Content-Type: text/html; charset=utf-8
+X-Ua-Compatible: IE=Edge,chrome=1
+Etag: "a2632a6ed39bd10580cd3c20313b901b"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 287095ae-de56-4bc3-9f21-f12c7ce2f01f
+X-Runtime: 0.020066
+Date: Wed, 26 Jun 2019 11:15:16 GMT
+X-Rack-Cache: miss
+Content-Length: 34320
+Via: 1.1 vegur
+ original-response-headers Server: Cowboy
+Connection: keep-alive
+Strict-Transport-Security: max-age=31536000
+Content-Type: text/html; charset=utf-8
+X-Ua-Compatible: IE=Edge,chrome=1
+Etag: "a2632a6ed39bd10580cd3c20313b901b"
+Cache-Control: max-age=0, private, must-revalidate
+Set-Cookie: _dashingd3js_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWUyM2JhMjk1OTdjYzM4MDViYWJkN2Q4Yzg5NmFiNTA3BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMU1haUFmNWl2VUhwbEpuWldoTEo1Mit6bDNZV3pqazJWbUl6MDJjQnJUeVU9BjsARg%3D%3D--082e237de27c8a1254f6cc76da11f572d6459c31; path=/; secure; HttpOnly
+X-Request-Id: 287095ae-de56-4bc3-9f21-f12c7ce2f01f
+X-Runtime: 0.020066
+Date: Wed, 26 Jun 2019 11:15:16 GMT
+X-Rack-Cache: miss
+Content-Length: 34320
+Via: 1.1 vegur
+ uncompressed-len 0 net-response-time-onstart 2653 net-response-time-onstop 2673 predictor::resource-count 28 predictor::https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css 1,1,1561547714,4096 predictor::https://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/readable/bootstrap.min.css 1,1,1561547714,4096 predictor::https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js 1,1,1561547714,4096 predictor::https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js 1,1,1561547714,4096 predictor::https://www.dashingd3js.com/assets/application-6d3b700c86e739ba3d914422fc2c282e.css 1,1,1561547714,4096 predictor::https://www.dashingd3js.com/assets/application-2478861aa2c0ba2dc16f5c7cfabb42f6.js 1,1,1561547714,4096 predictor::https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css 1,1,1561547714,4096 predictor::https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js 1,1,1561547714,4096 predictor::https://fast.wistia.com/assets/external/E-v1.js 1,1,1561547714,4096 predictor::https://fonts.googleapis.com/css?family=Raleway:400,700 1,1,1561547714,4096 predictor::https://ssl.google-analytics.com/ga.js 1,1,1561547714,4096 predictor::https://cdn.heapanalytics.com/js/heap.js 1,1,1561547714,4096 predictor::https://tag.marinsm.com/serve/56b35c64755632e5580000d4.js 1,1,1561547714,4096 predictor::https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0ITw.woff2 1,1,1561547714,4096 predictor::https://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/fonts/glyphicons-halflings-regular.woff 1,1,1561547714,4096 predictor::https://fonts.gstatic.com/s/raleway/v13/1Ptrg8zYS_SKggPNwJYtWqZPAA.woff2 1,1,1561547714,4096 predictor::https://pixel-geo.prfct.co/tagjs?a_id=56659&source=js_tag 1,1,1561547714,4096 predictor::https://js-agent.newrelic.com/nr-1123.min.js 1,1,1561547714,4096 predictor::https://pixel-geo.prfct.co/cs/?partnerId=opx 1,1,1561547714,4096 predictor::https://pixel-geo.prfct.co/seg/?add=4609998&source=js_tag&a_id=56659 1,1,1561547714,4096 predictor::https://secure.adnxs.com/seg?t=2&add=4609998 1,1,1561547714,4096 predictor::https://heapanalytics.com/h?a=2413960016&u=5143249566903105&v=1193976649651395&s=5981259101558856&b=web&tv=4.0&z=0&h=%2Flessons%2Fjavascript-callback-functions&d=www.dashingd3js.com&t=JavaScript%20Callback%20Functions%20%7C%20DashingD3js.com&r=https%3A%2F%2Fwww.google.com%2F&ts=1561547720444&st=1561547720447 1,1,1561547714,4096 predictor::https://fast.wistia.com/embed/medias/40xwqs7ogt.json?callback=wistiajson1 1,1,1561547714,4096 predictor::https://fast.wistia.com/assets/external/wistia-mux.js 1,1,1561547714,4096 predictor::https://embedwistia-a.akamaihd.net/deliveries/30fe14f8c798a6bacf88e20939f176442f7c0431.jpg?origin_v2=1&image_crop_resized=1280x720 1,1,1561547714,4096 predictor::https://fast.wistia.com/assets/external/allIntegrations.js 1,1,1561547714,4096 predictor::https://fast.wistia.com/assets/external/engines/manual_quality_video.js 1,1,1561547714,4096 predictor::https://fast.wistia.com/assets/images/blank.gif 1,1,1561547714,4096   †

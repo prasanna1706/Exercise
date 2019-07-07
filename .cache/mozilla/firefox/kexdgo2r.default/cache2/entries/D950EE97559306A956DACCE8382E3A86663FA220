@@ -1,0 +1,351 @@
+vex.defaultOptions.className = 'vex-theme-plain';
+
+(function ($) {
+	$.fn.prompts = function () {
+		var $form = $(this);
+
+		$form.find('.prompt--text, .prompt--label, .prompt--select, .prompt--date, .prompt--option').on('focus mouseover', function (event) {
+			$form.find('small[role="tooltip"]').removeClass('show--tooltip');
+			$(event.target).closest('.prompt--text, .prompt--label, .prompt--select, .prompt--date, .prompt--option').find('small[role="tooltip"]').addClass('show--tooltip');
+		});
+
+		$form.find('.prompt--text, .prompt--label, .prompt--select, .prompt--date, .prompt--option').on('blur mouseout', function (event) {
+			$form.find('small[role="tooltip"]').removeClass('show--tooltip');
+		});
+	}
+}(jQuery));
+
+$(function() {
+    $('.modal--trigger').on('click', function() {
+        vex.open({
+            unsafeContent: $('#' + $(this).data('modal-id')).html(),
+            contentClassName: 'dialog--content--' + $(this).data('modal-id'),
+            afterOpen: function() {
+                $('.datepicker-common').pickadate({
+            		weekdaysShort: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+              		labelMonthNext: 'Go to the next month',
+            		labelMonthPrev: 'Go to the previous month',
+            		labelMonthSelect: 'Pick a month from the dropdown',
+            		labelYearSelect: 'Pick a year from the dropdown',
+            		selectMonths: true,
+            		selectYears: 70
+                });
+                
+                initNumberFormat();
+            }
+        });
+    });
+});
+
+// ==========================================================================
+// Put commas in numbers
+// ==========================================================================
+$(function() {
+    initNumberFormat();
+});
+
+function initNumberFormat() {
+    $(function () {
+        $('input.number').val(function(index, value) {
+            return formatNumber(value);
+          });
+
+        $('input.number').keyup(function(event) {
+          // skip for arrow keys
+          if(event.which >= 37 && event.which <= 40) return;
+          // format number
+          $(this).val(function(index, value) {
+            return formatNumber(value);
+          });
+        });    
+    });
+}
+
+function formatNumber(num) {
+        var n1, n2;
+        num = num.replace(/\D/g, "");
+        num = num + '' || '';
+        // works for integer and floating as well
+        n1 = num.split('.');
+        n2 = n1[1] || null;
+        n1 = n1[0].replace(/(\d)(?=(\d\d)+\d$)/g, "$1,");
+        num = n2 ? n1 + '.' + n2 : n1;
+        return num;
+}    
+
+// ==========================================================================
+// jQuery
+// ==========================================================================
+
+// hamburger
+jQuery(function($){
+	$( '.nav__mobile' ).click(function(){
+	    $('nav').toggleClass('expand')
+	})
+
+	$( '.nav--profile' ).click(function(event){
+	    $('.header__links--subnav').toggleClass('expand')
+	    $('.nav--profile').toggleClass('active')
+	    event.stopPropagation(event);
+	    event.preventDefault(event); 
+	})
+
+	$('html').click(function() {
+	  $('.header__links--subnav').removeClass('expand')
+	  $('.nav--profile').removeClass('active')
+	  
+	});
+
+
+	$('nav.app__aside--nav ul a').filter(function(){return this.href==location.href}).addClass('active').siblings().removeClass('active')
+			$('nav.app__aside--nav ul a').click(function(){
+				$(this).addClass('active').siblings().removeClass('active')	
+	})
+
+	$('.child--reports .link--reports, .child--people .link--people, .child--settings .link--settings, .child--company .link--company, .child--reimbursements .link--reimbursements, .child--tax .link--taxDeductions').addClass('active').siblings().removeClass('active')
+	
+	$('.table__filters a').filter(function(){return this.href==location.href}).addClass('filter--active').siblings().removeClass('filter--active')
+			$('.table__filters a').click(function(){
+				$(this).addClass('filter--active').siblings().removeClass('filter--active')	
+	})
+
+	$( '#cbp-ntaccordion').cbpNTAccordion();
+
+  // $('.accordion__trigger--all').click(function() {
+  //   $('.cbp-ntaccordion li').addClass('.cbp-ntopen')
+  // })
+
+  $('.toc a').click(function() {
+           $('html,body').animate({scrollTop: $(this).offset().top}, 500);
+   });
+
+   $('.toc__item--sub a').on('click', function(){
+Â Â Â Â history.pushState({}, '', $(this).attr('href'));
+Â Â }); 
+
+
+// smooth scrollTop
+
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+// file picker enhancements
+	$( '.inputfile' ).each( function()
+	{
+		var $input	 = $( this ),
+			$label	 = $input.next( 'label' ),
+			labelVal = $label.html();
+
+		$input.on( 'change', function( e )
+		{
+			var fileName = '';
+
+			if( this.files && this.files.length > 1 )
+				fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+			else if( e.target.value )
+				fileName = e.target.value.split( '\\' ).pop();
+
+			if( fileName )
+				$label.find( 'span' ).html( fileName );
+			else
+				$label.html( labelVal );
+		});
+
+		// Firefox bug fix
+		$input
+		.on( 'focus', function(){ $input.addClass( 'has-focus' ); })
+		.on( 'blur', function(){ $input.removeClass( 'has-focus' ); });
+	});
+
+
+
+// #datepicker used for scheduling payroll : greys out all dates before today
+	$('.datepicker-future').pickadate({
+		weekdaysShort: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+  		labelMonthNext: 'Go to the next month',
+		labelMonthPrev: 'Go to the previous month',
+		labelMonthSelect: 'Pick a month from the dropdown',
+		labelYearSelect: 'Pick a year from the dropdown',
+		selectMonths: true,
+		selectYears: true,
+		today: 'Today',
+		clear: 'Clear',
+		close: 'Ok',
+		closeOnSelect: false,
+  		min: true
+	})
+
+// #datepicker used for birthday : gives year options backwards from year 2000 (18 years)
+	$('.datepicker-past').pickadate({
+		weekdaysShort: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+  		labelMonthNext: 'Go to the next month',
+		labelMonthPrev: 'Go to the previous month',
+		labelMonthSelect: 'Pick a month from the dropdown',
+		labelYearSelect: 'Pick a year from the dropdown',
+		selectMonths: true,
+		selectYears: 70,
+                max: [2020,1,1],
+  		today: ''
+	})
+
+// #datepicker-all used for hire date : nothing gets greyed out
+	$('.datepicker-common').pickadate({
+		weekdaysShort: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+  		labelMonthNext: 'Go to the next month',
+		labelMonthPrev: 'Go to the previous month',
+		labelMonthSelect: 'Pick a month from the dropdown',
+		labelYearSelect: 'Pick a year from the dropdown',
+		selectMonths: true,
+		selectYears: 70
+	})
+
+// prompt the user when an input field is hovered on or focussed on
+	$('#employeeOnboarding').prompts();
+	
+})
+
+function sortTable(id, n, excludeLast) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById(id);
+  switching = true;
+  dir = "asc"; 
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    if (excludeLast == true)
+        numRows = rows.length - 2;
+    else
+        numRows = rows.length - 1;
+    for (i = 1; i < numRows; i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++; 
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+function checkAll(ele) {
+    var checkboxes = document.getElementsByTagName('input');
+    for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].type == 'checkbox') {
+            checkboxes[i].checked = ele.checked;
+        }
+    }
+}
+
+// CSV Downloads
+function downloadCSV(csv, filename) {
+    var csvFile;
+    var downloadLink;
+
+    // CSV file
+    csvFile = new Blob([csv], {type: "text/csv"});
+
+    // Download link
+    downloadLink = document.createElement("a");
+
+    // File name
+    downloadLink.download = filename;
+
+    // Create a link to the file
+    downloadLink.href = window.URL.createObjectURL(csvFile);
+
+    // Hide download link
+    downloadLink.style.display = "none";
+
+    // Add the link to DOM
+    document.body.appendChild(downloadLink);
+
+    // Click download link
+    downloadLink.click();
+}
+
+function exportTableToCSV(filename) {
+    var csv = [];
+    var rows = document.querySelectorAll("table.export tr");
+    
+    for (var i = 0; i < rows.length; i++) {
+        var row = [], cols = rows[i].querySelectorAll("td, th");
+        
+        for (var j = 0; j < cols.length; j++) 
+            row.push("\"" + cols[j].innerText.replace(/\n/g , " ").replace(/,/g , "") + "\"");
+        
+        csv.push(row.join(","));        
+    }
+
+    // Download CSV file
+    downloadCSV(csv.join("\n"), filename);
+}
+Ø&ªÞ      ]&½]&½@ŠÜ]!NN   +    :https://login.opfin.com/js/scripts.js?v=23 necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAAAAgAAAAAAAAAAAAAAAAAAAAEAMQFmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAbPMIIGyzCCBbOgAwIBAgIQPijpflLk/CPhibtHhTK3sTANBgkqhkiG9w0BAQsFADCBkDELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxNjA0BgNVBAMTLUNPTU9ETyBSU0EgRG9tYWluIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBDQTAeFw0xODA3MzEwMDAwMDBaFw0yMDA3MzEyMzU5NTlaMFgxITAfBgNVBAsTGERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDEdMBsGA1UECxMUUG9zaXRpdmVTU0wgV2lsZGNhcmQxFDASBgNVBAMMCyoub3BmaW4uY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqAw96Ws2OTfBQOoTnz787VngQ2aNKpQk3uY55PeCmsfCG/5EqL2p/ZnDwBVt/nttL+wLG3vxqEieMZESNNr8zIWGoYhiMYqCHuKqv/j5qkHVU17S10isOhkEnN5Zp2fibDJCikBGXrFgR0tHiuF2I/mPvndV3JRKeAkEyH7L/G63JMn4n4tyxvZ9ZhSkeI1zrEUh0Px7dNyE+zoCjLB5mvcnyJ+0WP7fAYvGK9SygGmbIi/DkfjWNuo8baDnaKHQvS66IGxF+sNCxc8oThQaBjOTjGUD6q8aqSiLp2bHrtXZGybd83/DNIn528Mo3UUkIinDxlWMTA1F9k/VVCuxOQIDAQABo4IDVjCCA1IwHwYDVR0jBBgwFoAUkK9qOpRaC9iQ6hJWc99DtDoo2ucwHQYDVR0OBBYEFMshyQC4PCHLUhZy6OChG+tV5BNtMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBPBgNVHSAESDBGMDoGCysGAQQBsjEBAgIHMCswKQYIKwYBBQUHAgEWHWh0dHBzOi8vc2VjdXJlLmNvbW9kby5jb20vQ1BTMAgGBmeBDAECATBUBgNVHR8ETTBLMEmgR6BFhkNodHRwOi8vY3JsLmNvbW9kb2NhLmNvbS9DT01PRE9SU0FEb21haW5WYWxpZGF0aW9uU2VjdXJlU2VydmVyQ0EuY3JsMIGFBggrBgEFBQcBAQR5MHcwTwYIKwYBBQUHMAKGQ2h0dHA6Ly9jcnQuY29tb2RvY2EuY29tL0NPTU9ET1JTQURvbWFpblZhbGlkYXRpb25TZWN1cmVTZXJ2ZXJDQS5jcnQwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmNvbW9kb2NhLmNvbTAhBgNVHREEGjAYggsqLm9wZmluLmNvbYIJb3BmaW4uY29tMIIBfwYKKwYBBAHWeQIEAgSCAW8EggFrAWkAdwDuS723dc5guuFCaR+r4Z5mow9+X7By2IMAxHuJeqj9ywAAAWTx+pkBAAAEAwBIMEYCIQDzA2IKSpGrfOajZRpgTi7W4YchKVl6np49bxSmvnhnuAIhAIZrjSG7M3SHVSXjOnuuW0IMFXslGGCZfwVquGrXqThBAHcAXqdz+d9WwOe1Nkh90EngMnqRmgyEoRIShBh1loFxRVgAAAFk8fqZWgAABAMASDBGAiEAk3s7v422A/nIGZYwIv6EEoKjoFyeNpsM+4EOjBvkTdQCIQCpqdujQy5qPV9ghEPeYETwLQIcW2KO0B8WESeTQFQ3agB1AFWB1MIWkDYBSuoLm1c8U/DA5Dh4cCUIFy+jqh0HE9MMAAABZPH6mR8AAAQDAEYwRAIgLugpJoDN+9Z2oW50CN0m384RCixiJICRWUrPkBiGnfECIC6kvJjwBhxcPFS612p/5hc2wqZjW/EoANqMsbSedzCgMA0GCSqGSIb3DQEBCwUAA4IBAQCJLcPlkgyj1pqCffedHzRvWSVtdZEGimI3Wk13p2pgCX4SzGvlUYf1DmvC/tv3xIeT+4I7OCWAghpf0HAxADKd4JIer/VkUQGukBID5RdJwb07ELJlUlMozg+1nB102+fweuLN2hG/qyVQelKASgcf0FyKGoI5xZ0zsZ56FCsiB86LgickWpw6hXsNNB5IHsl7UJy89RUQbz95bn8JwniuUbGXTeCAEeB5veSYYFB2YAQ/7XB64SUZ2WTDrZTj3/UM81yaTEPt3OPk1/XF4X16alyGnomYn4DxO5sRQEV3UwVOhfLF4q6wffEnlzhVKbF3sjX+8+uNwRJWY7kLEIDjwDAAAwAAAAABAQAAAAAAAARub25lAAAAEFJTQS1QS0NTMS1TSEE1MTIBlZ+xZWUXSH+rm9iRO+Uxl650zaXNL0c/lvXwt//2LGgAAAADZgoyJpFcT/u7IImFpjLfBb3Dl5pUIkzVhYlpa26W6oMAAAAAAAAGzzCCBsswggWzoAMCAQICED4o6X5S5Pwj4Ym7R4Uyt7EwDQYJKoZIhvcNAQELBQAwgZAxCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAOBgNVBAcTB1NhbGZvcmQxGjAYBgNVBAoTEUNPTU9ETyBDQSBMaW1pdGVkMTYwNAYDVQQDEy1DT01PRE8gUlNBIERvbWFpbiBWYWxpZGF0aW9uIFNlY3VyZSBTZXJ2ZXIgQ0EwHhcNMTgwNzMxMDAwMDAwWhcNMjAwNzMxMjM1OTU5WjBYMSEwHwYDVQQLExhEb21haW4gQ29udHJvbCBWYWxpZGF0ZWQxHTAbBgNVBAsTFFBvc2l0aXZlU1NMIFdpbGRjYXJkMRQwEgYDVQQDDAsqLm9wZmluLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKgMPelrNjk3wUDqE58+/O1Z4ENmjSqUJN7mOeT3gprHwhv+RKi9qf2Zw8AVbf57bS/sCxt78ahInjGREjTa/MyFhqGIYjGKgh7iqr/4+apB1VNe0tdIrDoZBJzeWadn4mwyQopARl6xYEdLR4rhdiP5j753VdyUSngJBMh+y/xutyTJ+J+Lcsb2fWYUpHiNc6xFIdD8e3TchPs6AoyweZr3J8iftFj+3wGLxivUsoBpmyIvw5H41jbqPG2g52ih0L0uuiBsRfrDQsXPKE4UGgYzk4xlA+qvGqkoi6dmx67V2Rsm3fN/wzSJ+dvDKN1FJCIpw8ZVjEwNRfZP1VQrsTkCAwEAAaOCA1YwggNSMB8GA1UdIwQYMBaAFJCvajqUWgvYkOoSVnPfQ7Q6KNrnMB0GA1UdDgQWBBTLIckAuDwhy1IWcujgoRvrVeQTbTAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwTwYDVR0gBEgwRjA6BgsrBgEEAbIxAQICBzArMCkGCCsGAQUFBwIBFh1odHRwczovL3NlY3VyZS5jb21vZG8uY29tL0NQUzAIBgZngQwBAgEwVAYDVR0fBE0wSzBJoEegRYZDaHR0cDovL2NybC5jb21vZG9jYS5jb20vQ09NT0RPUlNBRG9tYWluVmFsaWRhdGlvblNlY3VyZVNlcnZlckNBLmNybDCBhQYIKwYBBQUHAQEEeTB3ME8GCCsGAQUFBzAChkNodHRwOi8vY3J0LmNvbW9kb2NhLmNvbS9DT01PRE9SU0FEb21haW5WYWxpZGF0aW9uU2VjdXJlU2VydmVyQ0EuY3J0MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20wIQYDVR0RBBowGIILKi5vcGZpbi5jb22CCW9wZmluLmNvbTCCAX8GCisGAQQB1nkCBAIEggFvBIIBawFpAHcA7ku9t3XOYLrhQmkfq+GeZqMPfl+wctiDAMR7iXqo/csAAAFk8fqZAQAABAMASDBGAiEA8wNiCkqRq3zmo2UaYE4u1uGHISlZep6ePW8Upr54Z7gCIQCGa40huzN0h1Ul4zp7rltCDBV7JRhgmX8Farhq16k4QQB3AF6nc/nfVsDntTZIfdBJ4DJ6kZoMhKESEoQYdZaBcUVYAAABZPH6mVoAAAQDAEgwRgIhAJN7O7+NtgP5yBmWMCL+hBKCo6BcnjabDPuBDowb5E3UAiEAqanbo0Muaj1fYIRD3mBE8C0CHFtijtAfFhEnk0BUN2oAdQBVgdTCFpA2AUrqC5tXPFPwwOQ4eHAlCBcvo6odBxPTDAAAAWTx+pkfAAAEAwBGMEQCIC7oKSaAzfvWdqFudAjdJt/OEQosYiSAkVlKz5AYhp3xAiAupLyY8AYcXDxUutdqf+YXNsKmY1vxKADajLG0nncwoDANBgkqhkiG9w0BAQsFAAOCAQEAiS3D5ZIMo9aagn33nR80b1klbXWRBopiN1pNd6dqYAl+Esxr5VGH9Q5rwv7b98SHk/uCOzglgIIaX9BwMQAyneCSHq/1ZFEBrpASA+UXScG9OxCyZVJTKM4PtZwddNvn8HrizdoRv6slUHpSgEoHH9BcihqCOcWdM7GeehQrIgfOi4InJFqcOoV7DTQeSB7Je1CcvPUVEG8/eW5/CcJ4rlGxl03ggBHgeb3kmGBQdmAEP+1weuElGdlkw62U49/1DPNcmkxD7dzj5Nf1xeF9empchp6JmJ+A8TubEUBFd1MFToXyxeKusH3xJ5c4VSmxd7I1/vPrjcESVmO5CxCA42YKMiaRXE/7uyCJhaYy3wW9w5eaVCJM1YWJaWtuluqDAAAAAAAABgwwggYIMIID8KADAgECAhArLm7q2XU2bBSKbtujfIwHMA0GCSqGSIb3DQEBDAUAMIGFMQswCQYDVQQGEwJHQjEbMBkGA1UECBMSR3JlYXRlciBNYW5jaGVzdGVyMRAwDgYDVQQHEwdTYWxmb3JkMRowGAYDVQQKExFDT01PRE8gQ0EgTGltaXRlZDErMCkGA1UEAxMiQ09NT0RPIFJTQSBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eTAeFw0xNDAyMTIwMDAwMDBaFw0yOTAyMTEyMzU5NTlaMIGQMQswCQYDVQQGEwJHQjEbMBkGA1UECBMSR3JlYXRlciBNYW5jaGVzdGVyMRAwDgYDVQQHEwdTYWxmb3JkMRowGAYDVQQKExFDT01PRE8gQ0EgTGltaXRlZDE2MDQGA1UEAxMtQ09NT0RPIFJTQSBEb21haW4gVmFsaWRhdGlvbiBTZWN1cmUgU2VydmVyIENBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjsICGeGgWaTrODWNLP0B0NNJwGTHC2IFRRY6qKDADAJ/HczbxKFtdwOjD4b54wacPguBiptJG60DvvpL24wg7dXOXmWOPg2vTMKwt0VeUi803kgkZLRBrgCX975n3p7QeqdTgDt8rfWWVW+XRwp8hYsil42zhOCWV9BwGGCWj+4tB5OdobrK0c176cQqmighkU1vkk8lpfJ6Nd0m3Eal0KxZNYz/TpFDUD9Zkx5sUSHuWBSr/nVQeD5MsByGE/prmLzgO5QehVLcA5MkGG7LJ1FF5nDeJUOkDeFKpe22fsjNbe4uHSdzXdxFMICq47JBC6+9RIfaueUbnX+u5YWCpQIDAQABo4IBZTCCAWEwHwYDVR0jBBgwFoAUu69+Aj36pvE8hI6t7jiY7NkyMtQwHQYDVR0OBBYEFJCvajqUWgvYkOoSVnPfQ7Q6KNrnMA4GA1UdDwEB/wQEAwIBhjASBgNVHRMBAf8ECDAGAQH/AgEAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAbBgNVHSAEFDASMAYGBFUdIAAwCAYGZ4EMAQIBMEwGA1UdHwRFMEMwQaA/oD2GO2h0dHA6Ly9jcmwuY29tb2RvY2EuY29tL0NPTU9ET1JTQUNlcnRpZmljYXRpb25BdXRob3JpdHkuY3JsMHEGCCsGAQUFBwEBBGUwYzA7BggrBgEFBQcwAoYvaHR0cDovL2NydC5jb21vZG9jYS5jb20vQ09NT0RPUlNBQWRkVHJ1c3RDQS5jcnQwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmNvbW9kb2NhLmNvbTANBgkqhkiG9w0BAQwFAAOCAgEATit2T5IcYjaJunfBJwX0HNZEnamaPqrVZmYBPupJ5qI1vPr23ZWOmTWYDjYYdbHd3VByfK7cd4jOD/eQIMqjZy4fVn974UTqQpXEXQ0BUEYV8oGJWWyK3YzxEqGNOkKKmPhLNHsnOwi0byQ7cp1jdFg8Gmw/T8cRmsio9bU37xBFxmzZ4F6VJrPrraO57n8MmmY1czJgTuXdimEsblIRd2iW0xh1URUAG3SI3eHHOARDKOkW/dkF1F1HJ2DW+zg7bHKilPhCGt/tbwaMRcIGAKrk6NzZteFzeOz2I9zR3WyOGo+l6lR8lrfD/lWOjUle/GS7zz69lutpzb/gSPFighDlDEZX8jPa0Mhj7cYflAWWShqR0ffrz49Srg0I2T6ooFHpwYd01cn3dKsuU/u7evuX4vgfJo+z0qDgN1soOzHlDlctWriteaxeIGYapbmmtTnB9ZhD/+75p6f97sokPYAWxBePisFgoQyuW0NHkUvVmhdf+dSHwcKMt+fiDzAZN4as4NxCA+aUqJ2u/Q8kUZTOkgjR/FDwA0B7iFntDt2s0neCNNwGlQLYkPkt6jfVGmDQZyDX2EILRa+CaN7dZiQ3kCmUGUYZJbiA18vUhihqRHAmI2Kpn4Zvv7qQcNJWd4V47+olqRfOUHKMADqq49tjNJ/4BnEB4oIg1P5vvbFmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAXcMIIF2DCCA8CgAwIBAgIQTKr5yttjb+Af907YWwOGnTANBgkqhkiG9w0BAQwFADCBhTELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxKzApBgNVBAMTIkNPTU9ETyBSU0EgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTAwMTE5MDAwMDAwWhcNMzgwMTE4MjM1OTU5WjCBhTELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxKzApBgNVBAMTIkNPTU9ETyBSU0EgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCR6FSS0gpWsawNJN3Fz0RndJkrN6N9I3AAcbxT38T6KhKPS38QVr2fcHK3YX/JSw8Xpz3jsARh7v8Rl8f0hj4K+j5c+ZPmNHrZFGvnnLOFoIJ6dq9xkNfs/Q36nGz637CC9BR++b7Epi9Pf5l/tfxnQ3K9DADWietrLNPtj5gcFKt+5eNu/Nio5JIk2kNrYrhV/erBvGy2i/MOjZrkm2xpmfh4SDBF1a3hDTxFYPwyllEnvGfDyi62a+pGx8cgoLEfZd5ICLqkTqnyg0Y3hOvozIFIQ2dOciqbXL1MGyiKXCJ7tKuY2e7gUYPDCUZObT6Z+pUX2nwzV0E8jVHtC7ZcryxjGt9XyD+86V3Em69FmeKjWiS0uqlWPc9vqv9JWL7wqP/0uK3pN/u6uPQLOvnoQ0IeidiEyxPx2bvhiWC4jChWrBQdnArncevPDt09qZahSL0896+1DSJMwBGB7FY79tOi4lu3sgQiUpWAk2nojkxl8ZEDLXB0AuqLZxUpaVICu9ffUGpVRr+goyhhf3DQw6KqLCGqR84onAZFdr+CGCe01a60y1Dma/RMhnEw6abfFobg2P9A3fvQQoh/ozM6LlweQRGBY84YcWsr7KaKtzFcOmpH4MN5WdYgGq/yapiqcrxXStJLnbsQ/LBMQeXtHT1eKJ2czL+zUdqnR+WEUwIDAQABo0IwQDAdBgNVHQ4EFgQUu69+Aj36pvE8hI6t7jiY7NkyMtQwDgYDVR0PAQH/BAQDAgEGMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQEMBQADggIBAArx1UaEt65Ru2yyTUEUAJNMnMvlwFTPoCWOAvn9sKIN9SCYPBMtrFaisNZ+EZLpLrqeLppysb0ZRGxhNaKatBYSaVqM4dc+pBroLwP0rmEdEBsqpIt6xf4FpuHA1sj+nq6PK7o9mfjYcwlYRm6mnPTXJ9OV2jeDchzTc+CiR5kDOF3VSXkAKRzH7JsgHAckaVd4sjn8OoSgtZx8jb8uk2IntznaFxiuvTwJaP+EmzzV1gsD41eeFPfR60/IvYcjt7ZJQ3mFXLrrkguhxuhoqEwWsRqZCuhTLJK7oQkYdQxlqHvLI7cawiiFwxv/0Cti76R7CZGYZ4wUAc1oBmpjIXUDgIiKboHGhfKppC3n9KUkEEeDys30jXlYsQab5xoq2Z0B15R97QNKyvDb6KkBPvVWmckejkk9u+UJueBPSZI9FoJAzMxZxuY67RIuaTxslbH9qh17f4a+Hg4yRvv7E491f0yLS0Zj/gA0QHDBw7mh3aZw4gSzQbzpgJHqZJx64SIDqZxubw5lT2yHh17zbqD5daWbQOhTsiedSrnAdyGN/4fy3ryM7xfft0kL0fJuMAsaDk527RH89elWsn2/x20Kk4yl0MC2Hb46TpSi125sC8KKfPog88Tk5c0NqMuRkrF8hey1FGlmDoLnzc7ILaZRfyHBNVOFBkpdn627G190AA== request-method GET response-head HTTP/1.1 200 OK
+Date: Mon, 01 Jul 2019 15:28:19 GMT
+Server: Apache/2.4.33 (Amazon) OpenSSL/1.0.2k-fips PHP/7.2.17
+Last-Modified: Wed, 08 May 2019 08:54:27 GMT
+ETag: "2866-5885c7b1696c0"
+Accept-Ranges: bytes
+Content-Length: 10342
+Content-Type: text/javascript
+ original-response-headers Date: Mon, 01 Jul 2019 15:28:19 GMT
+Server: Apache/2.4.33 (Amazon) OpenSSL/1.0.2k-fips PHP/7.2.17
+Last-Modified: Wed, 08 May 2019 08:54:27 GMT
+ETag: "2866-5885c7b1696c0"
+Accept-Ranges: bytes
+Content-Length: 10342
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/javascript
+ uncompressed-len 0 net-response-time-onstart 167 net-response-time-onstop 168   (f

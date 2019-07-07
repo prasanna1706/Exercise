@@ -1,0 +1,14 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"JsPrettier",
+		"Package Control",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint_d",
+		"SublimeLinter-eslint"
+	]
+}

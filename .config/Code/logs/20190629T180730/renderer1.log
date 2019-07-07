@@ -1,0 +1,1 @@
+[2019-06-29 18:07:43.553] [renderer1] [error] doSave(0) - exit - resulted in a save error: Error: Unable to write file (Error: File Modified Since) {"$mid":1,"fsPath":"/home/prasanna/Documents/prasanna/exe2.js","external":"file:///home/prasanna/Documents/prasanna/exe2.js","path":"/home/prasanna/Documents/prasanna/exe2.js","scheme":"file"}

@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/prasanna/Downloads/Eloquent_JavaScript.pdf" added="2019-06-17T07:01:33Z" modified="2019-07-01T05:09:44Z" visited="2019-06-17T07:01:33Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-17T07:01:33Z" count="1"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-07-01T05:09:44Z" count="14"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Documents/Untitled%201" added="2019-06-19T08:40:25Z" modified="2019-06-19T08:40:25Z" visited="2019-06-19T08:40:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2019-06-19T08:40:25Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Documents/Untitled%201.odt" added="2019-06-19T08:40:26Z" modified="2019-06-27T04:26:22Z" visited="2019-06-19T08:40:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.text"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2019-06-27T04:26:22Z" count="14"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_prasanna0/sublime_text_3_build_3207_x64.tar.bz2" added="2019-06-19T12:40:02Z" modified="2019-06-19T12:40:02Z" visited="2019-06-19T12:40:02Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-bzip-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-19T12:40:02Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Downloads" added="2019-06-19T12:40:43Z" modified="2019-06-19T12:40:43Z" visited="2019-06-19T12:40:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Archive Manager" exec="&apos;file-roller %u&apos;" modified="2019-06-19T12:40:43Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/class%20user" added="2019-06-19T12:59:45Z" modified="2019-06-26T13:06:17Z" visited="2019-06-19T12:59:46Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-19T12:59:45Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-06-26T13:06:17Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///%3C!Doctype.html%3E" added="2019-06-20T02:34:53Z" modified="2019-06-20T02:34:53Z" visited="2019-06-20T02:34:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-20T02:34:53Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///one.js" added="2019-06-20T04:22:42Z" modified="2019-06-20T04:22:42Z" visited="2019-06-20T04:22:42Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-20T04:22:42Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///ex2.js" added="2019-06-20T04:44:55Z" modified="2019-06-20T04:44:55Z" visited="2019-06-20T04:44:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-20T04:44:55Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///ex2.sublime-project" added="2019-06-20T08:46:45Z" modified="2019-06-20T08:46:45Z" visited="2019-06-20T08:46:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-20T08:46:45Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Downloads/exe2.js" added="2019-06-20T13:00:12Z" modified="2019-06-20T13:00:13Z" visited="2019-06-20T13:00:13Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-20T13:00:13Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Documents/prasanna" added="2019-06-20T13:37:13Z" modified="2019-06-25T07:05:49Z" visited="2019-06-20T13:37:13Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-20T13:37:13Z" count="1"/>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2019-06-25T07:05:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Documents/prasanna/untitled.js" added="2019-06-20T13:39:34Z" modified="2019-07-01T13:26:58Z" visited="2019-06-20T13:39:34Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-07-01T13:26:58Z" count="4"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-07-01T13:26:05Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Documents/prasanna/untitled1.html" added="2019-06-20T13:41:21Z" modified="2019-07-01T13:26:31Z" visited="2019-06-20T13:41:21Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-07-01T13:26:31Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Documents/prasanna/exe3.html" added="2019-06-21T12:47:35Z" modified="2019-06-24T12:37:39Z" visited="2019-06-21T12:47:35Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-24T12:37:39Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_prasanna0/Resume_K.Lakshmi%20Prasanna_1706.docx" added="2019-06-22T05:24:56Z" modified="2019-06-22T06:38:23Z" visited="2019-06-22T05:24:57Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-22T05:24:56Z" count="1"/>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2019-06-22T06:38:23Z" count="7"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/Resume_K.Lakshmi%20Prasanna_1706" added="2019-06-22T05:26:19Z" modified="2019-06-22T05:26:19Z" visited="2019-06-22T05:26:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2019-06-22T05:26:19Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/Resume_K.Lakshmi%20Prasanna_1706.docx" added="2019-06-22T05:26:33Z" modified="2019-06-30T15:28:12Z" visited="2019-06-22T05:26:33Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2019-06-22T05:29:01Z" count="5"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-30T15:28:12Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Documents/prasanna/exe5.html" added="2019-06-24T12:37:22Z" modified="2019-06-24T12:37:22Z" visited="2019-06-24T12:37:22Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-24T12:37:22Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Documents/prasanna/tryit.asp" added="2019-06-24T13:44:20Z" modified="2019-06-27T04:26:55Z" visited="2019-06-24T13:44:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-asp"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-24T13:44:22Z" count="2"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-06-27T04:26:55Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Downloads/code_1.35.1-1560350270_amd64.deb" added="2019-06-25T06:38:30Z" modified="2019-06-25T06:38:30Z" visited="2019-06-25T06:38:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.debian.binary-package"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-25T06:38:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/00%20Code%2021-37/00%20Code%2021-37.zip" added="2019-06-25T16:41:08Z" modified="2019-06-25T16:41:08Z" visited="2019-06-25T16:41:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2019-06-25T16:41:08Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/.cache/.fr-xpKlZm/Authentication/AuthDemo/models/user.js" added="2019-06-25T16:41:17Z" modified="2019-06-25T16:41:17Z" visited="2019-06-25T16:41:17Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-06-25T16:41:17Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/01%20Introduction%20to%20this%20Course/000%20Note%2001%20A%20Note%20On%20Asking%20For%20Help.pdf" added="2019-06-25T16:41:50Z" modified="2019-06-25T16:41:50Z" visited="2019-06-25T16:41:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-06-25T16:41:50Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/01%20Introduction%20to%20this%20Course/000%20Note%2002%20Introducing%20Our%20TA.pdf" added="2019-06-25T16:45:47Z" modified="2019-06-25T16:45:47Z" visited="2019-06-25T16:45:48Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-06-25T16:45:47Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/01%20Introduction%20to%20this%20Course/000%20Note%2003%20Class%20Chat%20Rooms.pdf" added="2019-06-25T16:46:53Z" modified="2019-06-25T16:46:53Z" visited="2019-06-25T16:46:53Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-06-25T16:46:53Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/01%20Introduction%20to%20this%20Course/001%20Why%20This%20Course.mp4" added="2019-06-25T16:51:43Z" modified="2019-06-25T16:52:50Z" visited="2019-06-25T16:51:43Z">
+    <title>001 Why This Course.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-25T16:52:50Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/01%20Introduction%20to%20this%20Course/002%20Syllabus%20Download.pdf" added="2019-06-25T16:52:57Z" modified="2019-06-25T16:52:57Z" visited="2019-06-25T16:52:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-06-25T16:52:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/01%20Introduction%20to%20this%20Course/003%20Syllabus%20Walkthrough.mp4" added="2019-06-25T16:56:30Z" modified="2019-06-25T16:56:30Z" visited="2019-06-25T16:56:30Z">
+    <title>003 Syllabus Walkthrough.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-25T16:56:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/02%20Introduction%20to%20Front%20End%20Development/004%20Unit%20Objectives.mp4" added="2019-06-25T16:57:17Z" modified="2019-06-25T16:59:45Z" visited="2019-06-25T16:57:17Z">
+    <title>004 Unit Objectives.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-25T16:59:45Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/02%20Introduction%20to%20Front%20End%20Development/005%20Setting%20Up%20Front-End%20Developer%20Environment.mp4" added="2019-06-25T17:03:21Z" modified="2019-06-25T17:03:21Z" visited="2019-06-25T17:03:21Z">
+    <title>005 Setting Up Front-End Developer Environment.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-25T17:03:21Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/02%20Introduction%20to%20Front%20End%20Development/006%20Introduction%20to%20the%20Web.mp4" added="2019-06-25T17:08:14Z" modified="2019-06-25T17:08:14Z" visited="2019-06-25T17:08:15Z">
+    <title>006 Introduction to the Web.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-25T17:08:14Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/02%20Introduction%20to%20Front%20End%20Development/007%20The%20Front%20End%20Holy%20Trinity.mp4" added="2019-06-25T17:19:34Z" modified="2019-06-25T17:19:34Z" visited="2019-06-25T17:19:34Z">
+    <title>007 The Front End Holy Trinity.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-25T17:19:34Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Documents/prasanna/exe2.html" added="2019-06-26T09:18:19Z" modified="2019-06-26T09:18:19Z" visited="2019-06-26T09:18:19Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-26T09:18:19Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Documents/prasanna/exe2.js" added="2019-06-26T09:18:43Z" modified="2019-06-29T06:34:01Z" visited="2019-06-26T09:18:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-29T06:34:01Z" count="5"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-06-27T04:36:43Z" count="11"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/03%20Introduction%20to%20HTML/008%20Unit%20Objectives.mp4" added="2019-06-26T14:37:02Z" modified="2019-06-26T14:37:02Z" visited="2019-06-26T14:37:02Z">
+    <title>008 Unit Objectives.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T14:37:02Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/03%20Introduction%20to%20HTML/009%20HTML%20Basics.mp4" added="2019-06-26T14:38:47Z" modified="2019-06-26T14:38:47Z" visited="2019-06-26T14:38:47Z">
+    <title>009 HTML Basics.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T14:38:47Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/08%20Introduction%20to%20JavaScript/067%20Unit%20Objectives.mp4" added="2019-06-26T14:41:18Z" modified="2019-06-26T14:41:18Z" visited="2019-06-26T14:41:18Z">
+    <title>067 Unit Objectives.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T14:41:18Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/08%20Introduction%20to%20JavaScript/068%20The%20JavaScript%20Console.mp4" added="2019-06-26T14:50:17Z" modified="2019-06-26T14:50:17Z" visited="2019-06-26T14:50:17Z">
+    <title>068 The JavaScript Console.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T14:50:17Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/08%20Introduction%20to%20JavaScript/069%20Primitives.mp4" added="2019-06-26T14:54:20Z" modified="2019-06-26T14:54:20Z" visited="2019-06-26T14:54:20Z">
+    <title>069 Primitives.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T14:54:20Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/08%20Introduction%20to%20JavaScript/070%20Primitives%20Exercises.mp4" added="2019-06-26T15:07:13Z" modified="2019-06-26T15:07:13Z" visited="2019-06-26T15:07:14Z">
+    <title>070 Primitives Exercises.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T15:07:13Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/08%20Introduction%20to%20JavaScript/071%20Variables.mp4" added="2019-06-26T15:10:40Z" modified="2019-06-26T15:10:40Z" visited="2019-06-26T15:10:41Z">
+    <title>071 Variables.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T15:10:40Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/08%20Introduction%20to%20JavaScript/072%20Null%20and%20Undefined.mp4" added="2019-06-26T15:19:05Z" modified="2019-06-26T15:19:05Z" visited="2019-06-26T15:19:05Z">
+    <title>072 Null and Undefined.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T15:19:05Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/08%20Introduction%20to%20JavaScript/073%20Useful%20Built-In%20Methods.mp4" added="2019-06-26T15:23:19Z" modified="2019-06-26T15:23:19Z" visited="2019-06-26T15:23:19Z">
+    <title>073 Useful Built-In Methods.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T15:23:19Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/08%20Introduction%20to%20JavaScript/074%20Writing%20JavaScript%20in%20a%20Separate%20File.mp4" added="2019-06-26T16:35:46Z" modified="2019-06-26T16:35:46Z" visited="2019-06-26T16:35:46Z">
+    <title>074 Writing JavaScript in a Separate File.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T16:35:46Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/08%20Introduction%20to%20JavaScript/075%20JS%20Stalker%20Exercise.mp4" added="2019-06-26T16:41:41Z" modified="2019-06-26T16:41:41Z" visited="2019-06-26T16:41:41Z">
+    <title>075 JS Stalker Exercise.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T16:41:41Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/08%20Introduction%20to%20JavaScript/076%20JS%20Stalker%20Exercise%20SOLUTION.mp4" added="2019-06-26T16:43:50Z" modified="2019-06-26T16:43:50Z" visited="2019-06-26T16:43:50Z">
+    <title>076 JS Stalker Exercise SOLUTION.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T16:43:50Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/08%20Introduction%20to%20JavaScript/077%20Age%20Calculator%20Exercise.mp4" added="2019-06-26T16:48:47Z" modified="2019-06-26T16:48:47Z" visited="2019-06-26T16:48:47Z">
+    <title>077 Age Calculator Exercise.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T16:48:47Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/09%20Javascript%20Basics%20Control%20Flow/079%20Unit%20Objectives.mp4" added="2019-06-26T16:49:06Z" modified="2019-06-26T16:49:28Z" visited="2019-06-26T16:49:06Z">
+    <title>079 Unit Objectives.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T16:49:28Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/09%20Javascript%20Basics%20Control%20Flow/080%20Boolean%20Logic.mp4" added="2019-06-26T16:49:45Z" modified="2019-06-26T16:49:45Z" visited="2019-06-26T16:49:45Z">
+    <title>080 Boolean Logic.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T16:49:45Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/09%20Javascript%20Basics%20Control%20Flow/081%20Logical%20Operators.mp4" added="2019-06-26T17:14:09Z" modified="2019-06-26T17:14:09Z" visited="2019-06-26T17:14:09Z">
+    <title>081 Logical Operators.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T17:14:09Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/09%20Javascript%20Basics%20Control%20Flow/082%20Conditionals.mp4" added="2019-06-26T17:24:14Z" modified="2019-06-26T17:24:14Z" visited="2019-06-26T17:24:14Z">
+    <title>082 Conditionals.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-26T17:24:14Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/09%20Javascript%20Basics%20Control%20Flow/082%20Note%2004%20for%20Solution.txt" added="2019-06-27T04:17:03Z" modified="2019-06-27T04:17:03Z" visited="2019-06-27T04:17:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-06-27T04:17:03Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/09%20Javascript%20Basics%20Control%20Flow/083%20Guessing%20Game%20Code%20Along.mp4" added="2019-06-27T04:17:21Z" modified="2019-06-27T04:17:21Z" visited="2019-06-27T04:17:21Z">
+    <title>083 Guessing Game Code Along.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-27T04:17:21Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/10%20Javascript%20Basics%20Functions/093%20Unit%20Objectives.mp4" added="2019-06-27T04:17:54Z" modified="2019-06-27T04:17:54Z" visited="2019-06-27T04:17:55Z">
+    <title>093 Unit Objectives.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-27T04:17:54Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/10%20Javascript%20Basics%20Functions/094%20Introduction%20to%20Functions.mp4" added="2019-06-27T04:21:58Z" modified="2019-06-27T12:46:36Z" visited="2019-06-27T04:21:58Z">
+    <title>094 Introduction to Functions.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-27T12:46:36Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///exe3.html" added="2019-06-27T04:30:32Z" modified="2019-06-27T04:30:32Z" visited="2019-06-27T04:30:33Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-27T04:30:32Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///exe3.js" added="2019-06-27T04:32:32Z" modified="2019-06-27T04:32:32Z" visited="2019-06-27T04:32:32Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-27T04:32:32Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/exe3.js" added="2019-06-27T05:23:05Z" modified="2019-06-28T04:19:35Z" visited="2019-06-27T05:23:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-28T04:19:35Z" count="2"/>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2019-06-27T11:16:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/exe3.html" added="2019-06-27T05:23:28Z" modified="2019-06-28T04:24:20Z" visited="2019-06-27T05:23:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-28T04:24:20Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/xyz.js" added="2019-06-27T07:19:45Z" modified="2019-06-28T04:24:14Z" visited="2019-06-27T07:19:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-28T04:24:14Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/exe5.html" added="2019-06-27T12:29:57Z" modified="2019-07-02T04:21:35Z" visited="2019-06-27T12:29:57Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-07-02T04:21:35Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/exe5.js" added="2019-06-27T12:30:44Z" modified="2019-07-02T04:20:58Z" visited="2019-06-27T12:30:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-07-02T04:20:58Z" count="6"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-07-01T04:22:41Z" count="1"/>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2019-07-01T12:16:53Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/10%20Javascript%20Basics%20Functions/095%20Arguments.mp4" added="2019-06-27T12:52:15Z" modified="2019-06-27T15:15:06Z" visited="2019-06-27T12:52:15Z">
+    <title>095 Arguments.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-27T15:15:06Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/11%20Javascript%20Basics%20Arrays/104%20Introduction%20to%20Arrays.mp4" added="2019-06-27T12:53:00Z" modified="2019-06-27T15:52:56Z" visited="2019-06-27T12:53:00Z">
+    <title>104 Introduction to Arrays.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-27T15:52:56Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/13%20DOM%20Manipulation/121%20Introduction%20to%20the%20DOM.mp4" added="2019-06-27T12:55:38Z" modified="2019-06-27T12:55:38Z" visited="2019-06-27T12:55:38Z">
+    <title>121 Introduction to the DOM.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-27T12:55:38Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/13%20DOM%20Manipulation/122%20Defining%20the%20DOM.mp4" added="2019-06-27T12:59:49Z" modified="2019-06-27T12:59:49Z" visited="2019-06-27T12:59:50Z">
+    <title>122 Defining the DOM.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-27T12:59:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/que3.js" added="2019-06-27T13:11:01Z" modified="2019-06-28T04:23:58Z" visited="2019-06-27T13:11:01Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-28T04:23:58Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/10%20Javascript%20Basics%20Functions/096%20The%20Return%20Keyword.mp4" added="2019-06-27T15:34:17Z" modified="2019-06-27T15:34:17Z" visited="2019-06-27T15:34:17Z">
+    <title>096 The Return Keyword.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-27T15:34:17Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/10%20Javascript%20Basics%20Functions/097%20Functions%20Quiz.mp4" added="2019-06-27T15:46:58Z" modified="2019-06-27T15:46:58Z" visited="2019-06-27T15:46:58Z">
+    <title>097 Functions Quiz.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-27T15:46:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/10%20Javascript%20Basics%20Functions/098%20Functions%20Problem%20Set.mp4" added="2019-06-27T15:49:06Z" modified="2019-06-27T15:49:06Z" visited="2019-06-27T15:49:06Z">
+    <title>098 Functions Problem Set.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-27T15:49:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/11%20Javascript%20Basics%20Arrays/105%20Arrays%20Methods.mp4" added="2019-06-27T16:04:11Z" modified="2019-06-27T16:04:11Z" visited="2019-06-27T16:04:11Z">
+    <title>105 Arrays Methods.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-27T16:04:11Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/12%20Javascript%20Basics%20Objects/114%20Introduction%20to%20Objects.mp4" added="2019-06-27T17:02:29Z" modified="2019-06-27T17:02:29Z" visited="2019-06-27T17:02:30Z">
+    <title>114 Introduction to Objects.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2019-06-27T17:02:29Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/exe4.html" added="2019-06-28T05:33:07Z" modified="2019-06-28T11:30:18Z" visited="2019-06-28T05:33:08Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-28T11:30:18Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/exe4.js" added="2019-06-28T05:50:42Z" modified="2019-06-28T11:46:27Z" visited="2019-06-28T05:50:42Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-28T11:46:27Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/exe6.html" added="2019-06-28T10:23:11Z" modified="2019-06-30T09:07:22Z" visited="2019-06-28T10:23:12Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-30T09:07:22Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/exe6.js" added="2019-06-28T11:33:23Z" modified="2019-06-30T11:28:34Z" visited="2019-06-28T11:33:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-30T09:07:33Z" count="3"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-06-29T04:05:32Z" count="1"/>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2019-06-30T11:28:34Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/x.js" added="2019-06-30T06:57:33Z" modified="2019-07-01T12:41:57Z" visited="2019-06-30T06:57:33Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-07-01T12:41:57Z" count="3"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-07-01T12:06:44Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/x.html" added="2019-06-30T06:57:51Z" modified="2019-07-01T12:42:08Z" visited="2019-06-30T06:57:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-07-01T12:42:08Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/y.js" added="2019-06-30T09:44:13Z" modified="2019-06-30T09:44:13Z" visited="2019-06-30T09:44:13Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-30T09:44:13Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/y.html" added="2019-06-30T09:45:03Z" modified="2019-06-30T09:45:03Z" visited="2019-06-30T09:45:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-06-30T09:45:03Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/exercise6.js" added="2019-07-01T05:04:46Z" modified="2019-07-01T05:30:59Z" visited="2019-07-01T05:04:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-07-01T05:04:46Z" count="1"/>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2019-07-01T05:30:59Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Downloads/Head%20First%20JavaScript%20Programming%20-%20Eric%20Freeman,%20Elisabeth%20Robson.pdf" added="2019-07-01T08:03:27Z" modified="2019-07-01T08:04:28Z" visited="2019-07-01T08:03:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-07-01T08:03:27Z" count="1"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-07-01T08:04:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/EXPERIMENT6.HTML" added="2019-07-01T10:06:49Z" modified="2019-07-01T10:06:49Z" visited="2019-07-01T10:06:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-07-01T10:06:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/exp6.js" added="2019-07-01T10:09:56Z" modified="2019-07-02T04:20:43Z" visited="2019-07-01T10:09:56Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-07-02T04:20:43Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Desktop/exp5.js" added="2019-07-01T11:08:52Z" modified="2019-07-02T04:21:13Z" visited="2019-07-01T11:08:53Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-07-02T04:21:13Z" count="2"/>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2019-07-01T12:17:20Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/Documents/prasanna/exp1.js" added="2019-07-01T13:27:18Z" modified="2019-07-01T13:27:18Z" visited="2019-07-01T13:27:19Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2019-07-01T13:27:18Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/prasanna/exercise%20using%20class/exp1/exp1.js" added="2019-07-01T13:57:32Z" modified="2019-07-01T13:57:32Z" visited="2019-07-01T13:57:32Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/javascript"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-07-01T13:57:32Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

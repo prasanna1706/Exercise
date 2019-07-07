@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel=stylesheet href="../../media.css" type="text/css">
+	<meta charset="windows-1252">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+		<title>Accessing Elements in the DOM in Javascript</title>
+		<meta name="description" content="The getElementById() and getElementsByTagName() were the two methods from  DOM standard and the HTML5 specification adds three new methods for accessing elements, getElementsByClassName(), querySelector(), and querySelectorAll()" >
+	</head>
+	<body>
+
+<div id="wrapper">
+
+	<header id="header">
+		<h1>
+Accessing Elements in the DOM
+		</h1>
+	</header>
+
+	<article id="lcol">
+		<section id="doc">
+<h2>DOM Access</h2>  <IMG  src="img/jdom.png"   width=62 height=220  alt="Javascript DOM Access" align=right style="padding-left:20px;">
+<p>The document object represents a web document or page. It represents a document as a hierarchical tree structure and each  element in the document tree is called a Node in the DOM (Document Object Model).</p>
+<p>Structurally, the Document Object Model consists of nodes, with each node representing content in the web document. It gives developers a way of representing everything on a 	web page so that the contents of the web page is accessible via a common set of properties and methods.</p>
+			 <h3>DOM Methods</h3>
+<p>The getElementById() and getElementsByTagName() were the two methods from  DOM standard and the HTML5 specification adds three new methods for accessing elements, getElementsByClassName(), querySelector(), and querySelectorAll().</p>
+			 <h3>getElementById()</h3>  <IMG  src="img/var.png"   width=145 height=103  alt="Javascript DOM getElementById" align=right style="padding-left:20px;">
+<p>Typically you want to access an element within the DOM directly and try to do something with it. Javascript provides a document.getElementById() method, which is the easiest way to access an element from the DOM tree structure. It will return the element that has the ID attribute with the specified value.</p>
+<div style="width: 100%; height: auto; background: #FFFFFF; color: #0000FF; overflow-x:auto;overflow-y:none;">
+<xmp>
+	document.getElementById("ID");
+</xmp>
+</div>
+<div align="center">
+<script>
+function changeIt() {
+	alert(document.getElementById("heading").innerHTML);
+}
+</script>
+	<p id="heading">Document Object Model</p>
+	<button onclick="changeIt()">Get Value</button>
+</div>
+<p>Source</p>
+<div style="width: 100%; padding-left:1%; border:1px dashed #3B5998; height: auto; background: #F2F2F2; color: #0000FF; overflow-x:auto;overflow-y:none;">
+<xmp>
+<!DOCTYPE html>
+<html>
+<body>
+	<h1 id="heading">Document Object Model</h1>
+	<button onclick="changeIt()">Get Value</button>
+<script>
+function changeIt() {
+	alert(document.getElementById("heading").innerHTML);
+}
+</script>
+</body>
+</html>
+</xmp>
+</div>
+<p>Above program returns "Document Object Model" .</p>
+			 <h3>getElementsByTagName</h3>
+<p>The getElementsByTagName() is one of the method exposes for accessing nodes directly. This method takes a tag name as argument and returns a collection of all the nodes it finds in the document that are a sort of tag.</p>
+<div style="width: 100%; height: auto; background: #FFFFFF; color: #0000FF; overflow-x:auto;overflow-y:none;">
+<xmp>
+	document.getElementsByTagName("TagName");
+</xmp>
+</div>
+<script>
+function count() {
+	var cnt = document.getElementsByTagName("p");
+	alert(cnt.length);
+}
+</script>
+<div align="center">
+	<p>Paragraph 1</p>
+	<p>Paragraph 2</p>
+	<p>Paragraph 3</p>
+	<p>Paragraph 4</p>
+	<button onclick="count()">Get Value</button>
+</div>
+<br>
+<div style="width: 100%; padding-left:1%; border:1px dashed #3B5998; height: auto; background: #F2F2F2; color: #0000FF; overflow-x:auto;overflow-y:none;">
+<xmp>
+<!DOCTYPE html>
+<html>
+<body>
+	<p>Paragraph 1</p>
+	<p>Paragraph 2</p>
+	<p>Paragraph 3</p>
+	<p>Paragraph 4</p>
+	<button onclick="count()">Get Value</button>
+<script>
+function count() {
+	var cnt = document.getElementsByTagName("p");
+	alert(cnt.length);
+}
+</script>
+</body>
+</html>
+</xmp>
+</div>
+<p>Above program returns 4 , because total 4 paragraph elements in the HTML page.</p>
+			 <h3>getElementsByClassName()</h3>
+<p>The getElementsByClass() method works same like getElementById() method, and it will returns a collection of all elements in the document with the specified class name.</p>
+<div style="width: 100%; height: auto; background: #FFFFFF; color: #0000FF; overflow-x:auto;overflow-y:none;">
+<xmp>
+document.getElementsByClassName("ClassName");
+</xmp>
+</div>
+<div align="center">
+	<p class="testClass">Paragraph 1</p>
+	<p class="testClass">Paragraph 2</p>
+	<p class="testClass">Paragraph 3</p>
+	<p class="testClass">Paragraph 4</p>
+	<button onclick="count1()">Change Value</button>
+<script>
+function count1() {
+	var tmpClass = document.getElementsByClassName("testClass");
+	alert(tmpClass.length);
+	tmpClass[1].innerHTML ="Second Paragraph";
+}
+</script>
+</div>
+<p>Source</p>
+<div style="width: 100%; padding-left:1%; border:1px dashed #3B5998; height: auto; background: #F2F2F2; color: #0000FF; overflow-x:auto;overflow-y:none;">
+<xmp>
+<!DOCTYPE html>
+<html>
+<body>
+	<p class="testClass">Paragraph 1</p>
+	<p class="testClass">Paragraph 2</p>
+	<p class="testClass">Paragraph 3</p>
+	<p class="testClass">Paragraph 4</p>
+	<button onclick="count()">Change Value</button>
+<script>
+function count() {
+	var tmpClass = document.getElementsByClassName("testClass");
+	alert(tmpClass.length);
+	tmpClass[1].innerHTML ="Second Paragraph";
+}
+</script>
+</body>
+</html>
+</xmp>
+</div>
+<p>The above program first alert 4, the number of p elements, and then it change the second p element's text to "Second Paragraph".</p>
+<p>Both querySelector() and querySelectorAll() methods let you enter a CSS selector as an argument and return the selected elements as DOM elements.</p>
+			 <h3>querySelector()</h3>
+<p>It will returns the first element that matches a specified CSS selector in the document.</p>
+<div align="center">
+	<p id="testQuery">Paragraph 1</p>
+	<p id="testQuery">Paragraph 2</p>
+	<p id="testQuery">Paragraph 3</p>
+	<p id="testQuery">Paragraph 4</p>
+	<button onclick="change()">Change Value</button>
+<script>
+function change() {
+	document.querySelector("#testQuery").innerHTML ="First Paragraph";
+}
+</script>
+</div>
+<p>Source</p>
+<div style="width: 100%; padding-left:1%; border:1px dashed #3B5998; height: auto; background: #F2F2F2; color: #0000FF; overflow-x:auto;overflow-y:none;">
+<xmp>
+<!DOCTYPE html>
+<html>
+<body>
+	<p id="testQuery">Paragraph 1</p>
+	<p id="testQuery">Paragraph 2</p>
+	<p id="testQuery">Paragraph 3</p>
+	<p id="testQuery">Paragraph 4</p>
+	<button onclick="change()">Change Value</button>
+<script>
+function change() {
+	document.querySelector("#testQuery").innerHTML ="First Paragraph";
+}
+</script>
+</body>
+</html>
+</xmp>
+</div>
+<p>Above program change the first paragraph text to "First Paragraph".</p>
+			 <h3>querySelectorAll()</h3>
+<p>The querySelectorAll() method returns a collection filled with the matching elements in source order. Since it is a static collection, the modification of the document has no effect on the collection</p>
+<div align="center">
+	<div id="div_">div content 1</div>
+	<p id="p_">Paragraph 2</p>
+	<button onclick="change11()">Change Value</button>
+<script>
+function change11() {
+	var elements = document.querySelectorAll("div,p");
+	elements[1].innerHTML = "content changed";
+}
+</script>
+</div>
+<p>Source</p>
+<div style="width: 100%; padding-left:1%; border:1px dashed #3B5998; height: auto; background: #F2F2F2; color: #0000FF; overflow-x:auto;overflow-y:none;">
+<xmp>
+<!DOCTYPE html>
+<html>
+<body>
+	<div id="div_">div content 1</div>
+	<p id="p_">Paragraph 2</p>
+	<button onclick="change()">Change Value</button>
+<script>
+function change() {
+	var elements = document.querySelectorAll("div,p");
+	elements[1].innerHTML = "content changed";
+}
+</script>
+</body>
+</html>
+</xmp>
+</div>
+			 <br> <IMG  src="img/up-arrow.png"   width=97 height=84  alt="Javascript DOM element" align=right style="padding-left:20px;">
+<p>When you run the above code, you can see the place of the second p element text is changed but the p element remains there (the change you can see at the top line of browser only).</p>
+		<br>
+		</section>
+	</article>
+
+
+
+
+	<aside id="rcol">
+		<div id="sitename">
+			CoreLangs.com
+		</div>
+
+		<div id="navcontainer">
+			<ul>
+			 <li><a href="http://www.corelangs.com/html/default.html">HTML</a></li>
+			 <li><a href="http://www.corelangs.com/css/default.html">CSS</a></li>
+			 <li><a href="http://www.corelangs.com/js/default.html">JavaScript</a></li>
+			</ul>
+		</div> 
+
+			<br>
+<span class='st_googleplus_large' displayText='Google +'></span>
+<span class='st_facebook_large' displayText='Facebook'></span>
+<span class='st_twitter_large' displayText='Tweet'></span>
+<span class='st_linkedin_large' displayText='LinkedIn'></span>
+<span class='st_pinterest_large' displayText='Pinterest'></span>
+<span class='st_tumblr_large' displayText='Tumblr'></span>
+<span class='st_sharethis_large' displayText='ShareThis'></span>
+			<br>
+
+		<h5><b>Related Contents</b></h5>
+
+			<ul>
+<li><a href="http://www.corelangs.com/js/dom/domtree.html">DOM Structure</a></li>
+<li><a href="http://www.corelangs.com/js/dom/traverse.html">Traverses the DOM</a></li>
+<li><a href="http://www.corelangs.com/js/dom/manipulations.html">Dom Manipulations</a></li>
+<li><a href="http://www.corelangs.com/js/dom/domevents.html">Dom Events</a></li>
+			</ul>
+		<h5><b>Related Topics</b></h5>
+			<ul>
+<li><a href="http://www.corelangs.com/js/basics/default.html">Javascript Basics</a> </li>
+<li><a href="http://www.corelangs.com/js/progs/default.html">Javascript Programming</a> </li>
+<li><a href="http://www.corelangs.com/js/string/default.html">Javascript String</a> </li>
+<li><a href="http://www.corelangs.com/js/dom/default.html">Javascript DOM</a> </li>
+			</ul>
+
+	</aside>
+
+
+
+
+	<footer id="footer">
+		<br>
+		<a href="http://www.corelangs.com">Home</a>
+		&nbsp;|&nbsp;
+		<a href="http://www.corelangs.com/terms.html">Terms of Use</a>
+		&nbsp;|&nbsp;
+		<a href="http://www.corelangs.com/about.html">About Us</a>
+		<br>
+		CoreLangs.com &copy: 2018 <br>
+		All Rights Reserved. All other trademarks are property of their respective owners. 
+		<br><br>
+	</footer>
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38217933-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<script type="text/javascript">var switchTo5x=false;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "8a3f7af9-ee4b-4ece-b3b8-f1b5d7ec32b3", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+</body>
+</html>
+
+®© ü²      ] b] i@…²Ç]:â   /    :http://www.corelangs.com/js/dom/accessdom.html necko:classified 1 strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK
+Content-Type: text/html
+Last-Modified: Thu, 04 Oct 2018 09:20:45 GMT
+Accept-Ranges: bytes
+ETag: "765e7c87c35bd41:0"
+Server: Microsoft-IIS/7.0
+X-Powered-By: ASP.NET
+Date: Fri, 28 Jun 2019 11:56:19 GMT
+Content-Length: 11504
+Via: HTTP/1.1 forward.http.proxy:3128
+ original-response-headers Content-Type: text/html
+Last-Modified: Thu, 04 Oct 2018 09:20:45 GMT
+Accept-Ranges: bytes
+ETag: "765e7c87c35bd41:0"
+Server: Microsoft-IIS/7.0
+X-Powered-By: ASP.NET
+Date: Fri, 28 Jun 2019 11:56:19 GMT
+Content-Length: 11504
+Via: HTTP/1.1 forward.http.proxy:3128
+Connection: keep-alive
+ uncompressed-len 0 predictor::resource-count 16 predictor::http://www.corelangs.com/media.css 1,1,1561722978,4097 predictor::http://www.corelangs.com/js/dom/img/jdom.png 1,1,1561722978,4097 predictor::http://www.corelangs.com/js/dom/img/var.png 1,1,1561722978,4097 predictor::http://www.corelangs.com/js/dom/img/up-arrow.png 1,1,1561722978,4097 net-response-time-onstart 1408 net-response-time-onstop 1916 predictor::http://w.sharethis.com/button/buttons.js 1,1,1561722978,4096 predictor::http://www.google-analytics.com/ga.js 1,1,1561722978,4096 predictor::https://ws.sharethis.com/button/async-buttons.js 1,1,1561722978,4096 predictor::https://ws.sharethis.com/button/css/buttons-secure.css 1,1,1561722978,4096 predictor::https://ws.sharethis.com/images/2017/googleplus_32.png 1,1,1561722978,4096 predictor::https://ws.sharethis.com/images/2017/facebook_32.png 1,1,1561722978,4096 predictor::https://ws.sharethis.com/images/2017/twitter_32.png 1,1,1561722978,4096 predictor::https://ws.sharethis.com/images/2017/linkedin_32.png 1,1,1561722978,4096 predictor::https://ws.sharethis.com/images/2017/pinterest_32.png 1,1,1561722978,4096 predictor::https://ws.sharethis.com/images/2017/tumblr_32.png 1,1,1561722978,4096 predictor::https://ws.sharethis.com/images/2017/sharethis_32.png 1,1,1561722978,4096 predictor::https://t.sharethis.com/1/d/t.dhj?rnd=1561722984333&cid=c010&dmn=www.corelangs.com 1,1,1561722978,4096   ,ð

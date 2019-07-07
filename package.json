@@ -1,0 +1,27 @@
+{
+  "name": "project_1",
+  "version": "0.0.1",
+  "description": "loconav project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasanna/myproject.git"
+  },
+  "keywords": [
+    "enter"
+  ],
+  "author": "prasanna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prasanna/myproject/issues"
+  },
+  "homepage": "https://github.com/prasanna/myproject#readme",
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "prettier": "^1.18.2",
+    "prettier-eslint": "^9.0.0"
+  }
+}

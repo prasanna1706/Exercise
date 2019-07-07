@@ -1,0 +1,77 @@
+{
+  "Version": "18.04",
+  "OEM": {
+    "Vendor": "Dell Inc.",
+    "Product": "Latitude E7450"
+  },
+  "BIOS": {
+    "Vendor": "Dell Inc.",
+    "Version": "A07"
+  },
+  "CPU": {
+    "OpMode": "32-bit, 64-bit",
+    "CPUs": "4",
+    "Threads": "2",
+    "Cores": "2",
+    "Sockets": "1",
+    "Vendor": "GenuineIntel",
+    "Family": "6",
+    "Model": "61",
+    "Stepping": "4",
+    "Name": "Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz",
+    "Virtualization": "VT-x"
+  },
+  "Arch": "amd64",
+  "GPU": [
+    {
+      "Vendor": "8086",
+      "Model": "1616"
+    }
+  ],
+  "RAM": 8.1,
+  "Disks": [
+    512.1
+  ],
+  "Partitions": [
+    490.7,
+    0.5
+  ],
+  "Screens": [
+    {
+      "Size": "309mmx174mm",
+      "Resolution": "1920x1080",
+      "Frequency": "60.00"
+    }
+  ],
+  "Autologin": false,
+  "LivePatch": false,
+  "Session": {
+    "DE": "ubuntu:GNOME",
+    "Name": "ubuntu",
+    "Type": "x11"
+  },
+  "Language": "en_IN",
+  "Timezone": "Asia/Kolkata",
+  "Install": {
+    "Media": "Ubuntu 18.04.2 LTS \"Bionic Beaver\" - Release amd64 (20190210)",
+    "Type": "GTK",
+    "OEM": false,
+    "PartitionMethod": "use_device",
+    "DownloadUpdates": true,
+    "Language": "en",
+    "Minimal": false,
+    "RestrictedAddons": true,
+    "Stages": {
+      "0": "language",
+      "8": "console_setup",
+      "12": "wireless",
+      "18": "prepare",
+      "40": "partman",
+      "47": "start_install",
+      "53": "timezone",
+      "59": "usersetup",
+      "84": "user_done",
+      "288": "done"
+    }
+  }
+}

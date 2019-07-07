@@ -1,0 +1,51 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/prasanna/Documents/prasanna
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git show :untitled1.html
+> git show :exe2.js
+> git ls-files --stage -- ./
+> git show :untitled1.html
+> git show :exe2.js
+> git ls-files --stage -- ./
+> git show :untitled1.html
+> git show :exe2.js
+> git ls-files --stage -- ./
+> git show :.prettierrc
+> git show :exe2.js
+> git ls-files --stage -- ./
+> git show :.prettierrc
+> git show :exe2.js
+> git ls-files --stage -- ./
+> git show :.prettierrc
+> git show :exe2.js
+> git ls-files --stage -- ./
+> git show :exe2.html
+> git ls-files --stage -- ./
+> git show :.eslintrc.js
+> git show :exe2.js
+> git ls-files --stage -- ./
+> git show :.eslintrc.js
+> git show :exe2.js
+> git ls-files --stage -- ./
+> git show :exe2.html
+> git ls-files --stage -- ./
+> git show :exe2.js
+> git ls-files --stage -- ./
+> git show :exe2.html
+> git ls-files --stage -- ./
+> git show :exe2.js
+> git ls-files --stage -- ./
+> git show :exe2.html
+> git ls-files --stage -- ./
+> git show :exe2.js
+> git ls-files --stage -- ./

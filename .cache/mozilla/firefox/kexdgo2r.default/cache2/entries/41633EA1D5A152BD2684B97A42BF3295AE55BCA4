@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- Copyright 2017 Christopher Heng. All rights reserved. -->
+<!-- Source: https://www.thesitewizard.com/javascripts/insert-div-block-javascript.shtml -->
+
+<title>How to Insert a DIV Block and Other HTML Elements into a Web Page Using JavaScript (thesitewizard.com)</title>
+
+<meta name="description" content="How to insert a DIV block, paragraph and other HTML elements/tags into a website with JavaScript" />
+<meta name="robots" content="index,follow,noarchive" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="author" content="Christopher Heng" />
+<meta name="copyright" content="Copyright Â© 2017 Christopher Heng. All rights reserved." />
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" media="screen" href="../include/screen.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../include/printstyle.css" />
+<style type="text/css">
+div#inserted_block_id {
+	border: 1px solid blue ;
+	padding: 8px ;
+}
+</style>
+<script type="text/javascript">
+function demo_insert_div_block()
+{
+	var block_to_insert ;
+	var container_block ;
+	block_to_insert = document.createElement('div');
+	block_to_insert.innerHTML = 'This demo DIV block was inserted into the page using JavaScript.' ;
+	block_to_insert.id = 'inserted_block_id' ;
+	container_block = document.getElementById('democontainer');
+	container_block.appendChild( block_to_insert );
+}
+</script>
+
+<link rel="alternate" type="application/rss+xml" title="thesitewizard.com RSS Feed" href="https://www.thesitewizard.com/thesitewizard.xml" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="search" href="https://www.thesitewizard.com/opensearch.xml" type="application/opensearchdescription+xml" title="thesitewizard.com Search" />
+<script src="../include/common.js" language="JavaScript" type="text/javascript"></script>
+
+<link rel="home" href="https://www.thesitewizard.com/" title="thesitewizard.com's main page" />
+<link rel="index" href="https://www.thesitewizard.com/sitemap.shtml" title="List of all documents on thesitewizard.com" />
+<link rel="canonical" href="https://www.thesitewizard.com/javascripts/insert-div-block-javascript.shtml" />
+
+</head>
+
+<body onload="tsw_init_page_global()">
+
+<div class="toppanel">
+<div class="logo">
+<a href="https://www.thesitewizard.com/" target="_top"><img src="../img/logo202x42.png" width="202" height="42" border="0" alt="Logo for thesitewizard.com" title="thesitewizard.com: Website design, site promotion, PHP/JavaScript programming, and ecommerce" /></a>
+</div>
+</div>
+
+<div class="newmaincontent">
+
+<div class="newtoptitle">
+<h1>How to Insert a DIV Block and Other HTML Elements into a Web Page Using JavaScript</h1>
+<h2>Adding HTML to a page with JavaScript</h2>
+</div>
+<br />
+
+<div class="noprint" style="width: 95%; margin-bottom: 1em">
+<script type="text/javascript">tsw_notify_user();</script>
+<!-- Google's use of HTML5 stuff means that the contents of this section will not validate on XHTML 1.0 pages. -->
+<script type="text/javascript" async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block"
+  data-ad-client="ca-pub-2592812953019923" data-ad-slot="2754390004" data-ad-format="auto"></ins>
+<script type="text/javascript">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+<h1>How to Insert a DIV Block and Other HTML Elements into a Web Page Using JavaScript</h1>
+by Christopher Heng, <a href="https://www.thesitewizard.com/" target="_top">thesitewizard.com</a><br />
+
+<p>
+I was asked by a visitor how he could programmatically insert a DIV block into his web page
+using JavaScript. This article shows one way in which this can be done. The method given can
+also be used for other HTML elements.
+</p>
+
+<h2>Prerequisites</h2>
+
+<p>
+I will assume here that you know some
+<a href="https://www.thesitewizard.com/html-tutorial/what-is-html.shtml" target="_top" title="What is JavaScript?">JavaScript</a>
+and <a href="https://www.thesitewizard.com/html-tutorial/what-is-html.shtml" target="_top" title="What is HTML?">HTML</a>. You
+do not have to be an expert or anything like that, but some knowledge is needed, otherwise even the question dealt with
+here will be meaningless to you.
+</p>
+
+<p>
+If you do not have a website, and have arrived here thinking that this article will give you an idea of what web development
+is like, please read <a href="https://www.thesitewizard.com/gettingstarted/startwebsite.shtml" target="_top">How to
+Create a Website</a> or my <a href="https://www.thesitewizard.com/domain/index.shtml" target="_top">articles on
+domain names</a> instead, since they will be more relevant.
+</p>
+
+<h2>Adding a DIV Block or Other HTML Elements with JavaScript</h2>
+
+<p>
+The following code demonstrates one way to insert a DIV block with JavaScript.
+</p>
+
+<div class="codeblock">
+var block_to_insert ;<br />
+var container_block ;<br />
+&nbsp;<br />
+block_to_insert = document.createElement( 'div' );<br />
+block_to_insert.innerHTML = 'This demo DIV block was inserted into the page using JavaScript.' ;<br />
+&nbsp;<br />
+container_block = document.getElementById( 'democontainer' );<br />
+container_block.appendChild( block_to_insert );
+</div>
+
+<p>
+Let's say that the relevant part of the web page has the following HTML.
+</p>
+
+<div class="codeblock">
+&lt;div id="democontainer"&gt;<br />
+&lt;p&gt;<br />
+The new block will appear below this paragraph.<br />
+&lt;/p&gt;<br />
+&lt;/div&gt;
+</div>
+
+<p>
+When the code is executed, that part of the page effectively becomes as follows.
+</p>
+
+<div class="codeblock">
+&lt;div id="democontainer"&gt;<br />
+&lt;p&gt;<br />
+The new block will appear below this paragraph.<br />
+&lt;/p&gt;<br />
+&lt;div&gt;<br />
+This demo DIV block was inserted into the page using JavaScript.<br />
+&lt;/div&gt;<br />
+&lt;/div&gt;
+</div>
+<br />
+
+<h2>Explanation of the Code</h2>
+
+<p>
+Let's work through the code, line by line.
+</p>
+
+<ol>
+<li>
+<div class="codeblock">
+block_to_insert = document.createElement( 'div' );
+</div>
+<p>
+This line creates the DIV element and assigns it to the <code>block_to_insert</code> variable. As you may have already
+guessed, although we used <code>createElement()</code> to make a DIV, you can also use it to make other HTML elements.
+</p></li>
+
+<li>
+<div class="codeblock">
+block_to_insert.innerHTML = 'This demo DIV block was inserted into the page using JavaScript.' ;
+</div>
+<p>
+The above line sets the content of the DIV block so that it has the words "This demo DIV block was inserted into
+the page using JavaScript." It is equivalent to writing the following HTML code.
+</p>
+<div class="codeblock">
+&lt;div&gt;<br />
+This demo DIV block was inserted into the page using JavaScript.<br />
+&lt;/div&gt;
+</div><br /></li>
+
+<li>
+<div class="codeblock">
+container_block = document.getElementById( 'democontainer' );
+</div>
+<p>
+Since we will be adding the DIV using a method called <code>appendChild()</code> later
+(notice the "child" portion of the name), it stands to reason that we need a parent block into which
+it can be inserted.
+</p>
+<p>
+In our example, we will insert it into another block with the <code>id</code> 'democontainer'.
+As such, this line assigns the 'democontainer' DIV element to the variable <code>container_block</code>.
+</p></li>
+
+<li>
+<div class="codeblock">
+container_block.appendChild( block_to_insert );
+</div>
+<p>
+All that remains is to insert our new block into its container, which is done here. The <code>appendChild()</code> method
+places <code>block_to_insert</code> as the last child of <code>container_block</code>. (That is,
+our new DIV will be placed after all other HTML elements, if any, in <code>container_block</code>.)
+</p></li>
+</ol>
+
+<p>
+The above is the bare minimum that you will typically need to do to inject a DIV block into a web page.
+You will probably need to add additional code, such as to assign your DIV an id and/or class
+so that you can customize its appearance using
+<a href="https://www.thesitewizard.com/html-tutorial/what-is-html.shtml" target="_top" title="What is CSS?">CSS</a>,
+for example, as follows:
+</p>
+
+<div class="codeblock">
+block_to_insert.id = 'inserted_block_id' ;<br />
+block_to_insert.className = 'inserted_block_class' ;<br />
+</div>
+<br />
+
+<h2>Demo</h2>
+
+<p>
+You can see a demo of the code in action by clicking the button below. The same code given above is used here. The outline
+around the DIV block was <a href="https://www.thesitewizard.com/css/rectangular-box-border.shtml" target="_top">added using
+CSS</a>.
+</p>
+
+<div id="democontainer">
+<form action="/dontcrawl/">
+<input type="submit" onclick="demo_insert_div_block(); return false;" name="demo" id="demo" value="Insert DIV block below" />
+</form>
+</div>
+<br />
+
+<h2>Compatibility</h2>
+
+<p>
+The above code should work in all modern browsers.
+</p>
+
+<p>
+Copyright &copy; 2017 Christopher Heng. All rights reserved.<br />
+Get more free tips and articles like <a href="https://www.thesitewizard.com/" target="_top">this</a>,
+on web design, promotion, revenue and scripting, from <a href="https://www.thesitewizard.com/javascripts/insert-div-block-javascript.shtml" target="_top">https://www.thesitewizard.com/</a>.
+</p>
+
+
+
+<div id="breadcrumbs">
+<p>
+You are here:
+<a href="https://www.thesitewizard.com/" target="_top">Top</a> &gt;
+<a href="https://www.thesitewizard.com/javascripts/index.shtml" target="_top" title="List of JavaScript tutorials">JavaScript</a> &gt;
+<a href="https://www.thesitewizard.com/javascripts/insert-div-block-javascript.shtml" target="_top">How to Insert a DIV Block and Other HTML Elements into a Web Page Using JavaScript</a>
+</p>
+<p>
+Other articles on:
+<a href="https://www.thesitewizard.com/javascripts/index.shtml" target="_top" title="List of JavaScript tutorials">JavaScript</a>,
+<a href="https://www.thesitewizard.com/css/index.shtml" target="_top" title="List of CSS tutorials">CSS</a>,
+<a href="https://www.thesitewizard.com/html-tutorial/index.shtml" target="_top" title="List of HTML tutorials">HTML</a>
+</p>
+</div>
+
+<h1>thesitewizard&trade; News Feed (RSS Site Feed)&nbsp;
+<a href="https://www.thesitewizard.com/thesitewizard.xml" title="Subscribe to thesitewizard.com RSS newsfeed" target="_top"><img src="../img/feed28x28.png" border="0" height="28" width="28" alt="Subscribe to thesitewizard.com newsfeed" /></a></h1>
+<p>
+Do you find this article useful? You can learn of new articles and scripts that are published on
+<a href="https://www.thesitewizard.com/" target="_top">thesitewizard.com</a>
+by subscribing to the RSS feed. Simply point your RSS feed reader or a browser that supports RSS feeds at
+<a href="https://www.thesitewizard.com/thesitewizard.xml" title="RSS feed" target="_top">https://www.thesitewizard.com/thesitewizard.xml</a>.
+You can <a href="https://www.thesitewizard.com/faqs/howtoreadsitefeeds.shtml" target="_top">read more about how to subscribe to
+RSS site feeds</a> from my <a href="https://www.thesitewizard.com/faqs/howtoreadsitefeeds.shtml" target="_top">RSS FAQ</a>.
+</p>
+
+<h1>Please Do Not Reprint This Article</h1>
+<p>
+This article is copyrighted. Please do not reproduce or distribute this article in whole or part, in any form.
+</p>
+
+<h1>Related Articles</h1>
+<ul>
+<li><a href="https://www.thesitewizard.com/css/center-div-block.shtml" target="_top">How to Centre a DIV Block Using CSS</a></li>
+<li><a href="https://www.thesitewizard.com/javascripts/change-style-sheets.shtml" target="_top">How to Use JavaScript to Change a Cascading Style Sheet (CSS) Dynamically</a></li>
+<li><a href="https://www.thesitewizard.com/javascripts/cookies.shtml" target="_top">How to Use Cookies in JavaScript</a></li>
+<li><a href="https://www.thesitewizard.com/css/create-rounded-corners-box-borders-css.shtml" target="_top">How to Create Rounded Corners for Your Box Borders in CSS</a></li>
+<li><a href="https://www.thesitewizard.com/archive/registerdomain.shtml" target="_top">How to Register Your Own Domain Name</a></li>
+<li><a href="https://www.thesitewizard.com/domain/register-with-icann-sans-middlemen.shtml" target="_top">Can you register a domain name directly with ICANN instead of through a middleman?</a></li>
+<li><a href="https://www.thesitewizard.com/apache/redirect-domain-www-subdomain.shtml" target="_top">How to Redirect from Your Root Domain to the WWW Subdomain and Vice Versa Using mod_rewrite</a></li>
+<li><a href="https://www.thesitewizard.com/apache/change-default-page-for-domain.shtml" target="_top">How to Change the Default Web Page that is Shown When Someone Goes to Your Domain Name</a></li>
+</ul>
+
+<h1>New Articles</h1>
+<ul>
+<li><a href="https://www.thesitewizard.com/bluegriffon/insert-self-hosted-video.shtml" target="_top">How to Add a (Self-Hosted) Video to Your Website with BlueGriffon</a></li>
+<li><a href="https://www.thesitewizard.com/webhosting/what-if-web-host-closes.shtml" target="_top">What Happens If My Web Host Goes Out of Business? Or If They Shut Down My Website?</a></li>
+<li><a href="https://www.thesitewizard.com/html-tutorial/how-to-insert-tooltips.shtml" target="_top">How to Add a Tooltip in HTML/CSS (No JavaScript Needed)</a></li>
+<li><a href="https://www.thesitewizard.com/html-tutorial/make-links-open-pdf-files-in-pdf-viewer.shtml" target="_top">How To Make Links to PDF Files Open in a PDF Viewer</a></li>
+<li><a href="https://www.thesitewizard.com/javascripts/change-font-size-with-javascript.shtml" target="_top">How to Change Font Sizes with JavaScript</a></li>
+<li><a href="https://www.thesitewizard.com/general/check-broken-links.shtml" target="_top">How to Check for Broken Links on Your Website</a></li>
+<li><a href="https://www.thesitewizard.com/domain/owning-your-website-domain.shtml" target="_top">What To Do If You Do Not Own Your Website's Domain Name</a></li>
+<li><a href="https://www.thesitewizard.com/domain/difference-between-domain-registrar-and-web-host.shtml" target="_top">What's the Difference Between a Domain Name Registrar and a Web Host?</a></li>
+<li><a href="https://www.thesitewizard.com/css/mobile-friendly-responsive-design.shtml" target="_top">How to Make a Mobile-Friendly Website: Responsive Design in CSS</a></li>
+<li><a href="https://www.thesitewizard.com/gettingstarted/difference-cms-site-builder.shtml" target="_top">What's the Difference Between a Content Management System (CMS), a Blog, a Web Editor and an Online Site Builder?</a></li>
+</ul>
+
+<h1>Popular Articles</h1>
+<ul>
+<li><a href="https://www.thesitewizard.com/blogging/how-to-create-a-blog.shtml" target="_top">How to Create a Blog</a></li>
+<li><a href="https://www.thesitewizard.com/gettingstarted/startwebsite.shtml" target="_top">How to Make / Create a Website: The Beginner's A-Z Guide</a></li>
+<li><a href="https://www.thesitewizard.com/archive/domainname.shtml" target="_top">Tips on Choosing a Good Domain Name</a></li>
+<li><a href="https://www.thesitewizard.com/expression-web/expression-web-4-tutorial-1.shtml" target="_top">Expression Web Tutorial: How to Design a Website with Microsoft Expression Web</a></li>
+<li><a href="https://www.thesitewizard.com/dreamweaver/dreamweaver-cs6-tutorial-1.shtml" target="_top">Dreamweaver Tutorial: How to Design a Website with Dreamweaver CS6</a></li>
+<li><a href="https://www.thesitewizard.com/bluegriffon/bluegriffon-2-tutorial-1.shtml" target="_top">BlueGriffon Tutorial: How to Design a Website with BlueGriffon 3</a></li>
+<li><a href="https://www.thesitewizard.com/gettingstarted/kompozer-tutorial-1.shtml" target="_top">How to Design and Publish Your Website with KompoZer (free WYSIWYG web editor)</a></li>
+<li><a href="https://www.thesitewizard.com/wizards/feedbackform.shtml" target="_top">Free Feedback/Contact Form Wizard</a></li>
+</ul>
+
+
+<h1>How to Link to This Page</h1>
+<form action="/dontcrawl/">
+<p><label for="pagelinkcode">
+To link to this page from your website, simply cut and paste the following code to your
+web page. (Switch to your web editor's HTML source mode before pasting.)
+</label></p>
+<textarea id="pagelinkcode" class="linkinfo" rows="5" cols="43" title="Select the text here, click your right mouse button, click the Copy menu item, and paste it into your web page in HTML source mode" onclick="this.focus();this.select();" readonly="readonly">
+&lt;a href="https://www.thesitewizard.com/javascripts/insert-div-block-javascript.shtml" target="_top"&gt;How to Insert a DIV Block and Other HTML Elements into a Web Page Using JavaScript&lt;/a&gt;
+</textarea>
+</form>
+<p>
+It will appear on your page as:
+</p>
+<p>
+<a href="https://www.thesitewizard.com/javascripts/insert-div-block-javascript.shtml" target="_top">How to Insert a DIV Block and Other HTML Elements into a Web Page Using JavaScript</a>
+</p>
+
+<br />
+
+<div class="copyright">
+Copyright &copy; 2017 Christopher Heng. All rights reserved.<br />
+thesitewizard&trade;, thefreecountry&trade; and HowToHaven&trade; are trademarks of Christopher Heng.<br />
+This page was last updated on 19 May 2017.
+</div>
+
+<br />
+
+</div>	<!-- newmaincontent -->
+
+<div class="sidepanel">
+
+<br />
+
+<form method="get" action="https://www.thesitewizard.com/search/" target="_top">
+<div class="searchbutton"><label for="searchterms">Search This Site</label></div>
+<input class="searchentry" id="searchterms" type="text" name="q" accesskey="4" size="8" value="" title="Type the words you want to look for here and click the Search button" />
+<input type="submit" value="Search" />
+</form>
+
+<br />
+
+
+
+<div class="button"><a href="https://www.thesitewizard.com/" accesskey="1" class="menubutton" target="_top" title="Main page on thesitewizard.com">Home</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/donation/index.shtml" accesskey="5" class="menubutton" target="_top" title="Donate to thesitewizard.com">Donate</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/feedback.php" accesskey="9" class="menubutton" target="_top" title="Feedback form">Contact</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/linktous.shtml" accesskey="6" class="menubutton" target="_top" title="Suggestions on how to link to thesitewizard.com">Link to Us</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/topics/index.shtml" accesskey="2" class="menubutton" target="_top" title="Articles organised by topics, categories and keywords">Topics</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/sitemap.shtml" accesskey="3" class="menubutton" target="_top" title="Comprehensive list of pages on thesitewizard.com">Site Map</a></div>
+
+<br />
+
+<div class="button"><a href="https://www.thesitewizard.com/gettingstarted/index.shtml" class="menubutton" target="_top" title="Tutorials on how you can get started in various aspects of your website">Getting Started</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/webdesign/index.shtml" class="menubutton" target="_top" title="Tutorials on web design and related matters">Web Design</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/sitepromotion/index.shtml" class="menubutton" target="_top" title="Tutorials on how you can promote your website and get more visitors">Search Engines</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/revenue/index.shtml" class="menubutton" target="_top" title="Tutorials on how you can earn money from your website. Includes ecommerce.">Revenue Making</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/domain/index.shtml" class="menubutton" target="_top" title="Domain Name tutorials and issues">Domains</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/webhosting/index.shtml" class="menubutton" target="_top" title="Web hosting issues and articles">Web Hosting</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/blogging/index.shtml" class="menubutton" target="_top" title="Articles on Blogging and Content Management System">Blogging</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/javascripts/index.shtml" class="menubutton" target="_top" title="Tutorials on how to use JavaScript for various tasks">JavaScripts</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/php/index.shtml" class="menubutton" target="_top" title="Tutorials on how to use PHP or write PHP Scripts for various tasks">PHP</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/perl/index.shtml" class="menubutton" target="_top" title="Tutorials on how to use Perl or write Perl Scripts for various tasks">Perl / CGI</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/html-tutorial/index.shtml" class="menubutton" target="_top" title="HTML Tutorials">HTML</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/css/index.shtml" class="menubutton" target="_top" title="Tutorials on how you can use CSS on your site">CSS</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/apache/index.shtml" class="menubutton" target="_top" title="Articles on the Apache web server and various .htaccess tricks">.htaccess / Apache</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/ezines/index.shtml" class="menubutton" target="_top" title="Tutorials on running your own email newsletters">Newsletters</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/general/index.shtml" class="menubutton" target="_top" title="Webmaster tutorials on a variety of topics">General</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/news/index.shtml" class="menubutton" target="_top" title="Articles on issues that are relevant only for a specific period of time">Seasonal</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/reviews/index.shtml" class="menubutton" target="_top" title="Reviews on services, software, and hardware relevant to webmasters and web developers">Reviews</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/faqs/index.shtml" class="menubutton" target="_top" title="Webmaster Frequently Asked Questions">FAQs</a></div>
+<div class="button"><a href="https://www.thesitewizard.com/wizards/index.shtml" class="menubutton" target="_top" title="Easy-to-use wizards to generate customized code that you can use on your website">Wizards</a></div>
+
+<br />&nbsp;<br />
+
+<script type="text/javascript">
+google_ad_client = "pub-2592812953019923";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text";
+google_ad_channel = "0089840650";
+google_color_border = "000000";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "008000";
+</script>
+<script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br />&nbsp;<br />
+
+
+<a href="https://www.thefreecountry.com/" target="_top"><img src="https://www.thesitewizard.com/images/tfc88x31.gif" border="0" alt="Free webmasters and programmers resources, scripts and tutorials" width="88" height="31" /></a>
+<br />&nbsp;<br />
+
+<a href="https://www.howtohaven.com/" target="_top"><img src="https://www.thesitewizard.com/img/hth88x31dup.gif" alt="HowtoHaven.com: Free How-To Guides" border="0" width="88" height="31" /></a>
+<br />&nbsp;<br />
+
+<a href="https://www.thesitewizard.com/" target="_top"><img src="https://www.thesitewizard.com/images/tsw88x31sdt.gif" alt="Site Design Tips at thesitewizard.com" width="88" height="31" border="0" /></a><br />
+Find this site useful?<br />
+Please <a href="https://www.thesitewizard.com/linktous.shtml" target="_top">link to us</a>.
+<br />&nbsp;<br />
+
+
+
+</div> <!-- sidepanel -->
+
+</body>
+</html>
+fk$áÉõ      ]õÅ]ö„@…«k       L    :https://www.thesitewizard.com/javascripts/insert-div-block-javascript.shtml necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Fri, 28 Jun 2019 11:11:03 GMT
+Server: Apache
+X-UA-Compatible: IE=edge
+X-FRAME-OPTIONS: deny
+Content-Security-Policy: frame-ancestors 'none';
+Content-Type: text/html
+ original-response-headers Date: Fri, 28 Jun 2019 11:11:03 GMT
+Server: Apache
+X-UA-Compatible: IE=edge
+X-FRAME-OPTIONS: deny
+Content-Security-Policy: frame-ancestors 'none';
+Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+ uncompressed-len 0 predictor::resource-count 16 predictor::https://www.thesitewizard.com/include/screen.css 1,1,1561720261,4097 predictor::https://www.thesitewizard.com/include/printstyle.css 1,1,1561720261,4097 predictor::https://www.thesitewizard.com/include/common.js 1,1,1561720261,4097 predictor::https://www.thesitewizard.com/img/logo202x42.png 1,1,1561720261,4097 predictor::https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js 1,1,1561720261,4096 net-response-time-onstart 2536 net-response-time-onstop 2741 predictor::https://www.thesitewizard.com/img/feed28x28.png 1,1,1561720261,4097 predictor::https://pagead2.googlesyndication.com/pagead/show_ads.js 1,1,1561720261,4096 predictor::https://www.thesitewizard.com/images/tfc88x31.gif 1,1,1561720261,4097 predictor::https://www.thesitewizard.com/img/hth88x31dup.gif 1,1,1561720261,4097 predictor::https://www.thesitewizard.com/images/tsw88x31sdt.gif 1,1,1561720261,4097 predictor::https://adservice.google.co.in/adsid/integrator.js?domain=www.thesitewizard.com 1,1,1561720261,4096 predictor::https://adservice.google.com/adsid/integrator.js?domain=www.thesitewizard.com 1,1,1561720261,4096 predictor::https://pagead2.googlesyndication.com/pub-config/r20160913/ca-pub-2592812953019923.js 1,1,1561720261,4096 predictor::https://pagead2.googlesyndication.com/pagead/js/r20190624/r20190131/show_ads_impl.js 1,1,1561720261,4096 predictor::https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101 1,1,1561720261,4096 predictor::https://pagead2.googlesyndication.com/pagead/gen_204?id=ovlp&adf=3215562993&client=ca-pub-2592812953019923&eid=21060853%2C633794000%2C633794002%2C21063845&et=9&io=0&saldr=aa&oa=0.00&qid=CPy1mK2FjOMCFdi0lgodXqkK4A&rafmt=1&roa=0&slot=2754390004&sp=0%2C0&tgt=ins%2Faswift_1_expand.0&tr=220%2C185.03334045410156%2C1420%2C275.03334045410156&url=https%3A%2F%2Fwww.thesitewizard.com%2Fjavascripts%2Finsert-div-block-javascript.shtml&vp=1841x944 1,1,1561720261,4096   ]Ú

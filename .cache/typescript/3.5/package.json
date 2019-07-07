@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@types/eslint": "^4.16.6",
+    "@types/eslint-plugin-prettier": "^2.2.0",
+    "@types/prettier": "^1.16.4",
+    "@types/sprintf": "^0.1.0"
+  }
+}

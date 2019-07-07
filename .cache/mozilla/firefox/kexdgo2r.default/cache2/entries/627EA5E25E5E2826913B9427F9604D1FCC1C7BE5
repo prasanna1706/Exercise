@@ -1,0 +1,1956 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    
+    <title>
+        Get values of all checked checkboxes by class name using jQuery</title>
+    
+    <meta http-equiv="Description" name="description" content="Here Mudassar Ahmed Khan has provided snippet to get values of all checked checkboxes by class name using jQuery" />
+    <link rel="canonical" href="http://www.jqueryfaqs.com/Articles/Get-values-of-all-checked-checkboxes-by-class-name-using-jQuery.aspx" />
+    
+    <link rel="icon" type="image/png" href="/images/metro/Red/ASPSmall.png" />
+    <meta content='Mudassar Ahmed Khan' name='author' />
+    
+    <meta content='index, follow' name='robots' />
+    <meta content='index, follow' name='Googlebot' />
+    
+    
+    <meta http-equiv="content-language" name="content-language" content="en-us" />
+    <link rel="search" type="application/opensearchdescription+xml" title="jQueryFAQs"
+        href="/opensearch.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Get values of all checked checkboxes by class name using jQuery"
+        href='/RSS.axd' />
+    <!--[if gt IE 8]>
+        <link rel="stylesheet" href='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css' media="screen" />
+    <![endif]-->
+    <!--[if !IE]><!-->
+    <link rel="stylesheet" href='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css'
+        media="screen" />
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href='/Bootstrap-3.0/css/bootstrap.min.css' media="screen" />
+    <![endif]-->
+    <link rel="stylesheet" href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css'
+        media="screen" />
+    <link rel="stylesheet" href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'
+        media="screen" />
+    <link rel="stylesheet" href='/Bootstrap-3.0/css/override.css?11_07_16_09_38' />
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href='/Bootstrap-3.0/css/chkrb.css?11_07_16_09_38' />
+    <link rel="stylesheet" media="all and (min-width: 1024px)"  href='/Bootstrap-3.0/media/Above_1024.css?11_07_16_09_38' />
+    <link rel="stylesheet" media="all and (max-width: 767px)" href='/Bootstrap-3.0/media/below_767.css?11_07_16_09_38' />
+    <!--<![endif]-->
+    <!--[if !IE]><!-->
+    <link rel="stylesheet" href='/Bootstrap-3.0/css/chkrb.css?11_07_16_09_38' />
+    <link rel="stylesheet" media="all and (min-width: 1024px)"  href='/Bootstrap-3.0/media/Above_1024.css?11_07_16_09_38' />
+    <link rel="stylesheet" media="all and (max-width: 767px)" href='/Bootstrap-3.0/media/below_767.css?11_07_16_09_38' />
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" href='/Bootstrap-3.0/css/IE.css?11_07_16_09_38' />
+    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Lekton' media="all and (max-width: 767px)"
+        rel='stylesheet' type='text/css' />
+    <script type="text/javascript" src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js'></script>
+    <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js'></script>
+    <script type="text/javascript" src='/scripts/json2.min.js'></script>
+    <script type="text/javascript" src='http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js'></script>
+    <script type="text/javascript" src='/scripts/date.format.js'></script>
+    <script src='/scripts/min141.js?13_07_2018' type="text/javascript"></script>
+    
+    <style type ="text/css">.leaderboard_ad, .leaderboard_ad .dvAdContainer{background-color:#D0252D !important}</style>
+    <script type="text/javascript">
+        window.open = function (url, name, features, replace) {
+            //alert("opening a window");
+            //if (url.indexOf("addthis") == -1) {
+              return false;
+            //} else {
+            //    alert(url);
+            //}
+        }
+
+        var Browser = "Other";
+        function CheckBrowser() {
+            if (!!navigator.userAgent.match(/Trident\/7\./) && navigator.userAgent.indexOf("Edge") == -1) {
+                Browser = "IE";
+                return;
+            }
+            if (navigator.userAgent.indexOf("Edge") != -1) {
+                Browser = "Edge";
+                return;
+            }
+        };
+        CheckBrowser();
+
+
+        $(function () {
+            if (!$(".visible-xs").is(":visible")) {
+                $(".visible-xs").remove();
+            }
+            else {
+                $(".hidden-xs").remove();
+            }
+        });
+    </script>
+    
+    
+    
+</head>
+<body style="margin: 0; padding: 0">
+    <form name="aspnetForm" method="post" action="/Articles/Get-values-of-all-checked-checkboxes-by-class-name-using-jQuery.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=4zUmsBjdlDKnpuL1IeretQ1x84Fo-PYkH0dqQZ1p7zgEI2UuzSa7JeZze-1nGzuOZ8fDIyZ26HFFIpK8v1Efx2Xmcso1&amp;t=636765211280000000" type="text/javascript"></script>
+
+
+<script src="/WebResource.axd?d=iZaTj-lNEMASJ8OBw51pJyR4VtNsfPil5mrFEwsrFaS1UxQ_k_DLAaWhW-w0JQxD1xjZbWvPd9paAUMDZX9ftNFMHcxFA5zDJNwO9-wVJLPQcNj_0&amp;t=636765211280000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+    <div id="dialog" style="display: none">
+    </div>
+    <div class="page-header-wrap">
+        <div class="page-header">
+            <div class="logo">
+                <a href="http://www.jqueryfaqs.com/" target="_blank">
+                    
+                    <img src='/images/Metro/blue/JqueryLogoNew.png' alt="jQueryFAQs"
+                        class="jQueryFAQsLogo" />
+                    
+                </a>
+            </div>
+            <div class='leaderboard_ad hidden-xs'>
+                
+                <div id="ctl00_ucAds738x90_adContainer" style="height:90px;width:728px;clear:both">
+	
+    
+    <style type="text/css">        
+        .text_ad
+        {
+            margin: 10px 0 0 0px;
+            display: block;
+            color: #444;
+            font-family: Sans-Serif;
+            font-size: 11pt;
+            position: relative;
+            top: 2px;
+        }
+        .text_ad a
+        {
+            color: #D0252D;
+            text-decoration: none;
+        }
+        .text_ad a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        function HideIFrame() {
+            window.onload = function () {
+                try {
+                    var dvArticleTextAd = window.parent.document.getElementById('dvArticleTextAd');
+                    window.parent.document.getElementById('dvArticleTextAd').style.display = "none";
+                    dvArticleTextAd.removeChild(dvArticleTextAd.getElementsByTagName("IFRAME")[0]);
+                } catch (e) {
+                }
+            }
+        }
+    </script>
+    <div data-type="ad" data-publisher="jqueryfaqs.com" data-zone="ron" data-format="728x90"></div>
+    
+    
+    
+</div>
+
+            </div>
+            
+            <button type="button" class="navbar-toggle" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                </span>
+            </button>
+        </div>
+        
+
+<div class="navbar-wrapper">
+    <div class="navbar-header">
+        
+        
+        
+        
+        
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <div class="row">
+            <div class="media hidden-xs" style="background: #fff; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;">
+                <div class="pull-left">
+                    <div id="site-nav" class=" col-md-6 site-nav  col-last col-xs-12 hidden-xs">
+                        <ul class="nav navbar-nav">
+                    
+                    <li class=''><a href='/Home.aspx'>
+                        <span class="fa fa-home fa-fw"></span>
+                        Home</a></li>
+                    <li class='dropdown  hidden-xs'>
+                        <a id="lnkCategories" class="dropdown-toggle" href="#">
+                            Categories
+                            <i class="sub-indicator fa fa-chevron-circle-down fa-fw text-muted"></i><b class="caret"
+                                style="display: none"></b></a>
+                        <ul class="dropdown-menu menu" id="ulCategoryMenu">
+                            <li class="grid-demo">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/HTML-Select.aspx'>
+                                                        HTML Select</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/CSS-Class.aspx'>
+                                                        CSS Class</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/General.aspx'>
+                                                        General</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/CheckBox.aspx'>
+                                                        CheckBox</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/HTML-Textarea.aspx'>
+                                                        HTML Textarea</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/DropDown.aspx'>
+                                                        DropDown</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/jQuery-UI.aspx'>
+                                                        jQuery UI</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/DatePicker.aspx'>
+                                                        DatePicker</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/Facebook.aspx'>
+                                                        Facebook</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/HTML-Form.aspx'>
+                                                        HTML Form</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/HTML-DIV.aspx'>
+                                                        HTML DIV</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/ASP.Net.aspx'>
+                                                        ASP.Net</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/JSON.aspx'>
+                                                        JSON</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/Radio.aspx'>
+                                                        Radio</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/Regular-Expressions.aspx'>
+                                                        Regular Expressions</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/HTML-Multiselect-ListBox.aspx'>
+                                                        HTML Multiselect ListBox</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/HTML-TextBox.aspx'>
+                                                        HTML TextBox</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/RadioButtonList.aspx'>
+                                                        RadioButtonList</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/CheckBoxList.aspx'>
+                                                        CheckBoxList</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/HTML-Anchor.aspx'>
+                                                        HTML Anchor</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/Master-Pages.aspx'>
+                                                        Master Pages</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/HTML5.aspx'>
+                                                        HTML5</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/Bootstrap.aspx'>
+                                                        Bootstrap</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/Image.aspx'>
+                                                        Image</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/FileUpload.aspx'>
+                                                        FileUpload</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/HTML-Span.aspx'>
+                                                        HTML Span</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/ListBox.aspx'>
+                                                        ListBox</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/jQuery.aspx'>
+                                                        jQuery</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/Table.aspx'>
+                                                        Table</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/Button.aspx'>
+                                                        Button</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/Password-TextBox.aspx'>
+                                                        Password TextBox</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/Sponsored.aspx'>
+                                                        Sponsored</a>
+                                                </div>
+                                            
+                                                <div class='col-md-3'">
+                                                    <a class="btn btn-xs btn-link" href='/Categories/XML.aspx'>
+                                                        XML</a>
+                                                </div>
+                                            
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    
+                    <li><a href="http://www.aspforums.net/Forums/" target="_blank" rel = "nofollow">
+                        Forums</a></li>
+                    <li class=''><a href="/Contact.aspx"
+                        class='last-menu1'>
+                        Contact</a></li>
+                    
+                    <li style="overflow: hidden">
+                        <div class="visible-xs" style="width: 100%; padding-bottom: 10px; overflow: hidden">
+                            <div class="media">
+                                <div class="pull-right">
+                                    <button type="submit" class="search-submit btn btn-red btn-lg" onclick="return Search()">
+                                        <span class="fa fa-search fa-fw" style="font-size: inherit"></span>
+                                        Search</button>
+                                </div>
+                                <div class="media-body">
+                                    <input id="Text2" type="text" value='' class="search-field form-control input-lg col-xs-8"
+                                        placeholder="Eg. Send Email ASP.Net" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <div class="media">
+                        <div class="pull-right" style="padding-right: 10px; margin-left: 5px;">
+                            <button type="button" class="search-submit btn btn-red btn-sm pull-right" style="padding: 5px 10px;
+                                margin: 4px 0" onclick="return Search()">
+                                <span class="fa fa-search fa-fw" style="font-size: inherit;"></span>Search</button>
+                        </div>
+                        <div class="media-body">
+                            <input id="txtSearch" type="text" value='' class="search-field form-control pull-right col-last"
+                                placeholder="Eg. Send Email ASP.Net" style="margin-top: 4px; height: 31px; background-color:#ddd;" />
+                        </div>
+                    </div>
+                </div>
+            </div>                        
+            <div class="visible-xs">
+                <ul class="nav navbar-nav-mobile">
+                    
+                    <li class=''><a href='/Home.aspx'>
+                        <span class="fa fa-home fa-fw hidden-xs"></span>
+                        Home</a></li>
+                    <li class='dropdown  hidden-xs'>
+                        <a id="A1" class="dropdown-toggle" href="#">
+                            Categories
+                            <i class="sub-indicator fa fa-chevron-circle-down fa-fw text-muted"></i><b class="caret"
+                                style="display: none"></b></a>
+                        <ul class="dropdown-menu menu" id="ul1">
+                            <li class="grid-demo">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    
+                    <li><a href="http://www.aspforums.net/Forums/" target="_blank">
+                        Forums</a></li>
+                    <li class=''><a href="/Contact.aspx"
+                        class='last-menu1'>
+                        Contact</a></li>
+                    
+                    <li>
+                        <div class="visible-xs" style="width: 100%; padding: 15px 10px; float: left">
+                            <div class="row">                                                                
+                                <div class="col-md-12">
+                                    <input id="txtSearch" type="text" value='' class="search-field form-control col-xs-8"
+                                        placeholder="Eg. Send Email ASP.Net" />
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="search-submit btn btn-red" onclick="return Search()">
+                                        <span class="fa fa-search fa-fw" style="font-size: inherit"></span>
+                                        Search</button>
+                                </div>
+                            </div>                            
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+<!-- /.nav-collapse -->
+
+<!-- /.container -->
+
+
+<div id="dvMenu" style="display: none; position: absolute; left: 0px; top: 0px; z-index: 10000;">
+</div>
+
+    </div>
+    <div id="main" class="site-main clearfix">
+        <div class="content-area">
+            
+            <div class="row">
+                <div class="col-md-12">
+                    
+    <div id="article">
+        
+            <div class="media article-media">
+            <div class="visible-xs">
+                
+                <div id="ctl00_contentplaceholder1_Ads7_adContainer" style="height:250px;width:300px;clear:both">
+	
+    
+    <style type="text/css">        
+        .text_ad
+        {
+            margin: 10px 0 0 0px;
+            display: block;
+            color: #444;
+            font-family: Sans-Serif;
+            font-size: 11pt;
+            position: relative;
+            top: 2px;
+        }
+        .text_ad a
+        {
+            color: #D0252D;
+            text-decoration: none;
+        }
+        .text_ad a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        function HideIFrame() {
+            window.onload = function () {
+                try {
+                    var dvArticleTextAd = window.parent.document.getElementById('dvArticleTextAd');
+                    window.parent.document.getElementById('dvArticleTextAd').style.display = "none";
+                    dvArticleTextAd.removeChild(dvArticleTextAd.getElementsByTagName("IFRAME")[0]);
+                } catch (e) {
+                }
+            }
+        }
+    </script>
+    <div data-type="ad" data-publisher="jqueryfaqs.com" data-zone="ron" data-format="300x250"></div>
+    
+    
+    
+</div>
+
+                <div class="heading-sep">
+                </div>
+            </div>
+            <div class="visible-xs">
+                
+                <div id="ctl00_contentplaceholder1_Ads10_adContainer" style="height:250px;width:300px;clear:both">
+	
+    
+    <style type="text/css">        
+        .text_ad
+        {
+            margin: 10px 0 0 0px;
+            display: block;
+            color: #444;
+            font-family: Sans-Serif;
+            font-size: 11pt;
+            position: relative;
+            top: 2px;
+        }
+        .text_ad a
+        {
+            color: #D0252D;
+            text-decoration: none;
+        }
+        .text_ad a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        function HideIFrame() {
+            window.onload = function () {
+                try {
+                    var dvArticleTextAd = window.parent.document.getElementById('dvArticleTextAd');
+                    window.parent.document.getElementById('dvArticleTextAd').style.display = "none";
+                    dvArticleTextAd.removeChild(dvArticleTextAd.getElementsByTagName("IFRAME")[0]);
+                } catch (e) {
+                }
+            }
+        }
+    </script>
+    <div data-type="ad" data-publisher="jqueryfaqs.com" data-zone="ron" data-format="300x250"></div>
+    
+    
+    
+</div>
+
+                <div class="heading-sep">
+                </div>
+            </div>
+            
+            <div class="media-body article-media-body">
+                <div id="ctl00_contentplaceholder1_dvArticleSummary" class="article_summary article_summary_without_text_ad">
+                    <div class="media">
+                        <div class="pull-right hidden-xs">
+                            
+                        </div>
+                        <div class="media-body">
+                            <h1 class="header">
+                                
+                                <a href='/Articles/Get-values-of-all-checked-checkboxes-by-class-name-using-jQuery.aspx' title='Get values of all checked checkboxes by class name using jQuery&#39;a' >
+                                    Get values of all checked checkboxes by class name using jQuery</a>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="pull-left mobile-float-none">
+                            <div>
+                                <span class="fa fa-calendar fa-fw"></span>16 Jun 2011&nbsp; <span class="fa fa-user fa"></span><a class="author" rel="author" href='/Authors/Mudassar-Khan.aspx'
+                                title=''>Mudassar Khan</a>
+                                
+                                <span class="fa fa-comments fa-fw"></span><a href='#comments'>
+                                    0</a>
+                                Comments
+                                
+                                <span class="fa fa-eye fa-fw"></span>51428&nbsp;Views
+                            </div>
+                            <div>
+                                <span class="fa fa-tags fa-fw"></span><a href='/Categories/CheckBox.aspx'>CheckBox</a>
+                                
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="pull-right hidden-xs">
+                            
+<div>
+    <div class="visible-xs">
+        <div class="row">
+            <div class="col-xs-3">
+                <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FJQueryFAQs&amp;width=150&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=1449212552011175"
+                    scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 50px;
+                    height: 35px;" allowtransparency="true"></iframe>
+            </div>
+            <div class="col-xs-8">
+                <a href="https://twitter.com/jQueryFaqs" class="twitter-follow-button" data-show-count="false"
+                    data-size="small">Follow @jQueryFaqs</a>
+                <script>                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } } (document, 'script', 'twitter-wjs');</script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-5">
+               
+            </div>
+            <div class="col-xs-3">
+                <a href="/Rss.ashx" target="_blank" class="SocialLink rss" data-container="body" data-toggle="popover"
+                    data-placement="top" data-content="Subscribe to RSS feed."><span
+                        class="fa fa-rss-square fa-fw"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="hidden-xs">
+        <div class="SocialButtonWrap">
+            <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FJQueryFAQs&amp;width=150&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21&amp;appId=1449212552011175"
+                scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 90px;
+                height: 22px; position: relative; top: 4px;" allowtransparency="true"></iframe>
+        </div>
+        <div class="SocialButtonWrap">
+            <a href="https://twitter.com/jQueryFaqs" class="twitter-follow-button" data-show-count="false"
+                data-size="large">Follow @jQueryFaqs</a>
+            <script>                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } } (document, 'script', 'twitter-wjs');</script>
+        </div>
+        <div class="SocialButtonWrap" style="position: relative; top: 3px;">
+            <!-- Place this tag in your head or just before your close body tag. -->
+          
+        </div>
+        <div class="SocialButtonWrap" style="position: relative; top: 4px;">
+            <a href="/Rss.ashx" target="_blank" class="SocialLink rss" data-container="body" data-toggle="popover"
+                data-placement="top" data-content="Subscribe to RSS feed."><span
+                    class="fa fa-rss-square fa-fw"></span></a>
+        </div>
+    </div>
+</div>
+
+                        </div>
+                        
+                    </div>
+                    
+                          
+                              
+                    <div class="media">
+                        <div class="pull-right hidden-xs">
+                            <div id="ctl00_contentplaceholder1_ucAds336x288_adContainer" style="height:250px;width:300px;clear:both">
+	
+    
+    <style type="text/css">        
+        .text_ad
+        {
+            margin: 10px 0 0 0px;
+            display: block;
+            color: #444;
+            font-family: Sans-Serif;
+            font-size: 11pt;
+            position: relative;
+            top: 2px;
+        }
+        .text_ad a
+        {
+            color: #D0252D;
+            text-decoration: none;
+        }
+        .text_ad a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        function HideIFrame() {
+            window.onload = function () {
+                try {
+                    var dvArticleTextAd = window.parent.document.getElementById('dvArticleTextAd');
+                    window.parent.document.getElementById('dvArticleTextAd').style.display = "none";
+                    dvArticleTextAd.removeChild(dvArticleTextAd.getElementsByTagName("IFRAME")[0]);
+                } catch (e) {
+                }
+            }
+        }
+    </script>
+    <div data-type="ad" data-publisher="jqueryfaqs.com" data-zone="ron" data-format="300x250"></div>
+    
+    
+    
+</div>
+
+                        </div>
+                        <div class="pull-right hidden-xs">
+                            <div id="ctl00_contentplaceholder1_Ads8_adContainer" style="height:250px;width:300px;clear:both">
+	
+    
+    <style type="text/css">        
+        .text_ad
+        {
+            margin: 10px 0 0 0px;
+            display: block;
+            color: #444;
+            font-family: Sans-Serif;
+            font-size: 11pt;
+            position: relative;
+            top: 2px;
+        }
+        .text_ad a
+        {
+            color: #D0252D;
+            text-decoration: none;
+        }
+        .text_ad a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        function HideIFrame() {
+            window.onload = function () {
+                try {
+                    var dvArticleTextAd = window.parent.document.getElementById('dvArticleTextAd');
+                    window.parent.document.getElementById('dvArticleTextAd').style.display = "none";
+                    dvArticleTextAd.removeChild(dvArticleTextAd.getElementsByTagName("IFRAME")[0]);
+                } catch (e) {
+                }
+            }
+        }
+    </script>
+    <div data-type="ad" data-publisher="jqueryfaqs.com" data-zone="ron" data-format="300x250"></div>
+    
+    
+    
+</div>
+
+                        </div>
+                        <div class="pull-right hidden-xs" id="dvArticleSummary3Ad" style="display: none !important;">
+                            <div id="ctl00_contentplaceholder1_Ads9_adContainer" style="height:250px;width:300px;clear:both">
+	
+    
+    <style type="text/css">        
+        .text_ad
+        {
+            margin: 10px 0 0 0px;
+            display: block;
+            color: #444;
+            font-family: Sans-Serif;
+            font-size: 11pt;
+            position: relative;
+            top: 2px;
+        }
+        .text_ad a
+        {
+            color: #D0252D;
+            text-decoration: none;
+        }
+        .text_ad a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        function HideIFrame() {
+            window.onload = function () {
+                try {
+                    var dvArticleTextAd = window.parent.document.getElementById('dvArticleTextAd');
+                    window.parent.document.getElementById('dvArticleTextAd').style.display = "none";
+                    dvArticleTextAd.removeChild(dvArticleTextAd.getElementsByTagName("IFRAME")[0]);
+                } catch (e) {
+                }
+            }
+        }
+    </script>
+    <div data-type="ad" data-publisher="jqueryfaqs.com" data-zone="ron" data-format="300x250"></div>
+    
+    
+    
+</div>
+
+                        </div>
+                        <div id="dvArticleSummaryWrap" class="media-body">
+                            <div class="abstract pull-left">
+                                <h2>
+                                    Here Mudassar Ahmed Khan has provided snippet to get values of all checked checkboxes by class name using jQuery</h2>
+                            </div>
+                            
+                            <div class="article-buttons-text-ad">
+                                
+                                <div id="dvArticleTextAd">
+                                    <div id="ctl00_contentplaceholder1_Ads18_adContainer" style="clear:both">
+	
+    
+    <style type="text/css">        
+        .text_ad
+        {
+            margin: 10px 0 0 0px;
+            display: block;
+            color: #444;
+            font-family: Sans-Serif;
+            font-size: 11pt;
+            position: relative;
+            top: 2px;
+        }
+        .text_ad a
+        {
+            color: #D0252D;
+            text-decoration: none;
+        }
+        .text_ad a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        function HideIFrame() {
+            window.onload = function () {
+                try {
+                    var dvArticleTextAd = window.parent.document.getElementById('dvArticleTextAd');
+                    window.parent.document.getElementById('dvArticleTextAd').style.display = "none";
+                    dvArticleTextAd.removeChild(dvArticleTextAd.getElementsByTagName("IFRAME")[0]);
+                } catch (e) {
+                }
+            }
+        }
+    </script>
+    
+    
+    
+    
+</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-buttons">
+                
+                
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="note-box clear visible-xs margin-bottom-15">
+            <div class="icon pull-left col-xs-2">
+                <i class="fa fa-thumbs-up text-info"></i>
+            </div>
+            <div class="right-content pull-left col-xs-10">
+                <div style="margin: 5px 0 0 10px;">
+                    
+<div>
+    <div class="visible-xs">
+        <div class="row">
+            <div class="col-xs-3">
+                <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FJQueryFAQs&amp;width=150&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=1449212552011175"
+                    scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 50px;
+                    height: 35px;" allowtransparency="true"></iframe>
+            </div>
+            <div class="col-xs-8">
+                <a href="https://twitter.com/jQueryFaqs" class="twitter-follow-button" data-show-count="false"
+                    data-size="small">Follow @jQueryFaqs</a>
+                <script>                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } } (document, 'script', 'twitter-wjs');</script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-5">
+               
+            </div>
+            <div class="col-xs-3">
+                <a href="/Rss.ashx" target="_blank" class="SocialLink rss" data-container="body" data-toggle="popover"
+                    data-placement="top" data-content="Subscribe to RSS feed."><span
+                        class="fa fa-rss-square fa-fw"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="hidden-xs">
+        <div class="SocialButtonWrap">
+            <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FJQueryFAQs&amp;width=150&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21&amp;appId=1449212552011175"
+                scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 90px;
+                height: 22px; position: relative; top: 4px;" allowtransparency="true"></iframe>
+        </div>
+        <div class="SocialButtonWrap">
+            <a href="https://twitter.com/jQueryFaqs" class="twitter-follow-button" data-show-count="false"
+                data-size="large">Follow @jQueryFaqs</a>
+            <script>                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } } (document, 'script', 'twitter-wjs');</script>
+        </div>
+        <div class="SocialButtonWrap" style="position: relative; top: 3px;">
+            <!-- Place this tag in your head or just before your close body tag. -->
+          
+        </div>
+        <div class="SocialButtonWrap" style="position: relative; top: 4px;">
+            <a href="/Rss.ashx" target="_blank" class="SocialLink rss" data-container="body" data-toggle="popover"
+                data-placement="top" data-content="Subscribe to RSS feed."><span
+                    class="fa fa-rss-square fa-fw"></span></a>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>        
+        
+        <div class="row">
+            <div class="col-xs-14 col-md-10 article-body-wrap">
+                <div id="body">
+                    <div class="article-body">
+                        <div>
+	<div style="margin: 0cm 0cm 10pt">
+		<span style="line-height: 115%; font-family: arial,sans-serif; font-size: 10pt">Below code snippet explains how to get all checked or selected HTML input checkbox based on their class attribute using jQuery.</span></div>
+	<div style="border-bottom: windowtext 1pt solid; border-left: windowtext 1pt solid; padding-bottom: 1pt; padding-left: 4pt; padding-right: 4pt; background: #f2f2f2; border-top: windowtext 1pt solid; border-right: windowtext 1pt solid; padding-top: 1pt">
+		<div style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; line-height: normal; padding-left: 0cm; padding-right: 0cm; background: #f2f2f2; border-top: medium none; border-right: medium none; padding-top: 0cm">
+			<span style="font-family: 'courier new'; color: blue; font-size: 9.5pt">&lt;</span><span style="font-family: 'courier new'; color: maroon; font-size: 9.5pt">input</span><span style="font-family: 'courier new'; font-size: 9.5pt"> <span style="color: red">type</span><span style="color: blue">=&quot;checkbox&quot;</span> <span style="color: red">id</span><span style="color: blue">=&quot;Checkbox1&quot;</span> <span style="color: red">class</span> <span style="color: blue">=</span> <span style="color: blue">&quot;chk&quot;</span> <span style="color: red">value</span> <span style="color: blue">=</span> <span style="color: blue">&quot;1&quot;</span> <span style="color: blue">/&gt;</span></span></div>
+		<div style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; line-height: normal; padding-left: 0cm; padding-right: 0cm; background: #f2f2f2; border-top: medium none; border-right: medium none; padding-top: 0cm">
+			<span style="font-family: 'courier new'; color: blue; font-size: 9.5pt">&lt;</span><span style="font-family: 'courier new'; color: maroon; font-size: 9.5pt">input</span><span style="font-family: 'courier new'; font-size: 9.5pt"> <span style="color: red">type</span><span style="color: blue">=&quot;checkbox&quot;</span> <span style="color: red">id</span><span style="color: blue">=&quot;Checkbox2&quot;</span> <span style="color: red">class</span> <span style="color: blue">=</span> <span style="color: blue">&quot;chk&quot;</span> <span style="color: red">value</span> <span style="color: blue">=</span> <span style="color: blue">&quot;2&quot;</span> <span style="color: blue">/&gt;</span></span></div>
+		<div style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; line-height: normal; padding-left: 0cm; padding-right: 0cm; background: #f2f2f2; border-top: medium none; border-right: medium none; padding-top: 0cm">
+			<span style="font-family: 'courier new'; color: blue; font-size: 9.5pt">&lt;</span><span style="font-family: 'courier new'; color: maroon; font-size: 9.5pt">input</span><span style="font-family: 'courier new'; font-size: 9.5pt"> <span style="color: red">type</span><span style="color: blue">=&quot;checkbox&quot;</span> <span style="color: red">id</span><span style="color: blue">=&quot;Checkbox3&quot;</span> <span style="color: red">class</span> <span style="color: blue">=</span> <span style="color: blue">&quot;chk&quot;</span> <span style="color: red">value</span> <span style="color: blue">=</span> <span style="color: blue">&quot;3&quot;</span> <span style="color: blue">/&gt;</span></span></div>
+		<div style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; line-height: normal; padding-left: 0cm; padding-right: 0cm; background: #f2f2f2; border-top: medium none; border-right: medium none; padding-top: 0cm">
+			<span style="font-family: 'courier new'; color: blue; font-size: 9.5pt">&lt;</span><span style="font-family: 'courier new'; color: maroon; font-size: 9.5pt">input</span><span style="font-family: 'courier new'; font-size: 9.5pt"> <span style="color: red">type</span><span style="color: blue">=&quot;checkbox&quot;</span> <span style="color: red">id</span><span style="color: blue">=&quot;Checkbox4&quot;</span> <span style="color: red">class</span> <span style="color: blue">=</span> <span style="color: blue">&quot;chk&quot;</span> <span style="color: red">value</span> <span style="color: blue">=</span> <span style="color: blue">&quot;4&quot;</span> <span style="color: blue">/&gt;</span></span></div>
+		<div style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; line-height: normal; padding-left: 0cm; padding-right: 0cm; background: #f2f2f2; border-top: medium none; border-right: medium none; padding-top: 0cm">
+			<span style="font-family: 'courier new'; color: blue; font-size: 9.5pt">&lt;</span><span style="font-family: 'courier new'; color: maroon; font-size: 9.5pt">input</span><span style="font-family: 'courier new'; font-size: 9.5pt"> <span style="color: red">type</span><span style="color: blue">=&quot;button&quot;</span> <span style="color: red">id</span><span style="color: blue">=&quot;demo&quot;</span> <span style="color: red">value</span> <span style="color: blue">=</span> <span style="color: blue">&quot;Demo&quot;</span> <span style="color: blue">/&gt;</span></span></div>
+		<div style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; line-height: normal; padding-left: 0cm; padding-right: 0cm; background: #f2f2f2; border-top: medium none; border-right: medium none; padding-top: 0cm">
+			&nbsp;</div>
+		<div style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; line-height: normal; padding-left: 0cm; padding-right: 0cm; background: #f2f2f2; border-top: medium none; border-right: medium none; padding-top: 0cm">
+			<span style="font-family: 'courier new'; color: blue; font-size: 9.5pt">&lt;</span><span style="font-family: 'courier new'; color: maroon; font-size: 9.5pt">script</span><span style="font-family: 'courier new'; font-size: 9.5pt"> <span style="color: red">type</span> <span style="color: blue">=</span> <span style="color: blue">&quot;text/javascript&quot;</span> <span style="color: red">src</span> <span style="color: blue">=</span> <span style="color: blue">&quot;http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1.min.js&quot;&gt;&lt;/</span><span style="color: maroon">script</span><span style="color: blue">&gt;</span></span></div>
+		<div style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; line-height: normal; padding-left: 0cm; padding-right: 0cm; background: #f2f2f2; border-top: medium none; border-right: medium none; padding-top: 0cm">
+			<span style="font-family: 'courier new'; color: blue; font-size: 9.5pt">&lt;</span><span style="font-family: 'courier new'; color: maroon; font-size: 9.5pt">script</span><span style="font-family: 'courier new'; font-size: 9.5pt"> <span style="color: red">type</span><span style="color: blue">=&quot;text/javascript&quot;&gt;</span></span></div>
+		<div style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; line-height: normal; padding-left: 0cm; padding-right: 0cm; background: #f2f2f2; border-top: medium none; border-right: medium none; padding-top: 0cm">
+			<span style="font-family: 'courier new'; font-size: 9.5pt">&nbsp;&nbsp;&nbsp; $(<span style="color: maroon">&quot;#demo&quot;</span>).live(<span style="color: maroon">&quot;click&quot;</span>, <span style="color: blue">function</span> () {</span></div>
+		<div style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; line-height: normal; padding-left: 0cm; padding-right: 0cm; background: #f2f2f2; border-top: medium none; border-right: medium none; padding-top: 0cm">
+			<span style="font-family: 'courier new'; font-size: 9.5pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $(<span style="color: maroon">&quot;input:checkbox[class=chk]:checked&quot;</span>).each(<span style="color: blue">function</span> () {</span></div>
+		<div style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; line-height: normal; padding-left: 0cm; padding-right: 0cm; background: #f2f2f2; border-top: medium none; border-right: medium none; padding-top: 0cm">
+			<span style="font-family: 'courier new'; font-size: 9.5pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert(<span style="color: maroon">&quot;Id: &quot;</span> + $(<span style="color: blue">this</span>).attr(<span style="color: maroon">&quot;id&quot;</span>) + <span style="color: maroon">&quot; Value: &quot;</span> + $(<span style="color: blue">this</span>).val());</span></div>
+		<div style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; line-height: normal; padding-left: 0cm; padding-right: 0cm; background: #f2f2f2; border-top: medium none; border-right: medium none; padding-top: 0cm">
+			<span style="font-family: 'courier new'; font-size: 9.5pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });</span></div>
+		<div style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; line-height: normal; padding-left: 0cm; padding-right: 0cm; background: #f2f2f2; border-top: medium none; border-right: medium none; padding-top: 0cm">
+			<span style="font-family: 'courier new'; font-size: 9.5pt">&nbsp;&nbsp;&nbsp; });</span></div>
+		<div style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; line-height: normal; padding-left: 0cm; padding-right: 0cm; background: #f2f2f2; border-top: medium none; border-right: medium none; padding-top: 0cm">
+			<span style="font-family: 'courier new'; color: blue; font-size: 9.5pt">&lt;/</span><span style="font-family: 'courier new'; color: maroon; font-size: 9.5pt">script</span><span style="font-family: 'courier new'; color: blue; font-size: 9.5pt">&gt;</span></div>
+	</div>
+	<div style="margin: 0cm 0cm 10pt">
+		&nbsp;</div>
+	<div style="margin: 0cm 0cm 10pt">
+		<b><span style="line-height: 115%; font-family: arial,sans-serif; font-size: 10pt">Explanation:</span></b></div>
+	<div style="margin: 0cm 0cm 10pt">
+		<span style="line-height: 115%; font-family: arial,sans-serif; font-size: 10pt">In the above example a click event handler has been assigned to the HTML input button. When the button is clicked, jQuery finds all the checkboxes with class name &ldquo;chk&rdquo; and that are checked using </span><span style="line-height: 115%; font-family: 'courier new'; color: maroon; font-size: 9.5pt">input:checkbox[class=chk]:checked</span><span style="line-height: 115%; font-family: arial,sans-serif; font-size: 10pt"> selector and then the Id and value attribute of the all HTML input checkboxes are displayed in alert using jQuery.</span></div>
+</div>
+</div>
+                </div>
+            </div>
+            <div class="col-xs-4 col-md-2 hidden-xs article-body-right">
+                
+                <div id="ctl00_contentplaceholder1_ucAds2_adContainer" style="height:600px;width:160px;clear:both">
+	
+    
+    <style type="text/css">        
+        .text_ad
+        {
+            margin: 10px 0 0 0px;
+            display: block;
+            color: #444;
+            font-family: Sans-Serif;
+            font-size: 11pt;
+            position: relative;
+            top: 2px;
+        }
+        .text_ad a
+        {
+            color: #D0252D;
+            text-decoration: none;
+        }
+        .text_ad a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        function HideIFrame() {
+            window.onload = function () {
+                try {
+                    var dvArticleTextAd = window.parent.document.getElementById('dvArticleTextAd');
+                    window.parent.document.getElementById('dvArticleTextAd').style.display = "none";
+                    dvArticleTextAd.removeChild(dvArticleTextAd.getElementsByTagName("IFRAME")[0]);
+                } catch (e) {
+                }
+            }
+        }
+    </script>
+    <div data-type="ad" data-publisher="jqueryfaqs.com" data-zone="ron" data-format="160x600"></div>
+    
+    
+    
+</div>
+
+                
+            </div>
+        </div>
+        <div class="heading-sep">
+        </div>
+        
+        <a name="comments"></a><a name="Comments"></a>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div id="ctl00_contentplaceholder1_dvGridRelatedArticles">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <span class="fa fa-files-o fa-fw"></span>
+                            Related Articles
+                        </div>
+                        <div class="panel-body">
+                            <div id="carousel-related-article" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    
+                                            <div class='item active'>
+                                                <a class="medium-title" href='/Articles/Get-values-of-all-checked-checkboxes-by-name-using-jQuery.aspx'><b>
+                                                    Get values of all checked checkboxes by name using jQuery</b></a><br />
+                                                <span>
+                                                    Here Mudassar Ahmed Khan has provided snippet to get values of all checked checkboxes by name using jQuery</span></div>
+                                        
+                                            <div class='item '>
+                                                <a class="medium-title" href='/Articles/Get-values-of-all-selected-checkboxes-by-name-using-jQuery.aspx'><b>
+                                                    Get values of all selected checkboxes by name using jQuery</b></a><br />
+                                                <span>
+                                                    Here Mudassar Ahmed Khan has provided snippet to get values of all selected checkboxes by name using jQuery</span></div>
+                                        
+                                            <div class='item '>
+                                                <a class="medium-title" href='/Articles/Get-ids-of-all-checked-checkboxes-using-name-in-jQuery.aspx'><b>
+                                                    Get ids of all checked checkboxes using name in jQuery</b></a><br />
+                                                <span>
+                                                    Here Mudassar Ahmed Khan has provided snippet to get ids of all checked checkboxes using name in jQuery</span></div>
+                                        
+                                            <div class='item '>
+                                                <a class="medium-title" href='/Articles/Get-ids-of-all-selected-checkboxes-using-name-in-jQuery.aspx'><b>
+                                                    Get ids of all selected checkboxes using name in jQuery</b></a><br />
+                                                <span>
+                                                    Here Mudassar Ahmed Khan has provided snippet to get ids of all selected checkboxes using name in jQuery</span></div>
+                                        
+                                            <div class='item '>
+                                                <a class="medium-title" href='/Articles/Get-all-checkboxes-by-name-using-jQuery.aspx'><b>
+                                                    Get all checkboxes by name using jQuery</b></a><br />
+                                                <span>
+                                                    Here Mudassar Ahmed Khan has provided snippet to get all checkboxes by name attribute using jQuery</span></div>
+                                        
+                                            <div class='item '>
+                                                <a class="medium-title" href='/Articles/Get-all-checkboxes-by-class-name-using-jQuery.aspx'><b>
+                                                    Get all checkboxes by class name using jQuery</b></a><br />
+                                                <span>
+                                                    Here Mudassar Ahmed Khan has provided snippet to get all checkboxes by class name using jQuery</span></div>
+                                        
+                                            <div class='item '>
+                                                <a class="medium-title" href='/Articles/Get-values-of-all-selected-checkboxes-by-class-name-using-jQuery.aspx'><b>
+                                                    Get values of all selected checkboxes by class name using jQuery</b></a><br />
+                                                <span>
+                                                    Here Mudassar Ahmed Khan has provided snippet to get values of all selected checkboxes by class name using jQuery</span></div>
+                                        
+                                            <div class='item '>
+                                                <a class="medium-title" href='/Articles/Get-ids-of-all-checked-checkboxes-using-class-name-in-jQuery.aspx'><b>
+                                                    Get ids of all checked checkboxes using class name in jQuery</b></a><br />
+                                                <span>
+                                                    Here Mudassar Ahmed Khan has provided snippet to get ids of all checked checkboxes using class name in jQuery</span></div>
+                                        
+                                            <div class='item '>
+                                                <a class="medium-title" href='/Articles/Get-ids-of-all-selected-checkboxes-using-class-name-in-jQuery.aspx'><b>
+                                                    Get ids of all selected checkboxes using class name in jQuery</b></a><br />
+                                                <span>
+                                                    Here Mudassar Ahmed Khan has provided snippet to get ids of all selected checkboxes using class name in jQuery</span></div>
+                                        
+                                            <div class='item '>
+                                                <a class="medium-title" href='/Articles/Get-ids-and-values-of-all-checked-checkboxes-in-jQuery.aspx'><b>
+                                                    Get ids and values of all checked checkboxes in jQuery</b></a><br />
+                                                <span>
+                                                    Here Mudassar Ahmed Khan has provided a code snippet to get ids and values of all checked checkboxes using jQuery</span></div>
+                                        
+                                            <div class='item '>
+                                                <a class="medium-title" href='/Articles/Get-ids-and-values-of-all-selected-checkboxes-in-jQuery.aspx'><b>
+                                                    Get ids and values of all selected checkboxes in jQuery</b></a><br />
+                                                <span>
+                                                    Here Mudassar Ahmed Khan has provided a code snippet to get ids and values of all selected checkboxes using jQuery</span></div>
+                                        
+                                            <div class='item '>
+                                                <a class="medium-title" href='/Articles/Get-ids-and-values-of-all-unselected-checkboxes-in-jQuery.aspx'><b>
+                                                    Get ids and values of all unselected checkboxes in jQuery</b></a><br />
+                                                <span>
+                                                    Here Mudassar Ahmed Khan has explained how to get ids and values of all unselected checkboxes in jQuery</span></div>
+                                        
+                                            <div class='item '>
+                                                <a class="medium-title" href='/Articles/Get-ids-and-values-of-all-unchecked-checkboxes-in-jQuery.aspx'><b>
+                                                    Get ids and values of all unchecked checkboxes in jQuery</b></a><br />
+                                                <span>
+                                                    Here Mudassar Ahmed Khan has explained how to get ids and values of all unchecked checkboxes in jQuery</span></div>
+                                        
+                                            <div class='item '>
+                                                <a class="medium-title" href='/Articles/ASP.Net-CheckBoxList-Check-or-uncheck-all-checkboxes-client-side-using-jQuery.aspx'><b>
+                                                    ASP.Net CheckBoxList: Check or uncheck all checkboxes client side using jQuery</b></a><br />
+                                                <span>
+                                                    Here Mudassar Ahmed Khan has explained how to  how to check or uncheck all checkboxes client side in ASP.Net CheckBoxList using jQuery. He has also explained if the the individual checkboxes checked status is changed then the checked status of the check all checkbox will also change accordingly.</span></div>
+                                        
+                                            <div class='item '>
+                                                <a class="medium-title" href='/Articles/Multiple-Select-MultiSelect-DropDownList-with-CheckBoxes-using-jQuery.aspx'><b>
+                                                    Multiple Select (MultiSelect) DropDownList with CheckBoxes using jQuery</b></a><br />
+                                                <span>
+                                                    Here Mudassar Ahmed Khan has explained how to implement a Multiple Select (MultiSelect) DropDownList with CheckBoxes using jQuery Bootstrap Multi-Select Plugin.
+
+In order to implement a Multiple Select (MultiSelect) DropDownList with CheckBoxes we will need to make use of HTML Select DropDownList control and apply the jQuery Bootstrap Multi-Select Plugin to it.</span></div>
+                                        
+                                </div>
+                                <!-- Controls -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="visible-xs">
+            
+            <div id="ctl00_contentplaceholder1_ucAds5_adContainer" style="height:250px;width:300px;clear:both">
+	
+    
+    <style type="text/css">        
+        .text_ad
+        {
+            margin: 10px 0 0 0px;
+            display: block;
+            color: #444;
+            font-family: Sans-Serif;
+            font-size: 11pt;
+            position: relative;
+            top: 2px;
+        }
+        .text_ad a
+        {
+            color: #D0252D;
+            text-decoration: none;
+        }
+        .text_ad a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        function HideIFrame() {
+            window.onload = function () {
+                try {
+                    var dvArticleTextAd = window.parent.document.getElementById('dvArticleTextAd');
+                    window.parent.document.getElementById('dvArticleTextAd').style.display = "none";
+                    dvArticleTextAd.removeChild(dvArticleTextAd.getElementsByTagName("IFRAME")[0]);
+                } catch (e) {
+                }
+            }
+        }
+    </script>
+    <div data-type="ad" data-publisher="jqueryfaqs.com" data-zone="ron" data-format="300x250"></div>
+    
+    
+    
+</div>
+
+            <div class="heading-sep">
+            </div>
+        </div>
+        <div id="lnkHiddenArticleLink"></div>
+        
+        <div>
+            <div class="article_comments panel">
+                <div class="header panel-heading">
+                    <span class="fa fa-comments fa-fw"></span>
+                    Comments
+                </div>
+                <div class="abstract">
+                    <div class="comment-div panel-body">
+                        <div id="dvComments">
+                        </div>
+                        <span id="lblNoComments" style="padding: 5px 0" 
+                            class="text-b">
+                            No comments have been added to this article.</span>
+                        <div class="more_section">
+                            <div id="dvMoreComments">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="visible-xs">
+            
+            <div id="ctl00_contentplaceholder1_ucAds6_adContainer" style="height:250px;width:300px;clear:both">
+	
+    
+    <style type="text/css">        
+        .text_ad
+        {
+            margin: 10px 0 0 0px;
+            display: block;
+            color: #444;
+            font-family: Sans-Serif;
+            font-size: 11pt;
+            position: relative;
+            top: 2px;
+        }
+        .text_ad a
+        {
+            color: #D0252D;
+            text-decoration: none;
+        }
+        .text_ad a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        function HideIFrame() {
+            window.onload = function () {
+                try {
+                    var dvArticleTextAd = window.parent.document.getElementById('dvArticleTextAd');
+                    window.parent.document.getElementById('dvArticleTextAd').style.display = "none";
+                    dvArticleTextAd.removeChild(dvArticleTextAd.getElementsByTagName("IFRAME")[0]);
+                } catch (e) {
+                }
+            }
+        }
+    </script>
+    <div data-type="ad" data-publisher="jqueryfaqs.com" data-zone="ron" data-format="300x250"></div>
+    
+    
+    
+</div>
+
+            <div class="heading-sep">
+            </div>
+        </div>
+        
+        <div class="media">
+            <div class="pull-right hidden-xs">
+                
+                
+                <div id="ctl00_contentplaceholder1_ucAds7_adContainer" style="height:250px;width:300px;clear:both">
+	
+    
+    <style type="text/css">        
+        .text_ad
+        {
+            margin: 10px 0 0 0px;
+            display: block;
+            color: #444;
+            font-family: Sans-Serif;
+            font-size: 11pt;
+            position: relative;
+            top: 2px;
+        }
+        .text_ad a
+        {
+            color: #D0252D;
+            text-decoration: none;
+        }
+        .text_ad a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        function HideIFrame() {
+            window.onload = function () {
+                try {
+                    var dvArticleTextAd = window.parent.document.getElementById('dvArticleTextAd');
+                    window.parent.document.getElementById('dvArticleTextAd').style.display = "none";
+                    dvArticleTextAd.removeChild(dvArticleTextAd.getElementsByTagName("IFRAME")[0]);
+                } catch (e) {
+                }
+            }
+        }
+    </script>
+    <div data-type="ad" data-publisher="jqueryfaqs.com" data-zone="ron" data-format="300x250"></div>
+    
+    
+    
+</div>
+
+                <div class="heading-sep">
+                </div>
+                
+                <div id="ctl00_contentplaceholder1_ucAds8_adContainer" style="height:250px;width:300px;clear:both">
+	
+    
+    <style type="text/css">        
+        .text_ad
+        {
+            margin: 10px 0 0 0px;
+            display: block;
+            color: #444;
+            font-family: Sans-Serif;
+            font-size: 11pt;
+            position: relative;
+            top: 2px;
+        }
+        .text_ad a
+        {
+            color: #D0252D;
+            text-decoration: none;
+        }
+        .text_ad a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        function HideIFrame() {
+            window.onload = function () {
+                try {
+                    var dvArticleTextAd = window.parent.document.getElementById('dvArticleTextAd');
+                    window.parent.document.getElementById('dvArticleTextAd').style.display = "none";
+                    dvArticleTextAd.removeChild(dvArticleTextAd.getElementsByTagName("IFRAME")[0]);
+                } catch (e) {
+                }
+            }
+        }
+    </script>
+    <div data-type="ad" data-publisher="jqueryfaqs.com" data-zone="ron" data-format="300x250"></div>
+    
+    
+    
+</div>
+
+            </div>
+            <div class="media-body">
+                <div class="panel box-shadow">
+                    <div id="comment-heading" class="panel-heading">
+                        <span class="fa fa-comment fa-fw"></span>
+                        Add Comments
+                    </div>
+                    <div class="content panel-body">
+                        <div class="greenbox" style="display: none">
+                            <div class="col-md-12 success-box">
+                                <div class="icon pull-left col-xs-2">
+                                    <i class="fa fa-check-circle text-info"></i>
+                                </div>
+                                <div class="right-content pull-left col-xs-10">
+                                    Thank you for the feedback. The comment is now awaiting moderation. You will be notified via email when the author replies to your comment.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="dvAddComment">
+                            <div class="col-md-12">
+                                <div id="Comment-not-selected" class="error-box" style="display: none; margin-bottom: 10px;">
+                                    <div class="icon pull-left col-xs-2">
+                                        <i class="fa fa-times-circle text-info"></i>
+                                    </div>
+                                    <div class="right-content pull-left col-xs-10">
+                                        Please select a comment to reply</div>
+                                </div>
+                                <div class="info-box">
+                                    <div class="icon pull-left col-xs-2">
+                                        <i class="fa fa-info-circle text-info"></i>
+                                    </div>
+                                    <div class="right-content pull-left col-xs-10">
+                                        <span>You can add your comment about this article using the form below. Make sure you provide a valid email address <br />else you won't be notified when the author replies to your comment</span><br />Please note that all comments are moderated and will be deleted if they are<ul><li>Not relavant to the article</li><li>Spam</li><li>Advertising campaigns or links to other sites</li><li>Abusive content.</li></ul><b>Please do not post code, scripts or snippets.</b></div>
+                                </div>
+                                <div class="heading-sep">
+                                </div>
+                                <div>
+                                    
+                                    <div class="note-box">
+                                        <div class="icon pull-left col-xs-2">
+                                            <i class="fa fa-thumbs-up text-info"></i>
+                                        </div>
+                                        <div class="right-content pull-left col-xs-10">
+                                            <div style="margin: 5px 0 0 10px;">
+                                                
+<div>
+    <div class="visible-xs">
+        <div class="row">
+            <div class="col-xs-3">
+                <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FJQueryFAQs&amp;width=150&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=1449212552011175"
+                    scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 50px;
+                    height: 35px;" allowtransparency="true"></iframe>
+            </div>
+            <div class="col-xs-8">
+                <a href="https://twitter.com/jQueryFaqs" class="twitter-follow-button" data-show-count="false"
+                    data-size="small">Follow @jQueryFaqs</a>
+                <script>                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } } (document, 'script', 'twitter-wjs');</script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-5">
+               
+            </div>
+            <div class="col-xs-3">
+                <a href="/Rss.ashx" target="_blank" class="SocialLink rss" data-container="body" data-toggle="popover"
+                    data-placement="top" data-content="Subscribe to RSS feed."><span
+                        class="fa fa-rss-square fa-fw"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="hidden-xs">
+        <div class="SocialButtonWrap">
+            <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FJQueryFAQs&amp;width=150&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21&amp;appId=1449212552011175"
+                scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 90px;
+                height: 22px; position: relative; top: 4px;" allowtransparency="true"></iframe>
+        </div>
+        <div class="SocialButtonWrap">
+            <a href="https://twitter.com/jQueryFaqs" class="twitter-follow-button" data-show-count="false"
+                data-size="large">Follow @jQueryFaqs</a>
+            <script>                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } } (document, 'script', 'twitter-wjs');</script>
+        </div>
+        <div class="SocialButtonWrap" style="position: relative; top: 3px;">
+            <!-- Place this tag in your head or just before your close body tag. -->
+          
+        </div>
+        <div class="SocialButtonWrap" style="position: relative; top: 4px;">
+            <a href="/Rss.ashx" target="_blank" class="SocialLink rss" data-container="body" data-toggle="popover"
+                data-placement="top" data-content="Subscribe to RSS feed."><span
+                    class="fa fa-rss-square fa-fw"></span></a>
+        </div>
+    </div>
+</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label for="ctl00_contentplaceholder1_txtName" id="ctl00_contentplaceholder1_lblName" class="col-md-2 control-label">Name</label>
+                                                
+                                                <div class="col-md-5">
+                                                    <input name="ctl00$contentplaceholder1$txtName" type="text" id="ctl00_contentplaceholder1_txtName" class="form-control" placeholder="Name" /></div>
+                                                <div class="col-md-5 input-validator">
+                                                    <span id="ctl00_contentplaceholder1_rfvName" style="color:Red;display:none;">Required</span></div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label for="ctl00_contentplaceholder1_txtEmail" id="ctl00_contentplaceholder1_lblEmail" class="col-md-2 control-label">Email</label>
+                                                <div class="col-md-5">
+                                                    <input name="ctl00$contentplaceholder1$txtEmail" type="text" id="ctl00_contentplaceholder1_txtEmail" class="form-control" placeholder="Email" />
+                                                    
+                                                </div>
+                                                <div class="col-md-5 input-validator">
+                                                    <span id="ctl00_contentplaceholder1_rfvEmail" style="color:Red;display:none;">Required</span>
+                                                    <span id="ctl00_contentplaceholder1_revEmail" style="color:Red;display:none;">Invalid Email Address</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label for="ctl00_contentplaceholder1_txtComment" id="ctl00_contentplaceholder1_Label1" class="col-md-2 control-label">Comment</label>
+                                                <div class="col-md-5">
+                                                    <textarea name="ctl00$contentplaceholder1$txtComment" rows="3" cols="20" id="ctl00_contentplaceholder1_txtComment" class="form-control" placeholder="Comment">
+</textarea>
+                                                </div>
+                                                <div class="col-md-5 input-validator">
+                                                    <span id="ctl00_contentplaceholder1_RequiredFieldValidator1" style="color:Red;top:23px;visibility:hidden;">Required</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-3 pull-left col-xs-5 col-last" style="padding-top: 3px">
+                                                    <label for="ctl00_contentplaceholder1_txtSecurityCode" id="ctl00_contentplaceholder1_lblCaptchCode" class="control-label">Security code:</label>
+                                                </div>
+                                                <div class="col-md-4 captcha col-xs-7">
+                                                    <div class="pull-right">
+                                                        <input name="ctl00$contentplaceholder1$txtSecurityCode" type="text" maxlength="3" id="ctl00_contentplaceholder1_txtSecurityCode" class="form-control" onkeyup="keyUP(event.keyCode)" onkeydown="return isNumeric(event.keyCode);" style="width:45px;" />
+                                                    </div>
+                                                    <div class="pull-right" style="padding-right: 10px;">
+                                                        <img alt = 'Captcha' align = 'NotSet' src = '/Red/GenerateImage.ashx?key=lD2A6RiAQ80JPO9svz2Y%2bz3vhGGoQ6zRZ0lBFHJaq48%3d&amp;color=Black' /><input type = 'hidden' name = 'ucCaptcha_Expression' value = 'XLxu0CqzlYXJdg3ZrX8l8A==' /><script type = 'text/javascript'>var CaptchaExpression = 'XLxu0CqzlYXJdg3ZrX8l8A==';</script>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 input-validator">
+                                                    <span id="ctl00_contentplaceholder1_RequiredFieldValidator4" style="color:Red;display:none;">Required</span>
+                                                    <span id="invalidCaptcha" class="error" style="display: none; color: #FF0000;">
+                                                        Invalid security code.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-10 col-md-offset-2">
+                                                    
+                                                    <button type="submit" name="AddComment" onclick="Page_ClientValidate(&#39;CommentValidator&#39;);" class="btn btn-green submit">
+                                                        <span class='fa fa-cloud-upload fa-fw'></span>Add Comment</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="popup" id="AuthorMessagePopup" style="max-width: 395px; display: none;">
+        <div class="header">
+            Message from Author</div>
+        <div align="right">
+            <a class="close"></a>
+        </div>
+        <div class="body">
+            <div class="cols">
+                <div class="col" style="min-height: 250px; padding-right: 10px">
+                    <img class="avatar" alt="" src='http://www.aspforums.net/Avatars/Mudassar.jpg?634592399822400000'
+                        style="width: 65px; height: 65px;" /></div>
+                <div class="col-last" style="margin-right: 75px">
+                    Message from Author
+                </div>
+            </div>
+            <br />
+        </div>
+        <div align="right" class="buttons" style="padding: 5px">
+            <input type="button" value="Ask Now" class="blue" onclick="window.location = 'http://www.aspforums.net/'" />
+            <input type="button" class="gray" value="Later" />
+        </div>
+    </div>
+    
+    <div id="dvSubscribeBox" class="popup" style="display: block; bottom: 15px; box-shadow: 1px 1px 8px #666;
+        z-index: 99; right: -10000px; min-width: 300px;">
+        <div class="float-box-white-bg">
+            <div class="header">
+                Subscribe
+                <a href="javascript:;" class="close"><span class="fa fa-times-circle fa-fw"></span>
+                </a>
+            </div>
+            <div class="body">
+                
+                <div class="float-box-social-link">
+                    
+<div>
+    <div class="visible-xs">
+        <div class="row">
+            <div class="col-xs-3">
+                <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FJQueryFAQs&amp;width=150&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=1449212552011175"
+                    scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 50px;
+                    height: 35px;" allowtransparency="true"></iframe>
+            </div>
+            <div class="col-xs-8">
+                <a href="https://twitter.com/jQueryFaqs" class="twitter-follow-button" data-show-count="false"
+                    data-size="small">Follow @jQueryFaqs</a>
+                <script>                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } } (document, 'script', 'twitter-wjs');</script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-5">
+               
+            </div>
+            <div class="col-xs-3">
+                <a href="/Rss.ashx" target="_blank" class="SocialLink rss" data-container="body" data-toggle="popover"
+                    data-placement="top" data-content="Subscribe to RSS feed."><span
+                        class="fa fa-rss-square fa-fw"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="hidden-xs">
+        <div class="SocialButtonWrap">
+            <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FJQueryFAQs&amp;width=150&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21&amp;appId=1449212552011175"
+                scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 90px;
+                height: 22px; position: relative; top: 4px;" allowtransparency="true"></iframe>
+        </div>
+        <div class="SocialButtonWrap">
+            <a href="https://twitter.com/jQueryFaqs" class="twitter-follow-button" data-show-count="false"
+                data-size="large">Follow @jQueryFaqs</a>
+            <script>                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } } (document, 'script', 'twitter-wjs');</script>
+        </div>
+        <div class="SocialButtonWrap" style="position: relative; top: 3px;">
+            <!-- Place this tag in your head or just before your close body tag. -->
+          
+        </div>
+        <div class="SocialButtonWrap" style="position: relative; top: 4px;">
+            <a href="/Rss.ashx" target="_blank" class="SocialLink rss" data-container="body" data-toggle="popover"
+                data-placement="top" data-content="Subscribe to RSS feed."><span
+                    class="fa fa-rss-square fa-fw"></span></a>
+        </div>
+    </div>
+</div>
+
+                </div>
+                
+                <div class="form-group clear">
+                    <input id="txtSubscriberEmailFromBox" type="text" name="email" value="" placeholder="Email Address"
+                        class="form-control" />
+                </div>
+                <div class="buttons popup-footer" align="right">
+                    <a onclick="return SubscribeVisitorFromBox();" id="ctl00_contentplaceholder1_lnkSubscribe" class="btn btn-red" href="javascript:__doPostBack(&#39;ctl00$contentplaceholder1$lnkSubscribe&#39;,&#39;&#39;)">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="http://cdn.jsdelivr.net/swfobject/2.2/swfobject.js" type="text/javascript"></script>
+    <script src='/scripts/MaxLength.min.js' type="text/javascript"></script>
+    <script type="text/javascript">
+
+    var isMobile = $("#IsMobile").is(":visible");
+    var article = { ArticleId: parseInt("36"), Title: "Get values of all checked checkboxes by class name using jQuery", Slug: "Get-values-of-all-checked-checkboxes-by-class-name-using-jQuery", Author: { Slug: "Mudassar-Khan"} };
+    var IPAddress = "14.98.69.134";
+    var approved = Boolean("False");
+    var CommentedUpdatedSuccessMessage = "Comment has been updated.";
+
+    $(document).ready(function () {
+        $("#article [id*=txtComment]").MaxLength(
+        {
+            MaxLength: 300,
+            DisplayCharacterCount: false
+        });
+               
+        
+        GetRelatedArticles('Red');
+        $('input[type=text]').bind("keydown", function(e)
+        {
+            var keyCode = e.which ? e.which : e.keyCode;
+            return (keyCode!=13);
+        });
+    });
+
+    
+        $(function () {           
+            $(window).scroll(function () {
+                if (($(window).scrollTop() + $(window).height() - 150) > ($("#lnkHiddenArticleLink")[0].offsetTop)) {                
+                    if(!isSubscribeBoxVisible) {                   
+                        $("#dvSubscribeBox").css("right", "15px");
+                        $("#dvSubscribeBox").fadeIn();
+                        isSubscribeBoxVisible = true;
+                    }
+                }
+            });
+        });
+
+        $("#dvSubscribeBox .close").live("click", function () {
+            $("#dvSubscribeBox").fadeOut();       
+        });
+    
+    </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row page-footer">
+        <div class="col-md-12">
+            <div class="row sub-footer">
+                
+                <div class="col-md-6">
+                    <div class="sub-footer-title">
+                        Subscribe
+                    </div>
+                    <fieldset>
+                        <span id="ctl00_lblEnterSubscribeEmail">Please enter your email address:</span>
+                        <div class="box-shadow">
+                            <div class="panel-body">
+                                <div class="media">
+                                    <div class="pull-right">
+                                        <input id="btnGo" type="button" class="btn btn-red btn-lg" value="Subscribe" onclick="return SubscribeVisitor()" />
+                                    </div>
+                                    <div class="media-body">
+                                        <input type="text" id="txtSubscriberEmail" class="form-control input-lg" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="dvSubscriberMessage" style="margin-top: 5px;">
+                                            <div class="content">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 well" align="left" style="padding-left: 50px;">
+                    Â©
+                    2019
+                    <a href="http://www.jqueryfaqs.com/">www.jqueryfaqs.com</a>
+                    All rights reserved | <a href="http://jqueryfaqs.com/PrivacyPolicy.aspx">Privacy Policy</a>
+                        | Powered by <a href="http://www.excelasoft.com/">Excelasoft Solutions</a>
+                    <img src='/images/excelasoft.png' class="excelasoft-img" alt="Excelasoft Solutions" />
+                </div>
+                <div class="col-md-4" align="right" style="font-size: 30px; padding-top: 14px">
+                    <a href="https://www.facebook.com/JQueryFAQs" target="_blank"><span class="fa fa-facebook-square fa-fw">
+                    </span></a><a href="https://plus.google.com/101323275732406765583" target="_blank"><span
+                        class="fa fa-google-plus-square fa-fw" style="margin-right: 0"></span></a><a href="http://www.twitter.com/jQueryFAQs"
+                            target="_blank"><span class="fa fa-twitter-square fa-fw"></span></a><a href='/Rss.ashx'
+                                target="_blank"><span class="fa fa-rss-square fa-fw"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="IsPostBack" id="IsPostBack" value="false" />
+    <input type="hidden" name="PostbackControl" id="PostbackControl" value="" />
+    <div class="menu-modal" style="display: none">
+    </div>
+    <a id="ctl00_lnkFake" href="javascript:__doPostBack(&#39;ctl00$lnkFake&#39;,&#39;&#39;)"></a>
+    <div id="dvErrorPopup" class="popup" style="width: 630px; margin-left: 10px; display: none;">
+        <div class="header">
+            <span class="fa  fa-exclamation-triangle fa-fw"></span>
+            Error Details
+        </div>
+        <div align="right">
+            <a href="javascript:;" class="close"><span class="fa fa-times-circle fa-fw"></span>
+            </a>
+        </div>
+        <div class="body">
+            <div class="content" style="">
+            </div>
+        </div>
+    </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_contentplaceholder1_rfvName"), document.getElementById("ctl00_contentplaceholder1_rfvEmail"), document.getElementById("ctl00_contentplaceholder1_revEmail"), document.getElementById("ctl00_contentplaceholder1_RequiredFieldValidator1"), document.getElementById("ctl00_contentplaceholder1_RequiredFieldValidator4"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_contentplaceholder1_rfvName = document.all ? document.all["ctl00_contentplaceholder1_rfvName"] : document.getElementById("ctl00_contentplaceholder1_rfvName");
+ctl00_contentplaceholder1_rfvName.controltovalidate = "ctl00_contentplaceholder1_txtName";
+ctl00_contentplaceholder1_rfvName.errormessage = "Required";
+ctl00_contentplaceholder1_rfvName.display = "Dynamic";
+ctl00_contentplaceholder1_rfvName.validationGroup = "CommentValidator";
+ctl00_contentplaceholder1_rfvName.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_contentplaceholder1_rfvName.initialvalue = "";
+var ctl00_contentplaceholder1_rfvEmail = document.all ? document.all["ctl00_contentplaceholder1_rfvEmail"] : document.getElementById("ctl00_contentplaceholder1_rfvEmail");
+ctl00_contentplaceholder1_rfvEmail.controltovalidate = "ctl00_contentplaceholder1_txtEmail";
+ctl00_contentplaceholder1_rfvEmail.errormessage = "Required";
+ctl00_contentplaceholder1_rfvEmail.display = "Dynamic";
+ctl00_contentplaceholder1_rfvEmail.validationGroup = "CommentValidator";
+ctl00_contentplaceholder1_rfvEmail.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_contentplaceholder1_rfvEmail.initialvalue = "";
+var ctl00_contentplaceholder1_revEmail = document.all ? document.all["ctl00_contentplaceholder1_revEmail"] : document.getElementById("ctl00_contentplaceholder1_revEmail");
+ctl00_contentplaceholder1_revEmail.controltovalidate = "ctl00_contentplaceholder1_txtEmail";
+ctl00_contentplaceholder1_revEmail.errormessage = "Invalid Email Address";
+ctl00_contentplaceholder1_revEmail.display = "Dynamic";
+ctl00_contentplaceholder1_revEmail.validationGroup = "CommentValidator";
+ctl00_contentplaceholder1_revEmail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ctl00_contentplaceholder1_revEmail.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+var ctl00_contentplaceholder1_RequiredFieldValidator1 = document.all ? document.all["ctl00_contentplaceholder1_RequiredFieldValidator1"] : document.getElementById("ctl00_contentplaceholder1_RequiredFieldValidator1");
+ctl00_contentplaceholder1_RequiredFieldValidator1.controltovalidate = "ctl00_contentplaceholder1_txtComment";
+ctl00_contentplaceholder1_RequiredFieldValidator1.errormessage = "Required";
+ctl00_contentplaceholder1_RequiredFieldValidator1.validationGroup = "CommentValidator";
+ctl00_contentplaceholder1_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_contentplaceholder1_RequiredFieldValidator1.initialvalue = "";
+var ctl00_contentplaceholder1_RequiredFieldValidator4 = document.all ? document.all["ctl00_contentplaceholder1_RequiredFieldValidator4"] : document.getElementById("ctl00_contentplaceholder1_RequiredFieldValidator4");
+ctl00_contentplaceholder1_RequiredFieldValidator4.controltovalidate = "ctl00_contentplaceholder1_txtSecurityCode";
+ctl00_contentplaceholder1_RequiredFieldValidator4.errormessage = "Required";
+ctl00_contentplaceholder1_RequiredFieldValidator4.display = "Dynamic";
+ctl00_contentplaceholder1_RequiredFieldValidator4.validationGroup = "CommentValidator";
+ctl00_contentplaceholder1_RequiredFieldValidator4.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_contentplaceholder1_RequiredFieldValidator4.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+HideIFrame();
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+    
+    <script type="text/javascript" src='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js'></script>
+    <!--[if lt IE 9]>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js' type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        var SearchUrl = "/Search.aspx";
+        var InvalidEmailWithIcon = "<i class='fa fa-times-circle text-info'></i>Invalid email address.";
+        var Global_Label_InvalidEmail = "Invalid Email Address";
+        var SubscribeThankyouMessagewithIcon = "<i class='fa fa-check-circle text-info'></i>Thank you! You are now subscribed.";
+        var AlreadySubcribeMessageWithIcon = "<i class='fa fa-times-circle text-info'></i>You are already subscribed."
+        var SubscribeThankyouMessage = "Thank you! You are now subscribed.";
+        var AlreadySubcribeMessage = "You are already subscribed."
+    </script>
+    
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-23981074-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    
+    <script type="text/javascript">
+        var SearchUrl = "/Search.aspx";
+    </script>
+    <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_floating_style addthis_32x32_style" style="right: 15px;
+        top: 300px; background: none; border: none">
+        <a class="addthis_button_facebook" style="cursor: pointer"></a><a class="addthis_button_twitter"
+            style="cursor: pointer"></a><a class="addthis_button_google_plusone" style="cursor: pointer">
+            </a>        </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=mudassarkhan&async=1&domready=1"></script>
+    <script>
+        function initAddThis() {
+            addthis.init()
+        }
+        try {
+            initAddThis();
+        }
+        catch (e) {
+
+        }
+    </script>
+    <!-- AddThis Button END -->
+    <!-- DeveloperMedia BEGIN -->
+    
+    <script type='text/javascript'>
+        function _dmBootstrap(file) {
+            var _dma = document.createElement('script');
+            _dma.type = 'text/javascript';
+            _dma.async = true;
+            _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+        }
+        function _dmFollowup(file) {if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+        (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+       
+    </script>
+    
+    <!-- DeveloperMedia END -->
+        <div id = "dvCookie" class="popup" style="display: none; bottom: 15px; box-shadow: 1px 1px 8px #666;
+        z-index: 99; right: 15px; min-width: 300px;">
+    <div class="float-box-white-bg">
+            <div class="header">
+               Disclaimer
+            </div>
+            <div class="body">
+                This site makes use of Cookies. Please refer <a href="/PrivacyPolicy.aspx">Privacy Policy</a> for more details.
+            </div>
+            <div class="buttons popup-footer" align="right" style="padding:0 10px 10px 0">
+                    <a class="btn btn-green" onclick ="HideCookieBox()">Got it</a>
+            </div>
+        </div>
+</div>
+<script type="text/javascript">
+    if (document.cookie.indexOf('privacy') == -1) {
+        document.getElementById("dvCookie").style.display = "block";
+    };
+    function HideCookieBox() {
+        document.cookie = "username=privacy; expires=Thu, 18 Dec 2033 12:00:00 UTC; path=/";
+        //alert(document.cookie.indexOf('privacy'));
+        document.getElementById("dvCookie").style.display = "none";
+    };
+</script>
+
+</body>
+</html>
+
+
+
+x¶‚iŠ6      ]r]Û@ƒ©“       h    :http://www.jqueryfaqs.com/Articles/Get-values-of-all-checked-checkboxes-by-class-name-using-jQuery.aspx necko:classified 1 strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK
+Cache-Control: private
+Content-Length: 109292
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 26 Jun 2019 06:27:59 GMT
+Via: HTTP/1.1 forward.http.proxy:3128
+ original-response-headers Cache-Control: private
+Content-Length: 109292
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+Set-Cookie: ASP.NET_SessionId=bswdg4whf2lmuzcopeqoj0af; path=/; HttpOnly
+X-Powered-By: ASP.NET
+Date: Wed, 26 Jun 2019 06:27:59 GMT
+Via: HTTP/1.1 forward.http.proxy:3128
+Connection: keep-alive
+ uncompressed-len 0 predictor::resource-count 68 predictor::http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css 1,1,1561530482,4096 predictor::http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css 1,1,1561530482,4096 predictor::http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css 1,1,1561530482,4096 predictor::http://www.jqueryfaqs.com/Bootstrap-3.0/css/override.css?11_07_16_09_38 1,1,1561530482,4096 predictor::http://www.jqueryfaqs.com/Bootstrap-3.0/css/chkrb.css?11_07_16_09_38 1,1,1561530482,4096 predictor::http://www.jqueryfaqs.com/Bootstrap-3.0/media/Above_1024.css?11_07_16_09_38 1,1,1561530482,4096 predictor::http://www.jqueryfaqs.com/Bootstrap-3.0/media/below_767.css?11_07_16_09_38 1,1,1561530482,4096 predictor::http://fonts.googleapis.com/css?family=Lekton 1,1,1561530482,4096 predictor::http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js 1,1,1561530482,4096 predictor::http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js 1,1,1561530482,4096 predictor::http://www.jqueryfaqs.com/scripts/json2.min.js 1,1,1561530482,4097 predictor::http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js 1,1,1561530482,4096 predictor::http://www.jqueryfaqs.com/scripts/date.format.js 1,1,1561530482,4097 predictor::http://www.jqueryfaqs.com/scripts/min141.js?13_07_2018 1,1,1561530482,4096 predictor::http://www.jqueryfaqs.com/WebResource.axd?d=4zUmsBjdlDKnpuL1IeretQ1x84Fo-PYkH0dqQZ1p7zgEI2UuzSa7JeZze-1nGzuOZ8fDIyZ26HFFIpK8v1Efx2Xmcso1&t=636765211280000000 1,1,1561530482,4096 predictor::http://www.jqueryfaqs.com/WebResource.axd?d=iZaTj-lNEMASJ8OBw51pJyR4VtNsfPil5mrFEwsrFaS1UxQ_k_DLAaWhW-w0JQxD1xjZbWvPd9paAUMDZX9ftNFMHcxFA5zDJNwO9-wVJLPQcNj_0&t=636765211280000000 1,1,1561530482,4096 predictor::http://www.jqueryfaqs.com/images/Metro/blue/JqueryLogoNew.png 1,1,1561530482,4097 predictor::http://www.jqueryfaqs.com/Red/GenerateImage.ashx?key=lD2A6RiAQ80JPO9svz2Y%2bz3vhGGoQ6zRZ0lBFHJaq48%3d&color=Black 1,1,1561530482,4096 predictor::http://www.aspforums.net/Avatars/Mudassar.jpg?634592399822400000 1,1,1561530482,4096 predictor::http://www.jqueryfaqs.com/images/Metro/Blue/pattern-39.png 1,1,1561530482,4096 predictor::http://cdn.jsdelivr.net/swfobject/2.2/swfobject.js 1,1,1561530482,4096 predictor::http://www.jqueryfaqs.com/scripts/MaxLength.min.js 1,1,1561530482,4097 predictor::http://www.jqueryfaqs.com/images/excelasoft.png 1,1,1561530482,4097 predictor::http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js 1,1,1561530482,4096 predictor::http://s7.addthis.com/js/300/addthis_widget.js#pubid=mudassarkhan&async=1&domready=1 1,1,1561530482,4096 net-response-time-onstart 2143 net-response-time-onstop 3884 predictor::http://platform.twitter.com/widgets.js 1,1,1561530482,4096 predictor::http://www.google-analytics.com/ga.js 1,1,1561530482,4096 predictor::https://v1.addthisedge.com/live/boost/mudassarkhan/_ate.track.config_resp 1,1,1561530482,4096 predictor::https://v1.addthis.com/live/red_lojson/300lo.json?si=5d131077131e1474&bkl=0&bl=1&pdt=3886&sid=5d131077131e1474&pub=mudassarkhan&rev=v8.4.11-wp&ln=en&pc=men&cb=0&ab=-&dp=www.jqueryfaqs.com&dr=www.google.com&fp=Articles%2FGet-values-of-all-checked-checkboxes-by-class-name-using-jQuery.aspx&fr=&of=0&pd=0&irt=0&vcl=0&md=0&ct=1&tct=0&abt=0&cdn=0&pi=1&rb=4&gen=100&chr=UTF-8&colc=1561530487901&jsl=33&uvs=5d13107719028599000&skipb=1&callback=addthis.cbs.vhp1_98672524835529940 1,1,1561530482,4096 predictor::https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/fonts/fontawesome-webfont.woff?v=4.0.3 1,1,1561530482,4096 predictor::http://cdn1.developermedia.com/a.min.js 1,1,1561530482,4096 predictor::https://platform.twitter.com/js/button.509719336ca39171c37a321231ccaf83.js 1,1,1561530482,4096 predictor::https://s7.addthis.com/static/layers.3a6529022ac1821e9e0a.js 1,1,1561530482,4096 predictor::https://s7.addthis.com/static/floating-css.f2caaedccd09c08e2921.js 1,1,1561530482,4096 predictor::http://www.googletagservices.com/tag/js/gpt.js 1,1,1561530482,4096 predictor::https://adservice.google.co.in/adsid/integrator.js?domain=www.jqueryfaqs.com 1,1,1561530482,4096 predictor::https://adservice.google.com/adsid/integrator.js?domain=www.jqueryfaqs.com 1,1,1561530482,4096 predictor::https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019061701.js 1,1,1561530482,4096 predictor::https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_2019061701.js 1,1,1561530482,4096 predictor::https://cdn.ampproject.org/rtv/011906111828200/amp4ads-host-v0.js 1,1,1561530482,4096 predictor::https://cdn.ampproject.org/rtv/011906111828200/amp4ads-v0.js 1,1,1561530482,4096 predictor::https://cdn.ampproject.org/rtv/011906111828200/v0/amp-analytics-0.1.js 1,1,1561530482,4096 predictor::https://tpc.googlesyndication.com/simgad/3655315058919113034 1,1,1561530482,4096 predictor::https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsvd_DWz_kPvhdRYsKc-5JKtplp40euM2_pr0PKgw9ftc0Wpj2QXc7ylO0hpHoh0aQI85QZsLYpTXQY1UcGvwII9Et1FuROhdi0QGUFtAuKFhAbFo2p2SszfZwVhnnj5-UKb7hIJRmF-LLtk7S7Kiffui3OWQmzEy5m4Q4z8nvIBsl7va6pNeMaHu06BwdHtO6AgB92TfL90SSAjEsouaq3LS9x_0xvgGpC5KORbhwa8kbcjdwOw_5WJVu95G6VaKvyfXIW-wg&sig=Cg0ArKJSzCJSyPUvDyFEEAE&adurl= 1,1,1561530482,4096 predictor::http://www.google.com/ads/measurement/l?ebcid=ALh7CaSra-u0N5AwKcqXpAM-zU1BXeUUFdZheoGETf6EQtXoFZiMH8l3Jc3UXzk5BlMRGedtpA5F0PvV6KM8LDHA3O4uzwUCRQ 1,1,1561530482,4096 predictor::https://tpc.googlesyndication.com/simgad/8252510241481633582 1,1,1561530482,4096 predictor::https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsva1rVAFwbPsM75oBTiZIkDjIefvNykKgUcjm-lSru5mI2QugvsBX_Irf8zqQZ3z1h-ZbAkiT3Pnj1I-h-7d5cr5NYtv9DCuwC8bE_KXxgTqOBySNckixUXwNd_KpLpe_9xI20w7pA2w7K8tkq0--Im-GXY1npoCECUplOcvY6vwCL3unkp8rn72fLzdY72EgwtHtV6MUXYJitAyLmBsfhPE2ZJ8UVY8h427FPQ4mKxT7z0oyhpAYNf0iB6xD2C5fP-6J-1RA&sig=Cg0ArKJSzBp8dyn3n0T-EAE&adurl= 1,1,1561530482,4096 predictor::http://www.google.com/ads/measurement/l?ebcid=ALh7CaSG13S6x6cgKAoEKeM2pWUuaF4j0Y8xr5YXcN4CTPjTWYM31IEpHkC12RUPbQwNCmykK_8fSYHfPx-xTi9yO5z7SOIJMA 1,1,1561530482,4096 predictor::https://tpc.googlesyndication.com/simgad/4466609739285366842 1,1,1561530482,4096 predictor::https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsuXCIExkWaHieBb5DbITekr9eAj5MTPFdDLF2wGGCNd15cDzvnTc6333y4A8UUgW26ZSpJLPyHiiqt2PFJyuUNPCxBgMWFgtnfkC6hhkaKcZIMhjFZebySxLw_8x3qI6r83GzFtVyGp8Xqc05mVdEpujb6J4lQjh4lQN3fcZStZ4X5xjoKQwMaNdrPxEdNbmHjZqYLMrtKboGvIAqGjKtU-LEH8Ru-9bWLhTUgFEeJc7_9eZ1KLiT_98Tybz6mxIsKPn76aCw&sig=Cg0ArKJSzCrTZ3O9hnctEAE&adurl= 1,1,1561530482,4096 predictor::http://www.google.com/ads/measurement/l?ebcid=ALh7CaTSA7NqKPe_MwwD6ZEQ7vbECtPZMbb7HeC-s79XL1IF__f5b4Ny0jrNhwoIgrLfSkHgHDYv3NxQwsv2cAWCAphDeL0dww 1,1,1561530482,4096 predictor::https://tpc.googlesyndication.com/simgad/11116802767093492475 1,1,1561530482,4096 predictor::https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsvMM7CM13S57QM6JTR3OXHTvmKb1nl8YgxxIBVUmmlGTaRhShKIUQfNb3GtnG2SkQi2pfBfolxYHItBQX_CbS0BLfV3_cOH5-5qScRRpwANWUWfkz2kFPpbjF2-G74wugBYgNuUnkGN-27i1JFWJo5FFU_LjEY1xNw9MFdw-WqOmTyeRrtHlV1tMJ6Qspe5uc6DGxjn-xLMqrpjHyrmUa8cTh_H11bQkWQ3F7JcM1By0fSxTf7FD9WCdc-wLzW3hbQfRki8hQ&sig=Cg0ArKJSzBqUodGOPd8kEAE&adurl= 1,1,1561530482,4096 predictor::http://www.google.com/ads/measurement/l?ebcid=ALh7CaTsJL4cozqkcjVjsBFgGKsVEPJGQ92vxIkp8Ndo2m6wnNx9gZtzPrNoWFCBpd9erDCC2dBMflJOuHYJSEq-_6N_gFdFLg 1,1,1561530482,4096 predictor::https://tpc.googlesyndication.com/simgad/176066192972329429 1,1,1561530482,4096 predictor::https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjstHO_AFQUu9QWKdE6fLpIxHqWZhVqv77MXxfXzzwRyRl3WaWFd9Gbkz0ofL3eL2AGchgv4x-GBA_tmqsuIi7IyeB-UcANWrhXsVNbdpRq3gK2h0gDozGRSJKIKm-rs_Th-_6_tktkE0KK6Mu5wL9eAh3D0DFUYNQkZ8CvQzg62uEN7tvm4Zoxw-_4uqSRdPbpLgRJG0PlJ8WxM-dv_YTaWlpT5lYslsognbWGddaaj05Ukx_3iMWq4EIFvFpuEGbf7TTg0EKg&sig=Cg0ArKJSzFV8TTZnk8ZdEAE&adurl= 1,1,1561530482,4096 predictor::https://pagead2.googlesyndication.com/pcs/activeview?xai=AKAOjssVq7CbeOmMJWOR3_IrkzjU1sE4zS1Kfow0hVZxB85adzafOXzAeh3OAnR_qsdVv66gn_d4zPMlep_pxiKE_4jKqudkCUhxFjiKMg0vymw&sig=Cg0ArKJSzIavaLhkqmDMEAE&id=ampim&o=1110,4&d=728,90&ss=1920,1080&bs=1853,944&mcvt=1537&mtos=0,0,1537,1537,1537&tos=0,0,1537,0,0&tfs=421&tls=1958&g=100&h=100&pt=606&tt=1958&rpt=606&rst=1561530574817&r=v&adk=2326646825&avms=ampa 1,1,1561530482,4096 predictor::https://pagead2.googlesyndication.com/pcs/activeview?xai=AKAOjsu_QZolXTAvjyER0l4xbV6XsYKnVyJZM2fcpPa5XR3tnH7s4NNlI9bCCSkaFb7DW3uR2Q8vh2jXpYUfsXfWw8b71g_9Ax0wFQeDBlWYZ2M&sig=Cg0ArKJSzBEfrhlH-jBbEAE&id=ampim&o=1526,242&d=300,250&ss=1920,1080&bs=1853,944&mcvt=1390&mtos=0,0,1390,1390,1390&tos=0,0,1390,0,0&tfs=404&tls=1794&g=100&h=100&pt=564&tt=1794&rpt=564&rst=1561530574861&r=v&adk=4058703182&avms=ampa 1,1,1561530482,4096 predictor::https://pagead2.googlesyndication.com/pcs/activeview?xai=AKAOjsvJYVkb-3uyNbTBgXV0NtcsjEvIWhffIOPF1Q2K1EbVbtRqVkeGFt1oEXUB6X1T4nTLW9T5LtmZVaW_UbWbTQwSCZXIDAsoYkpLRQBuGqY&sig=Cg0ArKJSzN4IX8who_9WEAE&id=ampim&o=1216,242&d=300,250&ss=1920,1080&bs=1853,944&mcvt=1242&mtos=0,0,1242,1242,1242&tos=0,0,1242,0,0&tfs=368&tls=1610&g=100&h=100&pt=548&tt=1610&rpt=548&rst=1561530574947&r=v&adk=4058703181&avms=ampa 1,1,1561530482,4096 predictor::https://pagead2.googlesyndication.com/pcs/activeview?xai=AKAOjssW4iOAC-z3SJ9QceMflmIqnqdmfGrPZ8yu0fhmFg4c8srAw2J7K9lPmM6wzhmnGXLkOZgs9pr9Mq-GHdz25KbsX1ArKMUmFSn74Eamrcc&sig=Cg0ArKJSzF_3Pe0YNyhiEAE&id=ampim&o=906,242&d=300,250&ss=1920,1080&bs=1853,944&mcvt=1264&mtos=0,0,1264,1264,1264&tos=0,0,1264,0,0&tfs=402&tls=1666&g=100&h=100&pt=563&tt=1666&rpt=563&rst=1561530574972&r=v&adk=4058703180&avms=ampa 1,1,1561530482,4096 predictor::https://pagead2.googlesyndication.com/pcs/activeview?xai=AKAOjssnuwe92btB4s84TyZoxSzQ2I4PtyhFiqSAqk8JdPZaaeFRGTLgZ3-XsDM2-h3quH1jjlD0G06aXCDi11Yeit7-sJynWE82RAAGW0rAqe0&sig=Cg0ArKJSzMal95zIseWlEAE&id=ampim&o=1666,520&d=160,600&ss=1920,1080&bs=1853,944&mcvt=1217&mtos=0,0,1217,1217,1217&tos=0,0,1217,0,0&tfs=342&tls=1559&g=70.61666666666667&h=70.61666666666667&pt=484&tt=1559&rpt=484&rst=1561530575011&r=v&adk=3398094170&avms=ampa 1,1,1561530482,4096 predictor::https://tpc.googlesyndication.com/simgad/2118724194437320217 1,1,1561530482,4096 predictor::https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjssAg8t5v2Eir6W0aD7rPRfVckhz39hTLT63EP1AcGIEedr3Adu-W4JBtWNebIK0dagYPkpkrRRkt_F8uOcYNw52YkeudgDVdwQvMlFCbqfe-OmtJJyO7E5VAKw0fzvhNDeAdbRzX3_YPOuHKbX4DwxwfeLrci-vqt3dhqR5Lv8-wqJ-lY93DpA02punRK5BSEw0Jm6pfygDawjNH3G2ap-VZK4dEEYo6NEGwXC_lW3qa8DGXpiRzl1XkKoCuX1e-K_80g7t196cs2MBwJ9S4hsr6aBNPA&sig=Cg0ArKJSzLc2NR7OBTNXEAE&adurl= 1,1,1561530482,4096 predictor::https://tpc.googlesyndication.com/simgad/17133979743726302061 1,1,1561530482,4096 predictor::https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsvz1E1UbFopjTSKcmTy1k1-A-SvgkWaeG-7roaFUITc7mpZUE57Vcpk9-92tFKdBk3LMDJSivX7tyfb8lp7KqZCEm5rskLsuOkrCpwqn8Rv20DxTwUrJgAtQlDUCAkzZZzqswagBJlmtX0RPtA_8rZxl0K9NvJZhI21RveSipWMWKLsnN4Dv8EsN1_NfjB_QW33SLTWynZGKKc6Ce8wYf4KVXRKg110qDWnAss3TLdmPFr5snFHeuUwbXphg01B-13qdSursHY&sig=Cg0ArKJSzFThhx8NHRfNEAE&adurl= 1,1,1561530482,4096 predictor::http://www.google.com/ads/measurement/l?ebcid=ALh7CaSambeyJnZbw7mIK3hHlp8WHhuCtMmPp3R83PtirF4HoY8POPSXMze7kndMsujsmM_bdhbPoPdGg8xToNWa6ELNY6L4vw 1,1,1561530482,4096 predictor::https://pagead2.googlesyndication.com/pcs/activeview?xai=AKAOjstxQPgLcNsjnNEv1KNHimIw2Tcs92UjXzXQIhCEQl3mqg8n29jeU4HynP-M0unEtvcraqoNx1hk1v6xn4rDjbR2Snnn-M1C-QUPQ0i1WFs&sig=Cg0ArKJSzMj5t1tUfn0wEAE&id=ampim&o=1526,1443&d=300,250&ss=1920,1080&bs=1853,944&mcvt=1002&mtos=0,0,1002,1002,1002&tos=0,0,1002,0,0&tfs=92&tls=1094&g=52.300000000000004&h=100&pt=305&tt=1095&rpt=305&rst=1561530585438&r=v&adk=4058703178&avms=ampa 1,1,1561530482,4096 predictor::https://pagead2.googlesyndication.com/pcs/activeview?xai=AKAOjsuIoFOFPxJaykmqu1BZVn06YmmAgNgq7Wvv31P0IzXHN35MWxdRo0-J1ZnzdB8tyetX4MkLUzxWtU5096Y7j2bD12Mli2v3-KMnn0HLD2U&sig=Cg0ArKJSzMtrdV_KtXCAEAE&id=ampim&o=1526,1713&d=300,250&ss=1920,1080&bs=1853,944&mcvt=1001&mtos=0,0,1001,1001,1001&tos=0,0,1001,0,0&tfs=370&tls=1417&g=61.1&h=100&pt=462&tt=1418&rpt=462&rst=1561530585591&r=v&adk=4058703177&avms=ampa 1,1,1561530482,4096  ªì
